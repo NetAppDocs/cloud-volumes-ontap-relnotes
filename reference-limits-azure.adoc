@@ -115,6 +115,8 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | L8s_v3 | 12 | 384 TiB | 2 PiB
 | L16s_v3 | 28 | 896 TiB | 2 PiB
 | L32s_v3 | 28 | 896 TiB | 2 PiB
+| L48s_v3 | 28 | 896 TiB | 2 PiB
+| L64s_v3 | 28 | 896 TiB | 2 PiB
 
 |===
 
@@ -155,6 +157,8 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E80ids_v4 | 28 | 896 TiB | 2 PiB
 | L16s_v3 | 28 | 896 TiB | 2 PiB
 | L32s_v3 | 28 | 896 TiB | 2 PiB
+| L48s_v3 | 28 | 896 TiB | 2 PiB
+| L64s_v3 | 28 | 896 TiB | 2 PiB
 |===
 
 ==== HA pairs in multiple availability zones with shared managed disks
@@ -170,6 +174,8 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 28 | 896 TiB | 2 PiB
 | E48ds_v4 | 28 | 896 TiB | 2 PiB
 | E80ids_v4 | 28 | 896 TiB | 2 PiB
+| L48s_v3 | 28 | 896 TiB | 2 PiB
+| L64s_v3 | 28 | 896 TiB | 2 PiB
 |===
 
 === Limits for node-based licensing
