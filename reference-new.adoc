@@ -17,11 +17,13 @@ Cloud Volumes ONTAP 9.13.1 includes new enhancements.
 
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
-== 9.13.1 GA (26 July 2023)
-The General Availability release of Cloud Volumes ONTAP 9.13.1 is now available in AWS, Azure, and Google Cloud. 
+== 9.14.0 (4 October 2023)
+The General Availability (GA) release of Cloud Volumes ONTAP 9.14.0 is now available in AWS, Azure, and Google Cloud. This release includes the following new features and enhancements.
 
-== 9.13.1 RC1 (26 June 2023)
-The Release Candidate 1 of Cloud Volumes ONTAP 9.13.1 is now available in AWS, Azure, and Google Cloud.
+=== SnapMirror traffic segregation in Azure
+Now you can segregate your SnapMirror replication traffic from your data traffic. 
+
+Learn more about how to link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-segregate-snapmirror-azure.html[segregate SnapMirror traffic in Azure^]
 
 == Upgrade notes
 
