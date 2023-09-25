@@ -21,7 +21,7 @@ Additional features and enhancements are also introduced in the latest versions 
 The General Availability (GA) release of Cloud Volumes ONTAP 9.14.0 is now available in AWS, Azure, and Google Cloud. This release includes the following new features and enhancements.
 
 === SnapMirror traffic segregation in Azure
-Now you can back up and segregate your SnapMirror replication traffic from your data traffic. 
+You can now segregate SnapMirror replication traffic using a different network to enhance the security and performance of the data in Azure. 
 
 Learn more about how to link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-segregate-snapmirror-azure.html[segregate SnapMirror traffic in Azure^].
 
