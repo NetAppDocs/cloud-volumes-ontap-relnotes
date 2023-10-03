@@ -21,7 +21,7 @@ Additional features and enhancements are also introduced in the latest versions 
 The General Availability (GA) release of Cloud Volumes ONTAP 9.14.0 is now available in AWS, Azure, and Google Cloud. This release includes the following new features and enhancements.
 
 === SnapMirror traffic segregation in Azure
-You can now segregate SnapMirror replication traffic from data and management traffic. This new feature allows you to leverage an additional subnet that isn't routable to the existing subnet used for data and management traffic. 
+You can now segregate SnapMirror replication traffic from data and management traffic. This new feature allows you to segregate SnapMirror replication traffic by leveraging an additional subnet that isn't routable to the existing subnet used for data and management traffic. 
 
 Learn more about how to link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-segregate-snapmirror-azure.html[segregate SnapMirror traffic in Azure^].
 
@@ -37,11 +37,11 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Supported upgrade path
 
-You can upgrade to Cloud Volumes ONTAP 9.14.0 from the 9.13.0 and 9.13.1 releases. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.14.0 from the 9.13.1 release. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 === Required version of the Connector
 
-The BlueXP Connector must be running version 3.9.26 or later to deploy new Cloud Volumes ONTAP 9.14.0 systems and to upgrade existing systems to 9.14.0.
+The BlueXP Connector must be running version 3.9.27 or later to deploy new Cloud Volumes ONTAP 9.14.0 systems and to upgrade existing systems to 9.14.0.
 
 TIP: Automatic upgrades of the Connector are enabled by default so you should be running the latest version.
 
