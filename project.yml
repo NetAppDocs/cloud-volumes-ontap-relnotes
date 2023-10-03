@@ -6,57 +6,40 @@ settings:
   prod:
     pdf_enabled: true
   versions:
-    - name: Cloud Volumes ONTAP 
+    - version-number: "9.14.0"
       url: /cloud-volumes-ontap-relnotes
-      version-number: "9.14.0"
-    - name: Cloud Volumes ONTAP 
+    - version-number: "9.13.1"
       url: /cloud-volumes-ontap-9131-relnotes
-      version-number: "9.13.1"
-    - name: Cloud Volumes ONTAP 
+    - version-number: "9.13.0"
       url: /cloud-volumes-ontap-9130-relnotes
-      version-number: "9.13.0"
-    - name: Cloud Volumes ONTAP 
+    - version-number: "9.12.1"
       url: /cloud-volumes-ontap-9121-relnotes
-      version-number: "9.12.1"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.12.0"
       url: /cloud-volumes-ontap-9120-relnotes
-      version-number: "9.12.0"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.11.1"
       url: /cloud-volumes-ontap-9111-relnotes
-      version-number: "9.11.1"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.11.0"
       url: /cloud-volumes-ontap-9110-relnotes
-      version-number: "9.11.0"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.10.1"
       url: /cloud-volumes-ontap-9101-relnotes
-      version-number: "9.10.1"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.10.0"
       url: /cloud-volumes-ontap-9100-relnotes
-      version-number: "9.10.0"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.9.1"
       url: /cloud-volumes-ontap-991-relnotes
-      version-number: "9.9.1"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.9.0"
       url: /cloud-volumes-ontap-990-relnotes
-      version-number: "9.9.0"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.8"
       url: /cloud-volumes-ontap-98-relnotes
-      version-number: "9.8"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.7"
       url: /cloud-volumes-ontap-97-relnotes
-      version-number: "9.7"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.6"
       url: /cloud-volumes-ontap-96-relnotes
-      version-number: "9.6"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.5"
       url: /cloud-volumes-ontap-95-relnotes
-      version-number: "9.5"
-    - name: Cloud Volumes ONTAP
+    - version-number: "9.4"
       url: /cloud-volumes-ontap-94-relnotes
-      version-number: "9.4"
-    - name: ONTAP Cloud
+    - version-number: "9.3"
       url: /cloud-volumes-ontap-93-relnotes
-      version-number: "9.3"
 sidebar:
   entries:
     - title: Release notes home
