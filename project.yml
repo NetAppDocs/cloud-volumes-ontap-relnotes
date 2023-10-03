@@ -5,6 +5,7 @@ settings:
     pdf_enabled: true
   prod:
     pdf_enabled: true
+    harmony_enabled: true
   versions:
     - version-number: "9.14.0"
       url: /cloud-volumes-ontap-relnotes
@@ -123,3 +124,4 @@ homepage:
           url: https://cloud.netapp.com/blog
         - title: Cloud webinars
           url: https://cloud.netapp.com/events
+
