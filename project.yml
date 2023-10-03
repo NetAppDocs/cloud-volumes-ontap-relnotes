@@ -1,5 +1,5 @@
 settings:
-  name: Cloud Volumes ONTAP 9.14.0 release notes
+  name: Cloud Volumes ONTAP release notes
   platform: cloud
   internal:
     pdf_enabled: true
