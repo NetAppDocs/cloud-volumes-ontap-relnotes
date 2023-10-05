@@ -283,9 +283,11 @@ a|
 
 === HA pairs
 
-HA pairs use managed disks. (Page blobs are supported with HA pairs deployed before the 9.12.1 release.) 
+HA pairs use Azure Managed Disks. The following disk type and sizes are supported. 
 
-The following disk sizes are supported:
+(Page blobs are supported with HA pairs deployed before the 9.12.1 release.) 
+
+*Premium SSD*
 
 * 500 GiB
 * 1 TiB
