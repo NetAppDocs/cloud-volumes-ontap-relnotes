@@ -283,7 +283,7 @@ a|
 
 === HA pairs
 
-HA pairs use Azure Managed Disks. The following disk sizes are supported. 
+HA pairs use Azure Managed Disks. The following disk type and sizes are supported. 
 
 (Page blobs are supported with HA pairs deployed before the 9.12.1 release.) 
 
@@ -294,5 +294,5 @@ HA pairs use Azure Managed Disks. The following disk sizes are supported.
 * 2 TiB
 * 4 TiB
 * 8 TiB
-* 16 TiB 
-* 32 TiB 
+* 16 TiB (managed disks only)
+* 32 TiB (managed disks only)
