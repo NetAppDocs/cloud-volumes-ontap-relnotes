@@ -32,7 +32,7 @@ For some configurations, disk limits prevent you from reaching the capacity limi
 | PAYGO Explore	| 2 TB (data tiering is not supported with Explore)
 | PAYGO Standard | 10 TB
 | PAYGO Premium | 368 TB
-| Node-based license | 368 TB per license
+| Node-based license | 2 PiB (requires multiple licenses)
 | Capacity-based license | 2 PiB
 
 |===
