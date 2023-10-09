@@ -32,7 +32,7 @@ For some configurations, disk limits prevent you from reaching the capacity limi
 | PAYGO Explore	| 2 TiB (data tiering is not supported with Explore)
 | PAYGO Standard | 10 TiB
 | PAYGO Premium | 368 TiB
-| Node-based license | 368 TiB per license
+| Node-based license | 2 PiB (requires multiple licenses)
 | Capacity-based license | 2 PiB
 
 |===
@@ -135,9 +135,9 @@ a|
 
 The following disk limits apply to Cloud Volumes ONTAP systems that use node-based licensing, which is the previous generation licensing model that enabled you to license Cloud Volumes ONTAP by node. Node-based licensing is still available for existing customers.
 
-* If you use node-based licensing, you can purchase multiple node-based licenses for a Cloud Volumes ONTAP BYOL system to allocate more than 368 TiB of capacity.
-+
-The number of licenses that you can purchase for a single node system or HA pair is unlimited. Be aware that disk limits can prevent you from reaching the capacity limit by using disks alone. You can go beyond the disk limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html[Learn how to add additional system licenses to Cloud Volumes ONTAP^].
+You can purchase multiple node-based licenses for a Cloud Volumes ONTAP BYOL single node or HA pair system to allocate more than 368 TiB of capacity, up to the maximum tested and supported system capacity limit of 2 PiB. Be aware that disk limits can prevent you from reaching the capacity limit by using disks alone. You can go beyond the disk limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html[Learn how to add additional system licenses to Cloud Volumes ONTAP^]. Though Cloud Volumes ONTAP supports up to the maximum tested and supported system capacity of 2 PiB, crossing the 2 PiB limit results in an unsupported system configuration. 
+
+AWS Secret Cloud and Top Secret Cloud regions support purchases of multiple node-based licenses starting with Cloud Volumes ONTAP 9.12.1. 
 
 ==== Single node with PAYGO Premium
 
@@ -168,10 +168,10 @@ a|
 2+| Max system capacity with multiple licenses
 
 2+| | *Disks alone* | *Disks + data tiering* | *Disks alone* | *Disks + data tiering*
-| c5, m5, and r5 instances | 21 ^1^ | 336 TiB | 368 TiB | 336 TiB | 368 TiB x each license
+| c5, m5, and r5 instances | 21 ^1^ | 336 TiB | 368 TiB | 336 TiB | 2 PiB
 a|
 * m5dn.24xlarge
-* m6id.32xlarge | 19 ^2^ | 304 TiB | 368 TiB | 304 TiB | 368 TiB x each license
+* m6id.32xlarge | 19 ^2^ | 304 TiB | 368 TiB | 304 TiB | 2 PiB
 |===
 
 . 21 data disks is the limit for _new_ deployments of Cloud Volumes ONTAP. If you upgrade a system that was created with version 9.7 or earlier, then the system continues to support 22 disks. One less data disk is supported on new systems that use these instance types because of the addition of a core disk starting with the 9.8 release.
@@ -208,10 +208,10 @@ a|
 
 2+| | *Disks alone* | *Disks + data tiering* | *Disks alone* | *Disks + data tiering*
 
-| c5, m5, and r5 instances | 18 ^1^ | 288 TiB | 368 TiB | 288 TiB | 368 TiB x each license
+| c5, m5, and r5 instances | 18 ^1^ | 288 TiB | 368 TiB | 288 TiB | 2 PiB
 a|
 * m5dn.24xlarge
-* m6id.32xlarge | 16 ^2^ | 256 TiB | 368 TiB | 256 TiB | 368 TiB x each license
+* m6id.32xlarge | 16 ^2^ | 256 TiB | 368 TiB | 256 TiB | 2 PiB
 |===
 
 . 18 data disks is the limit for _new_ deployments of Cloud Volumes ONTAP. If you upgrade a system that was created with version 9.7 or earlier, then the system continues to support 19 disks. One less data disk is supported on new systems that use these instance types because of the addition of a core disk starting with the 9.8 release.

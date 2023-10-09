@@ -30,7 +30,7 @@ NetApp doesn't support exceeding the system capacity limit. If you reach the lic
 | PAYGO Explore	| 2 TiB (data tiering is not supported with Explore)
 | PAYGO Standard | 10 TiB
 | PAYGO Premium | 368 TiB
-| Node-based license | 368 TiB per license
+| Node-based license | 2 PiB (requires multiple licenses)
 | Capacity-based license | 2 PiB
 
 |===
@@ -182,9 +182,7 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 
 The following disk limits apply to Cloud Volumes ONTAP systems that use node-based licensing, which is the previous generation licensing model that enabled you to license Cloud Volumes ONTAP by node. Node-based licensing is still available for existing customers.
 
-If you use node-based licensing, you can purchase multiple node-based licenses for a Cloud Volumes ONTAP BYOL system to allocate more than 368 TiB of capacity.
-
-The number of licenses that you can purchase for a single node system or HA pair is unlimited. Be aware that disk limits can prevent you from reaching the capacity limit by using disks alone. You can go beyond the disk limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html[Learn how to add additional system licenses to Cloud Volumes ONTAP^].
+You can purchase multiple node-based licenses for a Cloud Volumes ONTAP BYOL single node or HA pair system to allocate more than 368 TiB of capacity, up to the maximum tested and supported system capacity limit of 2 PiB. Be aware that disk limits can prevent you from reaching the capacity limit by using disks alone. You can go beyond the disk limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html[Learn how to add additional system licenses to Cloud Volumes ONTAP^]. Though Cloud Volumes ONTAP supports up to the maximum tested and supported system capacity of 2 PiB, crossing the 2 PiB limit results in an unsupported system configuration.
 
 ==== Single node 
 Single node has two node-based licensing options: PAYGO Premium and BYOL.
@@ -223,22 +221,22 @@ Single node has two node-based licensing options: PAYGO Premium and BYOL.
 
 2+| | *Disks alone* | *Disks + data tiering* | *Disks alone* | *Disks + data tiering*
 
-| DS4_v2 | 29 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| DS5_v2 | 61 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| DS13_v2 | 29 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| DS14_v2 | 61 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| DS15_v2 | 61 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| L8s_v2 | 13 | 368 TiB | 368 TiB | 416 TiB | 368 TiB x each license
-| E4s_v3 | 5 | 160 TiB | 368 TiB | 160 TiB | 368 TiB x each license
-| E8s_v3 | 13 | 368 TiB | 368 TiB | 416 TiB | 368 TiB x each license
-| E32s_v3 | 29 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| E48s_v3 | 29 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| E64is_v3 | 29 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| E4ds_v4 | 5 | 160 TiB | 368 TiB | 160 TiB | 368 TiB x each license
-| E8ds_v4 | 13 | 368 TiB | 368 TiB | 416 TiB | 368 TiB x each license
-| E32ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| E48ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
-| E80ids_v4 | 61 | 368 TiB | 368 TiB | 896 TiB | 368 TiB x each license
+| DS4_v2 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| DS5_v2 | 61 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| DS13_v2 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| DS14_v2 | 61 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| DS15_v2 | 61 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| L8s_v2 | 13 | 368 TiB | 368 TiB | 416 TiB | 2 PiB
+| E4s_v3 | 5 | 160 TiB | 368 TiB | 160 TiB | 2 PiB
+| E8s_v3 | 13 | 368 TiB | 368 TiB | 416 TiB | 2 PiB
+| E32s_v3 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E48s_v3 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E64is_v3 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E4ds_v4 | 5 | 160 TiB | 368 TiB | 160 TiB | 2 PiB
+| E8ds_v4 | 13 | 368 TiB | 368 TiB | 416 TiB | 2 PiB
+| E32ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E48ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E80ids_v4 | 61 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
 |===
 ====
 
@@ -294,17 +292,17 @@ HA pairs have two configuration types: page blob and multiple availability zone.
 
 2+| | *Disks alone* | *Disks + data tiering* | *Disks alone* | *Disks + data tiering*
 
-| DS4_v2 | 29 | 232 TiB | 368 TiB | 232 TiB | 368 TiB x each license
-| DS5_v2 | 61 | 368 TiB | 368 TiB | 488 TiB | 368 TiB x each license
-| DS13_v2 | 29 | 232 TiB | 368 TiB | 232 TiB | 368 TiB x each license
-| DS14_v2 | 61 | 368 TiB | 368 TiB | 488 TiB | 368 TiB x each license
-| DS15_v2 | 61 | 368 TiB | 368 TiB | 488 TiB | 368 TiB x each license
-| E8s_v3 | 13 | 104 TiB | 368 TiB | 104 TiB | 368 TiB x each license
-| E48s_v3 | 29 | 232 TiB | 368 TiB | 232 TiB | 368 TiB x each license
-| E8ds_v4 | 13 | 104 TiB | 368 TiB | 104 TiB | 368 TiB x each license
-| E32ds_v4 | 29 | 232 TiB | 368 TiB | 232 TiB | 368 TiB x each license
-| E48ds_v4 | 29 | 232 TiB | 368 TiB | 232 TiB | 368 TiB x each license
-| E80ids_v4 | 61 | 368 TiB | 368 TiB | 488 TiB | 368 TiB x each license
+| DS4_v2 | 29 | 232 TiB | 368 TiB | 232 TiB | 2 PiB
+| DS5_v2 | 61 | 368 TiB | 368 TiB | 488 TiB | 2 PiB
+| DS13_v2 | 29 | 232 TiB | 368 TiB | 232 TiB | 2 PiB
+| DS14_v2 | 61 | 368 TiB | 368 TiB | 488 TiB | 2 PiB
+| DS15_v2 | 61 | 368 TiB | 368 TiB | 488 TiB | 2 PiB
+| E8s_v3 | 13 | 104 TiB | 368 TiB | 104 TiB | 2 PiB
+| E48s_v3 | 29 | 232 TiB | 368 TiB | 232 TiB | 2 PiB
+| E8ds_v4 | 13 | 104 TiB | 368 TiB | 104 TiB | 2 PiB
+| E32ds_v4 | 29 | 232 TiB | 368 TiB | 232 TiB | 2 PiB
+| E48ds_v4 | 29 | 232 TiB | 368 TiB | 232 TiB | 2 PiB
+| E80ids_v4 | 61 | 368 TiB | 368 TiB | 488 TiB | 2 PiB
 |===
 ====
 
@@ -320,10 +318,10 @@ HA pairs have two configuration types: page blob and multiple availability zone.
 
 2+| | *Disks alone* | *Disks + data tiering* | *Disks alone* | *Disks + data tiering*
 
-| E8ds_v4 | 12 | 368 TiB | 368 TiB | 368 TiB | 368 TiB x each license
-| E32ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 368 TiB x each license
-| E48ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 368 TiB x each license
-| E80ids_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 368 TiB x each license
+| E8ds_v4 | 12 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E32ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E48ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E80ids_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
 |===
 ====
 
