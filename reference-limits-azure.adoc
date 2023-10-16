@@ -112,6 +112,11 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 29 | 896 TiB | 2 PiB
 | E48ds_v4 | 29 | 896 TiB | 2 PiB
 | E80ids_v4 | 61 | 896 TiB | 2 PiB
+| E4ds_v5 | 5 | 160 TiB | 2 PiB
+| E8ds_v5 | 13 | 416 TiB | 2 PiB
+| E32ds_v5 | 29 | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 896 TiB| 2 PiB
+| E64ds_v5 | 29 | 896 TiB | 2 PiB
 | L8s_v3 | 12 | 384 TiB | 2 PiB
 | L16s_v3 | 28 | 896 TiB | 2 PiB
 | L32s_v3 | 28 | 896 TiB | 2 PiB
@@ -139,6 +144,10 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 29 | 232 TiB | 2 PiB
 | E48ds_v4 | 29 | 232 TiB | 2 PiB
 | E80ids_v4 | 61 | 488 TiB | 2 PiB
+| E8ds_v5 | 13 | 416 TiB | 2 PiB
+| E32ds_v5 | 29 | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 896 TiB| 2 PiB
+| E64ds_v5 | 29 | 896 TiB | 2 PiB
 |===
 
 
@@ -155,6 +164,10 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 28 | 896 TiB | 2 PiB
 | E48ds_v4 | 28 | 896 TiB | 2 PiB
 | E80ids_v4 | 28 | 896 TiB | 2 PiB
+| E8ds_v5 | 13 | 416 TiB | 2 PiB
+| E32ds_v5 | 29 | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 896 TiB| 2 PiB
+| E64ds_v5 | 29 | 896 TiB | 2 PiB
 | L16s_v3 | 28 | 896 TiB | 2 PiB
 | L32s_v3 | 28 | 896 TiB | 2 PiB
 | L48s_v3 | 28 | 896 TiB | 2 PiB
@@ -174,6 +187,10 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 28 | 896 TiB | 2 PiB
 | E48ds_v4 | 28 | 896 TiB | 2 PiB
 | E80ids_v4 | 28 | 896 TiB | 2 PiB
+| E8ds_v5 | 13 | 416 TiB | 2 PiB
+| E32ds_v5 | 29 | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 896 TiB| 2 PiB
+| E64ds_v5 | 29 | 896 TiB | 2 PiB
 | L48s_v3 | 28 | 896 TiB | 2 PiB
 | L64s_v3 | 28 | 896 TiB | 2 PiB
 |===
