@@ -25,14 +25,14 @@ Upgrading a single node system to an HA pair isn't supported. If you want to swi
 |===
 |
 | Freemium
+| Capacity-based license
 | PAYGO Explore
 | PAYGO Standard
 | PAYGO Premium
 | Node-based BYOL
-| Capacity-based license
 
 | Maximum system capacity
-(disks + object storage) ^1^ | 500 GB | 2 TB ^2^ | 10 TB | 368 TB | 368 TB per license | 2 PiB
+(disks + object storage) ^1^ | 2 PiB | 500 GB | 2 TB ^2^ | 10 TB | 368 TB | 368 TB per license |
 
 | Supported machine types ^3^
 a|
@@ -45,21 +45,21 @@ a|
 * n2-standard-48
 * n2-standard-64
 a|
-* n2-standard-4
-a|
 * n1-standard-8
-* n2-standard-8
-a|
 * n1-standard-32
+* n2-standard-4
+* n2-standard-8
 * n2-standard-16
 * n2-standard-32
 * n2-standard-48
 * n2-standard-64
 a|
-* n1-standard-8
-* n1-standard-32
 * n2-standard-4
+a|
+* n1-standard-8
 * n2-standard-8
+a|
+* n1-standard-32
 * n2-standard-16
 * n2-standard-32
 * n2-standard-48
