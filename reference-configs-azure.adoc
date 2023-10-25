@@ -23,20 +23,26 @@ Upgrading a single node system to an HA pair is not supported. If you want to sw
 
 === Single node systems
 
-You can choose from the following configurations when deploying Cloud Volumes ONTAP as a single-node system in Azure:
+You can choose from the following capacity-based or node-based licensing configurations when deploying Cloud Volumes ONTAP as a single-node system in Azure. 
 
-[cols=7*,cols="h,d,d,d,d,d,d",options="header"]
+==== Capacity-based licenses
+
+[cols=3*,cols="h,d,d",options="header"]
 |===
 |
-| Freemium
-| PAYGO Explore
-| PAYGO Standard
-| PAYGO Premium
-| Node-based BYOL
+| Freemium 
 | Capacity-based license
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | 2 TiB ^1^ | 10 TiB | 368 TiB | 368 TiB per license | 2 PiB
+(disks + object storage) | 500 GiB | 2 PiB 
+
+| License packages
+
+a|
+Optimized
+
+a| 
+Essentials, Professional, and Edge Cache
 
 | Supported virtual machine types
 
@@ -63,28 +69,6 @@ a|
 * L64s_v3 ^2^
 
 a|
-* E4s_v3
-* E4ds_v4 ^3^
-
-a|
-* DS4_v2
-* DS13_v2
-* E8s_v3
-* E8ds_v4 ^3^
-* L8s_v3 ^2^
-
-a|
-* DS5_v2
-* DS14_v2
-* DS15_v2
-* E32s_v3 ^3^
-* E48s_v3 ^3^
-* E64is_v3 ^3^
-* E32ds_v4 ^3^
-* E48ds_v4 ^3^
-* E80ids_v4 ^3^
-
-a|
 * DS4_v2
 * DS5_v2
 * DS13_v2
@@ -105,6 +89,70 @@ a|
 * L32s_v3 ^2^
 * L48s_v3 ^2^
 * L64s_v3 ^2^
+
+| Supported disk types ^4^ 6+| Standard HDD Managed Disks, Standard SSD Managed Disks, and Premium SSD Managed Disks
+
+|===
+
+Notes:
+
+. Data tiering to Azure Blob storage isn't supported with PAYGO Explore.
+
+. This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
+
+. These VM types use an https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd[Ultra SSD^] for VNVRAM, which provides better write performance.
++
+If you choose any of these VM types when you deploy a new Cloud Volumes ONTAP system, you can't change to another VM type that _doesn't_ use an Ultra SSD for VNVRAM. For example, you can't change from E8ds_v4 to E8s_v3, but you can change from E8ds_v4 to E32ds_v4 because both of those VM types use Ultra SSDs.
++
+Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won't be able to change to a VM type that uses an Ultra SSD for VNVRAM. For example, you can't change from E8s_v3 to E8ds_v4.
+
+. High write speed is supported with all instance types when using a single node system. You can enable high write speed from BlueXP during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
+
+. Enhanced write performance is enabled when using SSDs.
+
+. For Azure region support, see https://cloud.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+
+. Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported.
+
+. Single node deployments only support locally redundant storage (LRS) managed disks for Standard SSD and HDD and Premium SSD.
+
+==== Node-based licensing
+
+
+[cols=5*,cols="h,d,d,d,d",options="header"]
+|===
+|
+| PAYGO Explore
+| PAYGO Standard
+| PAYGO Premium
+| Node-based BYOL
+
+| Maximum system capacity
+(disks + object storage) | 2 TiB ^1^ | 10 TiB | 368 TiB | 368 TiB per license
+
+| Supported virtual machine types
+
+a|
+* E4s_v3
+* E4ds_v4 ^3^
+
+a|
+* DS4_v2
+* DS13_v2
+* E8s_v3
+* E8ds_v4 ^3^
+* L8s_v3 ^2^
+
+a|
+* DS5_v2
+* DS14_v2
+* DS15_v2
+* E32s_v3 ^3^
+* E48s_v3 ^3^
+* E64is_v3 ^3^
+* E32ds_v4 ^3^
+* E48ds_v4 ^3^
+* E80ids_v4 ^3^
 
 a|
 * DS4_v2
