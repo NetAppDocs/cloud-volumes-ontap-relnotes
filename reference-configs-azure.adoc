@@ -28,8 +28,8 @@ You can choose from the following capacity-based or node-based licensing configu
 [cols=7*,cols="h,d,d,d,d,d,d",options="header"]
 |===
 |
-| Freemium 
-| Capacity-based license
+| Freemium (Optimized)
+| Capacity-based license (Essentials, Professional, and Edge Cache)
 | PAYGO Explore
 | PAYGO Standard
 | PAYGO Premium
@@ -37,22 +37,6 @@ You can choose from the following capacity-based or node-based licensing configu
 
 | Maximum system capacity
 (disks + object storage) | 500 GiB | 2 PiB | 2 TiB ^1^ | 10 TiB | 368 TiB | 368 TiB per license
-
-| License packages
-
-a|
-Optimized
-
-a| 
-Essentials, Professional, and Edge Cache
-
-a|
-
-a|
-
-a|
-
-a|
 
 | Supported virtual machine types
 
