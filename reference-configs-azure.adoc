@@ -23,13 +23,14 @@ Upgrading a single node system to an HA pair is not supported. If you want to sw
 
 === Single node systems
 
-You can choose from the following capacity-based or node-based licensing configurations when deploying Cloud Volumes ONTAP as a single-node system in Azure: 
-// start tabbed area
+You can choose from the following capacity-based or node-based licensing configurations when deploying Cloud Volumes ONTAP as a single-node system in Azure. 
+
+Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported.
 
 [role="tabbed-block"]
 ====
 
-.With capacity-based licenses
+.Capacity-based licenses
 --
 [cols=4*,cols="h,d,d,d",options="header"]
 |===
@@ -110,7 +111,7 @@ Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won
 . Enhanced write performance is enabled when using SSDs.
 --
 
-.With node-based licenses 
+.Node-based licenses 
 --
 [cols=5*,cols="h,d,d,d,d",options="header"]
 |===
