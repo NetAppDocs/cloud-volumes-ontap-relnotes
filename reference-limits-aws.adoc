@@ -325,13 +325,14 @@ Because it requires a private IP address, it will limit the number of additional
 | *FlexClone volumes*	| Hierarchical clone depth ^1^ | 499
 .3+| *FlexVol volumes*	| Maximum per node |	500
 | Minimum size |	20 MB
-| Maximum size | 300 TiB
+| Maximum size ^2^ | 300 TiB
 | *Qtrees* |	Maximum per FlexVol volume |	4,995
 | *Snapshot copies* |	Maximum per FlexVol volume |	1,023
 
 |===
 
 . Hierarchical clone depth is the maximum depth of a nested hierarchy of FlexClone volumes that can be created from a single FlexVol volume.
+. The maximum size of 300 TiB for a FlexVol volume is supported starting from Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2.
 
 == iSCSI storage limits
 
