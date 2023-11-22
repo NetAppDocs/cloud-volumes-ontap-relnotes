@@ -325,7 +325,7 @@ Because it requires a private IP address, it will limit the number of additional
 | *FlexClone volumes*	| Hierarchical clone depth ^1^ | 499
 .3+| *FlexVol volumes*	| Maximum per node |	500
 | Minimum size |	20 MB
-| Maximum size | 100 TiB
+| Maximum size | 300 TiB
 | *Qtrees* |	Maximum per FlexVol volume |	4,995
 | *Snapshot copies* |	Maximum per FlexVol volume |	1,023
 
