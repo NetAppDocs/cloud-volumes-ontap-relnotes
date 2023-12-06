@@ -17,7 +17,7 @@ Cloud Volumes ONTAP 9.14.1 includes new enhancements.
 
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
-== 9.14.1 RC1 (19 December 2023)
+== 9.14.1 RC1 (6 December 2023)
 The Release Candidate 1 of Cloud Volumes ONTAP 9.14.1 is now available in AWS, Azure, and Google Cloud. 
 
 == Upgrade notes
@@ -32,7 +32,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Supported upgrade path
 
-You can upgrade to Cloud Volumes ONTAP 9.14.1 from the 9.14.0 release. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.14.1 from 9.13.1 and 9.14.0 releases. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 === Required version of the Connector
 
