@@ -53,11 +53,17 @@ a|
 * E32s_v3 ^3^
 * E48s_v3 ^3^
 * E64is_v3 ^3^
-* E4ds_v4 ^3^
-* E8ds_v4 ^3^
+* E4ds_v4 
+* E8ds_v4 
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+* E4ds_v5 
+* E8ds_v5 
+* E20s_v5 ^3^
+* E32ds_v5 ^3^
+* E48ds_v5 ^3^
+* E64ds_v5 ^3^
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -75,16 +81,17 @@ a|
 * E32s_v3 ^3^
 * E48s_v3 ^3^
 * E64is_v3 ^3^
-* E4ds_v4 ^3^
-* E8ds_v4 ^3^
+* E4ds_v4 
+* E8ds_v4 
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
-* E4ds_v5 ^4^
-* E8ds_v5 ^4^
-* E32ds_v5 ^3,4^
-* E48ds_v5 ^3,4^
-* E64ds_v5 ^3,4^
+* E4ds_v5 
+* E8ds_v5 
+* E20s_v5 ^3^
+* E32ds_v5 ^3^
+* E48ds_v5 ^3^
+* E64ds_v5 ^3^
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -92,8 +99,8 @@ a|
 * L64s_v3 ^2^
 
 a|
-* E4s_v3
-* E4ds_v4 ^3^
+* E4s_v3 ^1^
+* E4ds_v4 ^1,3^
 
 a|
 * DS4_v2
