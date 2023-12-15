@@ -383,7 +383,9 @@ Storage VMs that you configure for disaster recovery (DR) don't require an add-o
 |===
 
 . Hierarchical clone depth is the maximum depth of a nested hierarchy of FlexClone volumes that can be created from a single FlexVol volume.
-. The maximum size of 300 TiB for a FlexVol volume is supported starting from Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2.
+. FlexVol volume creation up to maximum size of 300 TiB is supported using the following tools and minimum versions:  
+* System Manager and the ONTAP CLI starting from Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2
+* BlueXP starting from Cloud Volumes ONTAP 9.13.1
 
 == iSCSI storage limits
 
