@@ -92,6 +92,7 @@ a|
 * L64s_v3 ^2^
 
 | Supported disk types ^4^ 6+| Standard HDD Managed Disks, Standard SSD Managed Disks, and Premium SSD Managed Disks
+
 |===
 
 Notes:
