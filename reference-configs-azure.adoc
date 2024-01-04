@@ -91,7 +91,7 @@ a|
 * L48s_v3 ^2^
 * L64s_v3 ^2^
 
-| Supported disk types ^4^ 6+| Standard HDD Managed Disks, Standard SSD Managed Disks, and Premium SSD Managed Disks
+| Supported disk types ^4^ 3+| Standard HDD Managed Disks, Standard SSD Managed Disks, and Premium SSD Managed Disks
 
 |===
 
@@ -171,7 +171,7 @@ a|
 * L48s_v3 ^2^
 * L64s_v3 ^2^
 
-| Supported disk types ^4^ 6+| Standard HDD Managed Disks, Standard SSD Managed Disks, and Premium SSD Managed Disks
+| Supported disk types ^4^ 4+| Standard HDD Managed Disks, Standard SSD Managed Disks, and Premium SSD Managed Disks
 
 |===
 
