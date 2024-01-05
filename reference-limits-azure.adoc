@@ -185,13 +185,11 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 28 | 896 TiB | 2 PiB
 | E48ds_v4 | 28 | 896 TiB | 2 PiB
 | E80ids_v4 | 28 | 896 TiB | 2 PiB
-//| E8ds_v5 | 12 | 416 TiB | 2 PiB
-//| E20ds_v5 | 28 | 896 TiB | 2 PiB
-//| E32ds_v5 | 28 | 896 TiB | 2 PiB
-//| E48ds_v5 | 28 | 896 TiB| 2 PiB
-//| E64ds_v5 | 28 | 896 TiB | 2 PiB
-//| L48s_v3 | 28 | 896 TiB | 2 PiB
-//| L64s_v3 | 28 | 896 TiB | 2 PiB
+| E8ds_v5 | 12 | 384 TiB | 2 PiB
+| E20ds_v5 | 28 | 896 TiB | 2 PiB
+| E32ds_v5 | 28 | 896 TiB | 2 PiB
+| E48ds_v5 | 28 | 896 TiB| 2 PiB
+| E64ds_v5 | 28 | 896 TiB | 2 PiB
 |===
 
 === Limits for node-based licensing
