@@ -310,7 +310,7 @@ Notes:
 
 . These VM types are only supported for HA pairs in a single availability zone configuration running on shared managed disks. 
 
-. These VM types are supported for HA pairs in single availability zone and multiple availability zone configurations running on shared managed disks.
+. These VM types are supported for HA pairs in single availability zone and multiple availability zone configurations running on shared managed disks. For Ls_v3 VM types, multiple availability zone support starts from ONTAP version 9.13.1. For Eds_v5 VM types, multiple availability zone support starts from ONTAP version 9.14.1 RC1. 
 
 . This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 
