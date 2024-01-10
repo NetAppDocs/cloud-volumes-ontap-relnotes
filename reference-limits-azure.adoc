@@ -224,10 +224,11 @@ Single node has two node-based licensing options: PAYGO Premium and BYOL.
 | E32ds_v4 | 29 | 368 TiB | 368 TiB
 | E48ds_v4 | 29 | 368 TiB | 368 TiB
 | E80ids_v4 | 61 | 368 TiB | 368 TiB
-| E20ds_v5 |
-| E32ds_v5 |
-| E48ds_v5 |
-| E64ds_v5 | 
+| E20ds_v5 | 29 | 896 TiB | 2 PiB
+| E32ds_v5 | 29 | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 896 TiB| 2 PiB
+| E64ds_v5 | 29 | 896 TiB | 2 PiB
+
 
 |===
 ====
@@ -260,11 +261,13 @@ Single node has two node-based licensing options: PAYGO Premium and BYOL.
 | E32ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
 | E48ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
 | E80ids_v4 | 61 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
-| E8ds_v5 |
-| E20ds_v5 |
-| E32ds_v5 |
-| E48ds_v5 |
-| E64ds_v5 | 
+| E4ds_v5 | 5 | 160 TiB | 368 TiB | 160 TiB | 2 PiB
+| E8ds_v5 | 13 | 368 TiB | 368 TiB | 416 TiB | 2 PiB
+| E20ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E32ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E64ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+
 |===
 ====
 
@@ -305,6 +308,10 @@ HA pairs have two configuration types: page blob and multiple availability zone.
 | E32ds_v4 | 28 | 368 TiB | 368 TiB
 | E48ds_v4 | 28 | 368 TiB | 368 TiB
 | E80ids_v4 | 28 | 368 TiB | 368 TiB
+| E20ds_v5 | 28 | 896 TiB | 2 PiB
+| E32ds_v5 | 28 | 896 TiB | 2 PiB
+| E48ds_v5 | 28 | 896 TiB| 2 PiB
+| E64ds_v5 | 28 | 896 TiB | 2 PiB
 |===
 ====
 
@@ -350,6 +357,12 @@ HA pairs have two configuration types: page blob and multiple availability zone.
 | E32ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
 | E48ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
 | E80ids_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E8ds_v5 | 12 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E20ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E32ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E48ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E64ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+
 |===
 ====
 
