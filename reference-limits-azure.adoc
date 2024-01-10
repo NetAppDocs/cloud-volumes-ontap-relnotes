@@ -224,6 +224,11 @@ Single node has two node-based licensing options: PAYGO Premium and BYOL.
 | E32ds_v4 | 29 | 368 TiB | 368 TiB
 | E48ds_v4 | 29 | 368 TiB | 368 TiB
 | E80ids_v4 | 61 | 368 TiB | 368 TiB
+| E20ds_v5 |
+| E32ds_v5 |
+| E48ds_v5 |
+| E64ds_v5 | 
+
 |===
 ====
 
@@ -255,6 +260,11 @@ Single node has two node-based licensing options: PAYGO Premium and BYOL.
 | E32ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
 | E48ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
 | E80ids_v4 | 61 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E8ds_v5 |
+| E20ds_v5 |
+| E32ds_v5 |
+| E48ds_v5 |
+| E64ds_v5 | 
 |===
 ====
 
