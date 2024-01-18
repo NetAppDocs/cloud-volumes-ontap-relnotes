@@ -43,7 +43,7 @@ Each license supports a different maximum system capacity. The maximum system ca
 (disks + object storage) ^1^ | 500 GiB | 2 TiB | 10 TiB | 368 TiB ^2^ | 368 TiB per license ^2^ | 2 PiB ^2^
 
 | Supported disk types 6+a|
-* General Purpose SSD (gp3 and gp2) ^3^
+* General Purpose SSD (gp3 and gp2) ^3^,^5^
 * Provisioned IOPS SSD (io1) ^3^
 * Throughput Optimized HDD (st1) ^4^
 
@@ -58,6 +58,8 @@ Each license supports a different maximum system capacity. The maximum system ca
 . Enhanced write performance is enabled when using SSDs with all Cloud Volumes ONTAP configurations, except for PAYGO Explore.
 
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
+
+. AWS Local Zones only support the General Purpose SSD (gp2) disk type.
 
 === Supported disk sizes
 
@@ -120,27 +122,27 @@ The bandwidths shown in the table below match the documented AWS limits for each
 
 | *Explore or any other license*
 
-| m5.xlarge | 4 | 16 | Not supported | Up to 10 | Up to 4,750 | Supported (single node only)
+| m5.xlarge ^7^ | 4 | 16 | Not supported | Up to 10 | Up to 4,750 | Supported (single node only)
 
 .3+| *Standard or any other license*
 
-| r5.xlarge | 4 | 32 | Not supported | Up to 10 | Up to 4,750 | Supported (single node only)
+| r5.xlarge ^7^ | 4 | 32 | Not supported | Up to 10 | Up to 4,750 | Supported (single node only)
 
 | m5a.2xlarge | 8 | 32 | Not supported | Up to 10 | Up to 2,880 | Supported
 
-| m5.2xlarge | 8 | 32 | Not supported | Up to 10 | Up to 4,750 | Supported
+| m5.2xlarge ^7^ | 8 | 32 | Not supported | Up to 10 | Up to 4,750 | Supported
 
 .22+| *Premium or any other license*
 
 | m5n.2xlarge | 8 | 32 | Not supported | Up to 25 | Up to 4,750 | Supported
 
-| r5.2xlarge | 8 | 64 | Not supported | Up to 10 | Up to 4,750 | Supported
+| r5.2xlarge ^7^ | 8 | 64 | Not supported | Up to 10 | Up to 4,750 | Supported
 
 | r5d.2xlarge | 8 | 64 | Supported | Up to 10 | Up to 4,750 | Supported
 
-| c5d.4xlarge | 16 | 32 | Supported | Up to 10 | 4,570 | Supported
+| c5d.4xlarge ^7^ | 16 | 32 | Supported | Up to 10 | 4,570 | Supported
 
-| m5.4xlarge | 16 | 64 | Not supported | Up to 10 | 4,750 | Supported
+| m5.4xlarge ^7^ | 16 | 64 | Not supported | Up to 10 | 4,750 | Supported
 
 | m5dn.4xlarge | 16 | 64 | Supported | Up to 25 | 4,750 | Supported
 
@@ -189,6 +191,8 @@ The bandwidths shown in the table below match the documented AWS limits for each
 . When you choose an EC2 instance type, you can specify whether it is a shared instance or a dedicated instance.
 
 . Cloud Volumes ONTAP can run on either a Reserved or On-demand EC2 instance. Solutions that use other instance types aren't supported.
+
+. AWS Local Zones are supported in the following EC2 instance type families with sizes xlarge to 4xlarge: M5, C5, C5d, R5, and R5d. 
 
 == Supported regions
 
