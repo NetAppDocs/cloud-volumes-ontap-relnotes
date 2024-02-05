@@ -320,18 +320,22 @@ Because it requires a private IP address, it will limit the number of additional
 | Parameter
 | Limit
 
-.2+| *Files*	| Maximum size | 16 TiB
+.2+| *Files*	| Maximum size ^2^ | 128 TB
 | Maximum per volume |	Volume size dependent, up to 2 billion
 | *FlexClone volumes*	| Hierarchical clone depth ^1^ | 499
 .3+| *FlexVol volumes*	| Maximum per node |	500
 | Minimum size |	20 MB
-| Maximum size | 100 TiB
+| Maximum size ^3^ | 300 TiB
 | *Qtrees* |	Maximum per FlexVol volume |	4,995
 | *Snapshot copies* |	Maximum per FlexVol volume |	1,023
 
 |===
 
 . Hierarchical clone depth is the maximum depth of a nested hierarchy of FlexClone volumes that can be created from a single FlexVol volume.
+. Beginning with ONTAP 9.12.1P2, the limit is 128 TB. In ONTAP 9.11.1 and earlier versions, the limit is 16 TB.
+. FlexVol volume creation up to maximum size of 300 TiB is supported using the following tools and minimum versions:  
+* System Manager and the ONTAP CLI starting from Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2
+* BlueXP starting from Cloud Volumes ONTAP 9.13.1
 
 == iSCSI storage limits
 
