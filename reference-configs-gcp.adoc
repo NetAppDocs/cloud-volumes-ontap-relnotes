@@ -21,49 +21,23 @@ Cloud Volumes ONTAP is available in Google Cloud Platform as a single node syste
 
 Upgrading a single node system to an HA pair isn't supported. If you want to switch between a single node system and an HA pair, then you need to deploy a new system and replicate data from the existing system to the new system.
 
-[cols=7*,cols="h,d,d,d,d,d,d",options="header"]
+[role="tabbed-block"]
+====
+
+.Capacity-based licenses
+--
+[cols=4*,cols="h,d,d,d",options="header"]
 |===
 |
-| Freemium
-| Capacity-based license
-| PAYGO Explore
-| PAYGO Standard
-| PAYGO Premium
-| Node-based BYOL
+| Freemium 
+| Optimized
+| Capacity-based license (Essentials, Professional, and Edge Cache)
 
 | Maximum system capacity
-(disks + object storage) ^1^ | 2 PiB | 500 GB | 2 TB ^2^ | 10 TB | 368 TB | 368 TB per license |
+(disks + object storage) | 500 GiB | ? | 2 PiB 
 
 | Supported machine types ^3^
-a|
-* n1-standard-8
-* n1-standard-32
-* n2-standard-4
-* n2-standard-8
-* n2-standard-16
-* n2-standard-32
-* n2-standard-48
-* n2-standard-64
-a|
-* n1-standard-8
-* n1-standard-32
-* n2-standard-4
-* n2-standard-8
-* n2-standard-16
-* n2-standard-32
-* n2-standard-48
-* n2-standard-64
-a|
-* n2-standard-4
-a|
-* n1-standard-8
-* n2-standard-8
-a|
-* n1-standard-32
-* n2-standard-16
-* n2-standard-32
-* n2-standard-48
-* n2-standard-64
+
 a|
 * n1-standard-8
 * n1-standard-32
@@ -74,7 +48,21 @@ a|
 * n2-standard-48
 * n2-standard-64
 
-| Supported disk types 6+| Balanced persistent disks ^4^, Performance (SSD) persistent disks ^4^, and Standard (HDD) persistent disks.
+a|
+* n2-standard-4
+* n2-standard-8
+
+a|
+* n1-standard-8
+* n1-standard-32
+* n2-standard-4
+* n2-standard-8
+* n2-standard-16
+* n2-standard-32
+* n2-standard-48
+* n2-standard-64
+
+| Supported disk types 3+| Balanced persistent disks ^4^, Performance (SSD) persistent disks ^4^, and Standard (HDD) persistent disks.
 
 |===
 
@@ -107,6 +95,80 @@ If you have an existing system running on this machine type, you can keep using 
 You can enable _Flash Cache_, and high write speed when deploying an eligible instance type. To enable the higher maximum transmission unit of 8,896 bytes, you must chose VPC-1, VPC-2, or VPC-3 for the deployment. The higher MTU enables higher network throughput. For more information on launching one of these deployments, see https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud[Launching an HA pair in Google Cloud].
 + 
 NOTE: _Flash cache_, high write mode, and an MTU of 8,896 are feature-dependent and cannot be disabled individually within a configured instance. 
+
+--
+
+.Node-based licenses 
+--
+[cols=5*,cols="h,d,d,d,d",options="header"]
+|===
+|
+| PAYGO Explore
+| PAYGO Standard
+| PAYGO Premium
+| Node-based BYOL
+
+| Maximum system capacity
+(disks + object storage) | 2 TB ^1^ | 10 TiB | 368 TiB | 368 TiB per license
+
+| Supported machine types ^3^
+
+a|
+* n2-standard-4
+a|
+* n1-standard-8
+* n2-standard-8
+a|
+* n1-standard-32
+* n2-standard-16
+* n2-standard-32
+* n2-standard-48
+* n2-standard-64
+a|
+* n1-standard-8
+* n1-standard-32
+* n2-standard-4
+* n2-standard-8
+* n2-standard-16
+* n2-standard-32
+* n2-standard-48
+* n2-standard-64
+
+| Supported disk types 4+| Balanced persistent disks ^4^, Performance (SSD) persistent disks ^4^, and Standard (HDD) persistent disks.
+
+|===
+
+Notes:
+
+. Disk limits can prevent you from reaching the maximum system capacity limit by using disks alone. You can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^].
++
+link:reference-limits-gcp.html[Learn more about disk limits in Google Cloud].
+
+. Data tiering to Google Cloud Storage isn't supported with PAYGO Explore.
+
+. The custom-4-16384 machine type is no longer supported with new Cloud Volumes ONTAP systems.
++
+If you have an existing system running on this machine type, you can keep using it, but we recommend switching to the n2-standard-4 machine type.
+
+. Enhanced write performance is enabled when using Balanced persistent disks and Performance (SSD) persistent disks.
+
+. The BlueXP interface shows an additional supported machine type for Standard and BYOL: n1-highmem-4. However, this machine type isn't meant for production environments. We've made it available for a specific lab environment only.
+
+. For Google Cloud Platform region support, see https://cloud.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+
+. Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported.
+
+. Starting with Cloud Volumes ONTAP software version 9.13.0, _Flash Cache_, high write speed, and a higher maximum transmission unit (MTU) of 8,896 bytes, are available for the following HA pair deployment instances: 
+* n2-standard-16
+* n2-standard-32
+* n2-standard-48
+* n2-standard-64
++ 
+You can enable _Flash Cache_, and high write speed when deploying an eligible instance type. To enable the higher maximum transmission unit of 8,896 bytes, you must chose VPC-1, VPC-2, or VPC-3 for the deployment. The higher MTU enables higher network throughput. For more information on launching one of these deployments, see https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud[Launching an HA pair in Google Cloud].
++ 
+NOTE: _Flash cache_, high write mode, and an MTU of 8,896 are feature-dependent and cannot be disabled individually within a configured instance. 
+--
+====
 
 == Supported disk sizes
 
