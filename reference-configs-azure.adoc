@@ -220,23 +220,26 @@ Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won
 . Enhanced write performance is enabled when using SSDs.
 
 --
+====
 
 === HA pairs
 You can choose from the following configurations when deploying Cloud Volumes ONTAP as an HA pair in Azure.
 
 ==== HA pairs with page blob 
 
-[cols=6*,cols="h,d,d,d,d,d",options="header"]
+[role="tabbed-block"]
+====
+.Capacity-based licenses
+--
+[cols=4*,cols="h,d,d,d",options="header"]
 |===
 |
-| Freemium
-| Capacity-based license
-| PAYGO Standard
-| PAYGO Premium
-| Node-based BYOL
+| Freemium 
+| Optimized
+| Capacity-based license (Essentials, Professional, and Edge Cache)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | 2 PiB | 10 TiB | 368 TiB | 368 TiB per license
+(disks + object storage) | 500 GiB | ? | 2 PiB 
 
 | Supported virtual machine types
 
@@ -260,6 +263,16 @@ a|
 
 a|
 * DS4_v2
+* DS13_v2
+* E4s_v3
+* E8s_v3
+* E4ds_v4 ^3^
+* E8ds_v4 ^3^
+* E4ds_v5 
+* E8ds_v5 
+
+a|
+* DS4_v2
 * DS5_v2 ^1^
 * DS13_v2
 * DS14_v2 ^1^
@@ -275,6 +288,33 @@ a|
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+
+| Supported disk types 3+| Page blobs
+
+|===
+
+Notes:
+
+. Cloud Volumes ONTAP supports high write speed with these VM types when using an HA pair. You can enable high write speed from BlueXP during deployment or any time after. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
+
+. This VM is recommended only when Azure maintenance control is needed. It's not recommended for any other use case due to the higher pricing.
+
+. These VMs are only supported in deployments of Cloud Volumes ONTAP 9.11.1 or earlier. With these VM types you can upgrade an existing page blob deployment from Cloud Volumes ONTAP 9.11.1 to 9.12.1. You cannot perform new page blob deployments with Cloud Volumes ONTAP 9.12.1 or above. 
+
+--
+
+.Node-based licenses 
+--
+[cols=3*,cols="h,d,d,d",options="header"]
+|===
+|
+| PAYGO Standard
+| PAYGO Premium
+| Node-based BYOL
+
+| Maximum system capacity (disks + object storage) | 10 TiB | 368 TiB | 368 TiB per license
+
+| Supported virtual machine types
 
 a|
 * DS4_v2
@@ -315,7 +355,7 @@ a|
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
 
-| Supported disk types 5+| Page blobs
+| Supported disk types 3+| Page blobs
 
 |===
 
@@ -327,20 +367,25 @@ Notes:
 
 . These VMs are only supported in deployments of Cloud Volumes ONTAP 9.11.1 or earlier. With these VM types you can upgrade an existing page blob deployment from Cloud Volumes ONTAP 9.11.1 to 9.12.1. You cannot perform new page blob deployments with Cloud Volumes ONTAP 9.12.1 or above. 
 
+--
+====
+
 ==== HA pairs with shared managed disks
 You can choose from the following configurations when deploying Cloud Volumes ONTAP as an HA pair in Azure.
 
-[cols=6*,cols="h,d,d,d,d,d",options="header"]
+[role="tabbed-block"]
+====
+.Capacity-based licenses
+--
+[cols=4*,cols="h,d,d,d",options="header"]
 |===
 |
-| Freemium
-| Capacity-based license
-| PAYGO Standard
-| PAYGO Premium
-| Node-based BYOL
+| Freemium 
+| Optimized
+| Capacity-based license (Essentials, Professional, and Edge Cache)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | 2 PiB | 10 TiB | 368 TiB | 368 TiB per license
+(disks + object storage) | 500 GiB | ? | 2 PiB 
 
 | Supported virtual machine types
 
@@ -360,6 +405,16 @@ a|
 * L64s_v3 ^1,4,5^
 
 a|
+* DS4_v2
+* DS13_v2
+* E4s_v3
+* E8s_v3
+* E4ds_v4 ^3^
+* E8ds_v4 ^3^
+* E4ds_v5 
+* E8ds_v5 
+
+a|
 * E8ds_v4 ^4^
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
@@ -373,6 +428,37 @@ a|
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
 * L64s_v3 ^1,4,5^
+
+| Supported disk types 5+| Managed disks
+
+|===
+
+Notes:
+
+. Cloud Volumes ONTAP supports high write speed with these VM types when using an HA pair. You can enable high write speed from BlueXP during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
+
+. This VM is recommended only when Azure maintenance control is needed. It's not recommended for any other use case due to the higher pricing.
+
+. These VM types are only supported for HA pairs in a single availability zone configuration running on shared managed disks. 
+
+. These VM types are supported for HA pairs in single availability zone and multiple availability zone configurations running on shared managed disks. For Ls_v3 VM types, multiple availability zone support starts from ONTAP version 9.13.1. For Eds_v5 VM types, multiple availability zone support starts from ONTAP version 9.14.1 RC1.  
+
+. This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
+
+//. PAYGO Explore isn't supported with HA pairs in Azure.
+--
+.Node-based licenses 
+--
+[cols=3*,cols="h,d,d,d",options="header"]
+|===
+|
+| PAYGO Standard
+| PAYGO Premium
+| Node-based BYOL
+
+| Maximum system capacity (disks + object storage) | 10 TiB | 368 TiB | 368 TiB per license
+
+| Supported virtual machine types
 
 a|
 * E8ds_v4 ^4^
@@ -407,7 +493,7 @@ a|
 * L48s_v3 ^1,4,5^
 * L64s_v3 ^1,4,5^
 
-| Supported disk types 5+| Managed disks
+| Supported disk types 3+| Managed disks
 
 |===
 
@@ -424,6 +510,9 @@ Notes:
 . This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
+
+--
+====
 
 == Supported disk sizes
 
