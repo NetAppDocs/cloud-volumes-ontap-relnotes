@@ -195,7 +195,7 @@ The bandwidths shown in the table below match the documented AWS limits for each
 
 . AWS Local Zones are supported in the following EC2 instance type families with sizes xlarge to 4xlarge: M5, C5, C5d, R5, and R5d. link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2[You should refer to AWS for the latest and complete details about supported EC2 instance types in Local Zones^]. 
 +
-High write speed isn't supported with these instances in AWS Local Zones. 
+High write speed isn't supported with these instance types in AWS Local Zones. 
 
 == Supported regions
 
