@@ -59,7 +59,7 @@ Each license supports a different maximum system capacity. The maximum system ca
 
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
 
-. AWS Local Zones only support the General Purpose SSD (gp2) disk type.
+. AWS Local Zones only support the General Purpose SSD (gp2) disk type. 
 
 === Supported disk sizes
 
