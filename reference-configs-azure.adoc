@@ -42,7 +42,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 | Capacity-based license (Essentials, Professional, and Edge Cache)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | ? | 2 PiB 
+(disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
 
 | Supported virtual machine types
 
@@ -100,6 +100,12 @@ a|
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+* E4ds_v5 
+* E8ds_v5 
+* E20s_v5 ^3^
+* E32ds_v5 ^3^
+* E48ds_v5 ^3^
+* E64ds_v5 ^3^
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
@@ -239,7 +245,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 | Capacity-based license (Essentials, Professional, and Edge Cache)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | ? | 2 PiB 
+(disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
 
 | Supported virtual machine types
 
@@ -385,7 +391,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 | Capacity-based license (Essentials, Professional, and Edge Cache)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | ? | 2 PiB 
+(disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
 
 | Supported virtual machine types
 
