@@ -270,11 +270,8 @@ a|
 a|
 * DS4_v2
 * DS13_v2
-* E4s_v3
 * E8s_v3
-* E4ds_v4 ^3^
-* E8ds_v4 ^3^
-* E4ds_v5 
+* E8ds_v4 ^3^ 
 * E8ds_v5 
 
 a|
@@ -411,13 +408,7 @@ a|
 * L64s_v3 ^1,4,5^
 
 a|
-* DS4_v2
-* DS13_v2
-* E4s_v3
-* E8s_v3
-* E4ds_v4 ^3^
 * E8ds_v4 ^3^
-* E4ds_v5 
 * E8ds_v5 
 
 a|
