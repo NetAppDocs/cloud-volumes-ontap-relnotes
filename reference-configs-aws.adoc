@@ -33,14 +33,14 @@ Each license supports a different maximum system capacity. The maximum system ca
 |===
 |
 | Freemium
+| Capacity-based license
 | PAYGO Explore
 | PAYGO Standard
 | PAYGO Premium
 | Node-based BYOL
-| Capacity-based license
 
 | Maximum system capacity
-(disks + object storage) ^1^ | 500 GiB | 2 TiB | 10 TiB | 368 TiB ^2^ | 368 TiB per license ^2^ | 2 PiB ^2^
+(disks + object storage) ^1^ | 500 GiB | 2 PiB ^2^ | 2 TiB | 10 TiB | 368 TiB ^2^ | 368 TiB per license ^2^ 
 
 | Supported disk types 6+a|
 * General Purpose SSD (gp3 and gp2) ^3^
