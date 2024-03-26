@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-new.html
 keywords: what's new, new, features, release notes, enhancements
-summary: Cloud Volumes ONTAP 9.14.1 includes a new enhancement.
+summary: Cloud Volumes ONTAP 9.15.1 includes a new enhancement.
 ---
 
-= What's new in Cloud Volumes ONTAP 9.14.1
+= What's new in Cloud Volumes ONTAP 9.15.1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,43 +13,26 @@ summary: Cloud Volumes ONTAP 9.14.1 includes a new enhancement.
 :imagesdir: ./media/
 
 [.lead]
-Cloud Volumes ONTAP 9.14.1 includes new enhancements.
+Cloud Volumes ONTAP 9.15.1 includes new enhancements.
 
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
-== 9.14.1 RC1 (6 December 2023)
-The Release Candidate 1 of Cloud Volumes ONTAP 9.14.1 is now available in AWS, Azure, and Google Cloud. 
+== 9.15.1 RC1 (April 2024)
+The Release Candidate 1 of Cloud Volumes ONTAP 9.15.1 is now available in AWS, Azure, and Google Cloud. 
 
 == Upgrade notes
 
 Read through these notes to learn more about upgrading to this release.
 
-=== How to upgrade
+=== Azure page blobs for no longer supported for new high-availability pair deployments 
 
-Upgrades of Cloud Volumes ONTAP must be completed from BlueXP. You should not upgrade Cloud Volumes ONTAP by using System Manager or the CLI. Doing so can impact system stability.
+Starting with Cloud Volumes ONTAP 9.15.1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
 
-link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when BlueXP notifies you^].
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs[Learn more about supported configurations in Azure^].
 
-=== Supported upgrade path
+=== Image verification in Azure
+Enhanced security features are now available for verifying signatures of Cloud Volumes ONTAP image files exported through Azure. 
 
-You can upgrade to Cloud Volumes ONTAP 9.14.1 from 9.13.1 and 9.14.0 releases. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
 
-=== Required version of the Connector
 
-The BlueXP Connector must be running version 3.9.27 or later to deploy new Cloud Volumes ONTAP 9.14.1 systems and to upgrade existing systems to 9.14.1.
-
-TIP: Automatic upgrades of the Connector are enabled by default so you should be running the latest version.
-
-=== Downtime
-
-* The upgrade of a single node system takes the system offline for up to 25 minutes, during which I/O is interrupted.
-
-* Upgrading an HA pair is nondisruptive and I/O is uninterrupted. During this nondisruptive upgrade process, each node is upgraded in tandem to continue serving I/O to clients.
-
-=== c4, m4, and r4 instances no longer supported
-
-In AWS, the c4, m4, and r4 EC2 instance types are no longer supported with Cloud Volumes ONTAP. If you have an existing system that's running on a c4, m4, or r4 instance type, you must change to an instance type in the c5, m5, or r5 instance family. You can't upgrade to this release until you change the instance type.
- 
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html[Learn how to change the EC2 instance type for Cloud Volumes ONTAP^].
-
-Refer to link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html[NetApp Support^] to learn more about the end of availability and support for these instance types. 
