@@ -1,45 +1,43 @@
-# Start snippet: landing page
 indexpage:
-title: Cloud Volumes ONTAP 9.14.1 Release Notes
-lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.1.
-summary: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.1.
-keywords: Cloud Volumes ONTAP release notes
-tiles:
+  title: Cloud Volumes ONTAP 9.14.1 Release Notes
+  lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.1.
+  summary: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.1.
+  tiles:
   - title: Get started
-      links:
-        - title: What's new
-          url: reference-new.html
-        - title: Licensing overview
-          url: concept-licensing.html
+    links:
+      - title: What's new
+        url: reference-new.html
+      - title: Licensing overview
+        url: concept-licensing.html
   - title: Amazon Web Services
-      links:
-        - title: Supported configurations
-          url: reference-configs-aws.html
-        - title: Storage limits
-          url: reference-limits-aws.html
-        - title: Limitations
-          url: reference-limitations-aws.html
+    links:
+      - tit le: Supported configurations
+        url: reference-configs-aws.html
+      - title: Storage limits
+        url: reference-limits-aws.html
+      - title: Limitations
+        url: reference-limitations-aws.html
   - title: Google Cloud
-      links:
-        - title: Supported configurations
-          url: reference-configs-gcp.html
-        - title: Storage limits
-          url: reference-limits-gcp.html
-        - title: Limitations
-          url: reference-limitations-gcp.html
+    links:
+      - title: Supported configurations
+        url: reference-configs-gcp.html
+      - title: Storage limits
+        url: reference-limits-gcp.html
+      - title: Limitations
+        url: reference-limitations-gcp.html
   - title: Microsoft Azure
-       links:
-        - title: Supported configurations
-          url: reference-configs-azure.html
-        - title: Storage limits
-          url: reference-limits-azure.html
-        - title: Limitations
-          url: reference-limitations-azure.html
+    links:
+      - title: Supported configurations
+        url: reference-configs-azure.html
+      - title: Storage limits
+        url: reference-limits-azure.html
+      - title: Limitations
+        url: reference-limitations-azure.html
   - title: Blogs & community
-      links:
-        - title: NetApp Community
-          url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-        - title: BlueXP blog
-          url: https://cloud.netapp.com/blog
-        - title: Cloud webinars
-          url: https://cloud.netapp.com/events
+    links:
+      - title: NetApp Community
+        url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+      - title: BlueXP blog
+        url: https://cloud.netapp.com/blog
+      - title: Cloud webinars
+        url: https://cloud.netapp.com/events
