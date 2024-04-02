@@ -12,7 +12,7 @@ indexpage:
           url: concept-licensing.html
     - title: Amazon Web Services
       links:
-        - tit le: Supported configurations
+        - title: Supported configurations
           url: reference-configs-aws.html
         - title: Storage limits
           url: reference-limits-aws.html
