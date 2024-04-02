@@ -2,6 +2,7 @@ indexpage:
   title: Cloud Volumes ONTAP 9.14.1 Release Notes
   lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.1.
   summary: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.14.1.
+  keywords: RN, CVO, release notes Cloud Volumes ONTAP
   tiles:
   - title: Get started
     links:
