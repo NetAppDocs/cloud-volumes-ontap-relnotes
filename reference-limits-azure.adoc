@@ -112,6 +112,12 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 29 | 896 TiB | 2 PiB
 | E48ds_v4 | 29 | 896 TiB | 2 PiB
 | E80ids_v4 | 61 | 896 TiB | 2 PiB
+| E4ds_v5 | 5 | 160 TiB | 2 PiB
+| E8ds_v5 | 13 | 416 TiB | 2 PiB
+| E20ds_v5 | 29 | 896 TiB | 2 PiB
+| E32ds_v5 | 29 | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 896 TiB| 2 PiB
+| E64ds_v5 | 29 | 896 TiB | 2 PiB
 | L8s_v3 | 12 | 384 TiB | 2 PiB
 | L16s_v3 | 28 | 896 TiB | 2 PiB
 | L32s_v3 | 28 | 896 TiB | 2 PiB
@@ -155,6 +161,11 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 28 | 896 TiB | 2 PiB
 | E48ds_v4 | 28 | 896 TiB | 2 PiB
 | E80ids_v4 | 28 | 896 TiB | 2 PiB
+| E8ds_v5 | 12 | 384 TiB | 2 PiB
+| E20ds_v5 | 28 | 896 TiB | 2 PiB
+| E32ds_v5 | 28 | 896 TiB | 2 PiB
+| E48ds_v5 | 28 | 896 TiB| 2 PiB
+| E64ds_v5 | 28 | 896 TiB | 2 PiB
 | L16s_v3 | 28 | 896 TiB | 2 PiB
 | L32s_v3 | 28 | 896 TiB | 2 PiB
 | L48s_v3 | 28 | 896 TiB | 2 PiB
@@ -174,6 +185,11 @@ The following disk limits apply to Cloud Volumes ONTAP systems that use a capaci
 | E32ds_v4 | 28 | 896 TiB | 2 PiB
 | E48ds_v4 | 28 | 896 TiB | 2 PiB
 | E80ids_v4 | 28 | 896 TiB | 2 PiB
+| E8ds_v5 | 12 | 384 TiB | 2 PiB
+| E20ds_v5 | 28 | 896 TiB | 2 PiB
+| E32ds_v5 | 28 | 896 TiB | 2 PiB
+| E48ds_v5 | 28 | 896 TiB| 2 PiB
+| E64ds_v5 | 28 | 896 TiB | 2 PiB
 | L16s_v3 | 28 | 896 TiB | 2 PiB
 | L32s_v3 | 28 | 896 TiB | 2 PiB
 | L48s_v3 | 28 | 896 TiB | 2 PiB
@@ -208,6 +224,12 @@ Single node has two node-based licensing options: PAYGO Premium and BYOL.
 | E32ds_v4 | 29 | 368 TiB | 368 TiB
 | E48ds_v4 | 29 | 368 TiB | 368 TiB
 | E80ids_v4 | 61 | 368 TiB | 368 TiB
+| E20ds_v5 | 29 | 896 TiB | 2 PiB
+| E32ds_v5 | 29 | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 896 TiB| 2 PiB
+| E64ds_v5 | 29 | 896 TiB | 2 PiB
+
+
 |===
 ====
 
@@ -239,6 +261,13 @@ Single node has two node-based licensing options: PAYGO Premium and BYOL.
 | E32ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
 | E48ds_v4 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
 | E80ids_v4 | 61 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E4ds_v5 | 5 | 160 TiB | 368 TiB | 160 TiB | 2 PiB
+| E8ds_v5 | 13 | 368 TiB | 368 TiB | 416 TiB | 2 PiB
+| E20ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E32ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E48ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+| E64ds_v5 | 29 | 368 TiB | 368 TiB | 896 TiB | 2 PiB
+
 |===
 ====
 
@@ -279,6 +308,10 @@ HA pairs have two configuration types: page blob and multiple availability zone.
 | E32ds_v4 | 28 | 368 TiB | 368 TiB
 | E48ds_v4 | 28 | 368 TiB | 368 TiB
 | E80ids_v4 | 28 | 368 TiB | 368 TiB
+| E20ds_v5 | 28 | 896 TiB | 2 PiB
+| E32ds_v5 | 28 | 896 TiB | 2 PiB
+| E48ds_v5 | 28 | 896 TiB| 2 PiB
+| E64ds_v5 | 28 | 896 TiB | 2 PiB
 |===
 ====
 
@@ -324,6 +357,12 @@ HA pairs have two configuration types: page blob and multiple availability zone.
 | E32ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
 | E48ds_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
 | E80ids_v4 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E8ds_v5 | 12 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E20ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E32ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E48ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+| E64ds_v5 | 28 | 368 TiB | 368 TiB | 368 TiB | 2 PiB
+
 |===
 ====
 
@@ -373,18 +412,22 @@ Storage VMs that you configure for disaster recovery (DR) don't require an add-o
 | Parameter
 | Limit
 
-.2+| *Files*	| Maximum size | 16 TiB
+.2+| *Files*	| Maximum size ^2^ | 128 TB
 | Maximum per volume |	Volume size dependent, up to 2 billion
 | *FlexClone volumes*	| Hierarchical clone depth ^1^ | 499
 .3+| *FlexVol volumes*	| Maximum per node |	500
 | Minimum size |	20 MB
-| Maximum size | 100 TiB
+| Maximum size ^3^| 300 TiB
 | *Qtrees* |	Maximum per FlexVol volume |	4,995
 | *Snapshot copies* |	Maximum per FlexVol volume |	1,023
 
 |===
 
 . Hierarchical clone depth is the maximum depth of a nested hierarchy of FlexClone volumes that can be created from a single FlexVol volume.
+. Beginning with ONTAP 9.12.1P2, the limit is 128 TB. In ONTAP 9.11.1 and earlier versions, the limit is 16 TB.
+. FlexVol volume creation up to maximum size of 300 TiB is supported using the following tools and minimum versions:  
+* System Manager and the ONTAP CLI starting from Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2
+* BlueXP starting from Cloud Volumes ONTAP 9.13.1
 
 == iSCSI storage limits
 
