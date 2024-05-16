@@ -17,7 +17,7 @@ Cloud Volumes ONTAP 9.15.1 includes new enhancements.
 
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
-== 9.15.1 RC1 (April 2024)
+== 9.15.0P1 (May 2024)
 The Release Candidate 1 of Cloud Volumes ONTAP 9.15.1 is now available in AWS, Azure, and Google Cloud. 
 
 == Upgrade notes
@@ -26,13 +26,13 @@ Read through these notes to learn more about upgrading to this release.
 
 === Azure page blobs no longer supported for new high-availability pair deployments 
 
-Starting with Cloud Volumes ONTAP 9.15.1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
+Starting with Cloud Volumes ONTAP 9.15.0P1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
 
 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs[Learn more about supported configurations in Azure^].
 
 === Image verification in Azure
 Enhanced security features are now available for verifying signatures of Cloud Volumes ONTAP image files exported through Azure. 
 
-link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
+For more information, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
 
 
