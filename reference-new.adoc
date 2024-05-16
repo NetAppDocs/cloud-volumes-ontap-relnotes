@@ -33,6 +33,6 @@ link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-config
 === Image verification in Azure
 Enhanced security features are now available for verifying signatures of Cloud Volumes ONTAP image files exported through Azure. 
 
-For more information, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
 
 
