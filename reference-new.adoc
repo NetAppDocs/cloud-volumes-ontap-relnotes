@@ -18,7 +18,23 @@ Cloud Volumes ONTAP 9.15.0 includes new enhancements.
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
 == 9.15.0 P1 (May 2024)
-The Cloud Volumes ONTAP 9.15.0 P1 is now available in AWS, Azure, and Google Cloud.
+The Cloud Volumes ONTAP 9.15.0 P1 is now available in AWS, Azure, and Google Cloud. The P1 version is available for deployment and upgrade. 
+
+//Update this section for every major release and every patch. This section has P1 for this version as the patch is the first major rls avl for deployment and upgrade. Other patches might top this up. When .1 version of a .0 version is available, the patch rls for .0 stops: MM.
+
+This release includes the following new features and enhancements.
+
+=== Azure page blobs no longer supported for new high-availability pair deployments 
+
+Starting with Cloud Volumes ONTAP 9.15.0P1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs[Learn more about supported configurations in Azure^].
+
+=== Image verification in Azure
+Enhanced security features are now available for verifying signatures of Cloud Volumes ONTAP image files exported through Azure. 
+
+For more information, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
+
 
 == Upgrade notes
 
@@ -33,6 +49,8 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 === Supported upgrade path
 
 You can upgrade to Cloud Volumes ONTAP 9.15.0 from 9.14.1 release. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+
+//Update this version for every major release. .0 v is can be usually upgraded from only the prev .1 v. Connector version removed as per code separation verification from engg: MM
 
 === Downtime
 
