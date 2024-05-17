@@ -22,19 +22,18 @@ The Cloud Volumes ONTAP 9.15.0 P1 is now available in AWS, Azure, and Google Clo
 
 //Update this section for every major release and every patch. This section has P1 for this version as the patch is the first major rls avl for deployment and upgrade. Other patches might top this up. When .1 version of a .0 version is available, the patch rls for .0 stops: MM.
 
-This release includes the following new features and enhancements.
-
-=== Azure page blobs no longer supported for new high-availability pair deployments 
-
-Starting with Cloud Volumes ONTAP 9.15.0P1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs[Learn more about supported configurations in Azure^].
+This release includes a new feature and an enhancement.
 
 === Image verification in Azure
 Enhanced security features are now available for verifying signatures of Cloud Volumes ONTAP image files exported through Azure. 
 
 For more information, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
 
+=== Azure page blobs no longer supported for new high-availability pair deployments 
+
+Starting with Cloud Volumes ONTAP 9.15.0P1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
+
+link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs[Learn more about supported configurations in Azure^].
 
 == Upgrade notes
 
