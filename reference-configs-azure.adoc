@@ -393,38 +393,38 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 | Supported virtual machine types
 
 a|
-* E8ds_v4 ^4^
-* E32ds_v4 ^1,4^
-* E48ds_v4 ^1,4^
-* E80ids_v4 ^1,2,4^
-* E8ds_v5 
-* E20ds_v5 ^1^
-* E32ds_v5 ^1^
-* E48ds_v5 ^1^
-* E64ds_v5 ^1^
-* L16s_v3 ^1,4,5^
-* L32s_v3 ^1,4,5^
-* L48s_v3 ^1,4,5^
-* L64s_v3 ^1,4,5^
+* E8ds_v4
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^1,2^
+* E8ds_v5 ^4^
+* E20ds_v5 ^1,4^
+* E32ds_v5 ^1,4^
+* E48ds_v5 ^1,4^
+* E64ds_v5 ^1,4^
+* L16s_v3 ^1,3,5^
+* L32s_v3 ^1,3,5^
+* L48s_v3 ^1,3,5^
+* L64s_v3 ^1,3,5^
 
 a|
-* E8ds_v4 ^3^
-* E8ds_v5 
+* E8ds_v4 
+* E8ds_v5 ^4^
 
 a|
-* E8ds_v4 ^4^
-* E32ds_v4 ^1,4^
-* E48ds_v4 ^1,4^
-* E80ids_v4 ^1,2,4^
-* E8ds_v5 
-* E20ds_v5 ^1^
-* E32ds_v5 ^1^
-* E48ds_v5 ^1^
-* E64ds_v5 ^1^
-* L16s_v3 ^1,4,5^
-* L32s_v3 ^1,4,5^
-* L48s_v3 ^1,4,5^
-* L64s_v3 ^1,4,5^
+* E8ds_v4 
+* E32ds_v4 ^1^
+* E48ds_v4 ^1^
+* E80ids_v4 ^1,2^
+* E8ds_v5 ^4^
+* E20ds_v5 ^1,4^
+* E32ds_v5 ^1,4^
+* E48ds_v5 ^1,4^
+* E64ds_v5 ^1,4^
+* L16s_v3 ^1,3,5^
+* L32s_v3 ^1,3,5^
+* L48s_v3 ^1,3,5^
+* L64s_v3 ^1,3,5^
 
 | Supported disk types 5+| Managed disks
 
@@ -436,9 +436,9 @@ Notes:
 
 . This VM is recommended only when Azure maintenance control is needed. It's not recommended for any other use case due to the higher pricing.
 
-. These VM types are only supported for HA pairs in a single availability zone configuration running on shared managed disks. 
+. Multiple availability zone support starts from ONTAP version 9.13.1. 
 
-. These VM types are supported for HA pairs in single availability zone and multiple availability zone configurations running on shared managed disks. For Ls_v3 VM types, multiple availability zone support starts from ONTAP version 9.13.1. For Eds_v5 VM types, multiple availability zone support starts from ONTAP version 9.14.1 RC1.  
+. Multiple availability zone support starts from ONTAP version 9.14.1 RC1.  
 
 . This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 
