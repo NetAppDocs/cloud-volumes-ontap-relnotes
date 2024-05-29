@@ -231,7 +231,9 @@ Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won
 === HA pairs
 You can choose from the following configurations when deploying Cloud Volumes ONTAP as an HA pair in Azure.
 
-==== HA pairs with page blob 
+==== HA pairs with page blob
+
+NOTE: You can use the following configurations with the existing Cloud Volumes ONTAP HA page blob deployments in Azure. Page blobs are not supported for new deployments.
 
 [role="tabbed-block"]
 ====
