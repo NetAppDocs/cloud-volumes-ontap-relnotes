@@ -8,8 +8,10 @@ settings:
     harmony_enabled: true 
   rss_page: "whats-new.html"    
   versions:
-    - version-number: "9.14.1"
+    - version-number: "9.15.0"
       url: /cloud-volumes-ontap-relnotes
+    - version-number: "9.14.1"
+      url: /cloud-volumes-ontap-9141-relnotes
     - version-number: "9.14.0"
       url: /cloud-volumes-ontap-9140-relnotes
     - version-number: "9.13.1"
