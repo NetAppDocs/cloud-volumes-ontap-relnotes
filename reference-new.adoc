@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-new.html
 keywords: what's new, new, features, release notes, enhancements
-summary: Cloud Volumes ONTAP 9.15.0 includes a new enhancement.
+summary: Cloud Volumes ONTAP 9.15.1 includes a new enhancement.
 ---
 
-= What's new in Cloud Volumes ONTAP 9.15.0
+= What's new in Cloud Volumes ONTAP 9.15.1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,12 +13,12 @@ summary: Cloud Volumes ONTAP 9.15.0 includes a new enhancement.
 :imagesdir: ./media/
 
 [.lead]
-Cloud Volumes ONTAP 9.15.0 includes new enhancements.
+Cloud Volumes ONTAP 9.15.1 includes new enhancements.
 
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
-== 9.15.0 P1 (10 June 2024)
-The Cloud Volumes ONTAP 9.15.0 P1 is now available in AWS, Azure, and Google Cloud. The P1 version is available for deployment and upgrade. 
+== 9.15.1 GA (August 2024)
+The Cloud Volumes ONTAP 9.15.1 GA is now available in AWS, Azure, and Google Cloud. The GA version is available for deployment and upgrade. 
 
 //Update this section for every major release and every patch. This section has P1 for this version as the patch is the first major rls avl for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM.
 
@@ -47,7 +47,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Supported upgrade path
 
-You can upgrade to Cloud Volumes ONTAP 9.15.0 from 9.14.1 release. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.15.1 from 9.15.0 and 9.14.1 releases. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 //Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. Connector version removed as per code separation verification from engg: MM
 
