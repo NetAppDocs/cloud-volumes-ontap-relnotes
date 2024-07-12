@@ -24,18 +24,24 @@ The Cloud Volumes ONTAP 9.15.1 GA is now available in AWS, Azure, and Google Clo
 
 This release includes a new feature and an enhancement.
 
-=== Image verification in Azure
-Enhanced security features are now available for verifying signatures of Cloud Volumes ONTAP image files exported through Azure. 
+=== Support for Virtual Machines Scale Sets in Flexible orchestration mode
+CVO 9.15.1 in Azure adopts Virtual Machines Scale Sets in Flexible orchestration mode for deploying virtual machine (VM) instances in a single availability zone. This orchestration mode ensures that all resources are deployed in the same availability zone, unlike the previous zone-redundant deployment. In this mode, separate fault domains are defined for the zone, achieving high availability at scale, by deploying identical or multiple virtual machine types. 
+This is applicable for both single node and HA pairs when the following criteria are met:
 
-For more information, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
+* The version of Cloud Volumes ONTAP is 9.15.1 or later.
+* The region supports Virtual Machines Scale Sets in Flexible orchestration mode.
+* The selected zone in a region supports Virtual Machines Scale Sets in Flexible orchestration mode.
+* The subscription is registered to the `Microsoft.Compute/VMOrchestratorZonalMultiFD` feature.
 
-=== Azure page blobs no longer supported for new high-availability pair deployments 
+If any of these criteria is not fulfilled, the previous non-zonal deployment in locally redundant storage (LRS) becomes effective. This is not applicable for multiple availability zones, where the older deployment including availability set is followed.
 
-Starting with Cloud Volumes ONTAP 9.15.0 P1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
+For more information, refer to 
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs[Learn more about supported configurations in Azure^].
+=== Support for Premium SSD V2 Managed Disks
+Premium SSD V2 Managed Disks are now supported in Cloud Volumes ONTAP. The premium disks provide higher performance with lower latency, at a lower cost, compared to Premium SSD Shared Managed Disks for both single node and HA pairs. The maximum disk size is 32 TiB. The performance (capacity, throughput, and IOPS) of a Premium SSD V2 Managed Disks can be configured independently of their size allowing workloads to be cost effective, while meeting shifting performance needs.
+CVO 9.15.1 in Azure adopts Virtual Machines Scale Sets in Flexible orchestration mode for deploying virtual machine (VM) instances in a single availability zone. This deployment, be default, makes use of Premium SSD V2 Managed Disks.
 
-== Upgrade notes
+== Upgrade notes.
 
 Read through these notes to learn more about upgrading to this release.
 
