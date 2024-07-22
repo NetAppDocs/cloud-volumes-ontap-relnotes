@@ -39,7 +39,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 |
 | Freemium 
 | Optimized
-| Capacity-based license (Essentials, Professional, and Edge Cache)
+| Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
 (disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
@@ -244,7 +244,7 @@ NOTE: You can use the following configurations with the existing Cloud Volumes O
 |
 | Freemium 
 | Optimized
-| Capacity-based license (Essentials, Professional, and Edge Cache)
+| Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
 (disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
@@ -387,7 +387,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 |
 | Freemium 
 | Optimized
-| Capacity-based license (Essentials, Professional, and Edge Cache)
+| Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
 (disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
