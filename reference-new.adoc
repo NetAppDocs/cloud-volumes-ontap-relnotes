@@ -24,6 +24,10 @@ The Cloud Volumes ONTAP 9.15.1 GA is now available in AWS, Azure, and Google Clo
 
 This release includes a new feature and an enhancement.
 
+=== ##Support for Premium SSD v2 Managed Disks##
+Premium SSD v2 Managed Disks are now supported in Cloud Volumes ONTAP. These premium disks provide higher performance with lower latency, at a lower cost, compared to Premium SSD Shared Managed Disks for both single node and HA pairs. The maximum disk size is 32 TiB. The performance (capacity, throughput, and IOPS) of a Premium SSD v2 Managed Disks can be configured, allowing workloads to be cost effective, while meeting shifting performance needs.
+CVO 9.15.1 in Azure leverages Virtual Machines Scale Sets in Flexible orchestration mode for deploying virtual machine (VM) instances in a single availability zone for single nodes and HA pairs. This deployment mode, by default, makes use of Premium SSD v2 Managed Disks.
+
 === ##Azure HA deployments supported in single availability zones##
 For high-availability (HA), CVO 9.15.1 in Azure adopts Virtual Machines Scale Sets in Flexible orchestration mode for deploying virtual machine (VM) instances in single availability zones (AZs). This orchestration mode ensures that all resources are deployed in the same AZ, unlike the previous non-zonal deployment. In this mode, separate fault domains are defined within a single zone, achieving high availability at scale. This deployment covers all flavors of the high-availability mode, Pageblob, locally-redundant storage (LRS), zone-redundant storage (ZRS) or multi-zonal, and LRS zonal (single AZ), when the following criteria are met:
 
@@ -35,10 +39,6 @@ For high-availability (HA), CVO 9.15.1 in Azure adopts Virtual Machines Scale Se
 If any of these criteria is not fulfilled, the previous non-zonal deployment in locally redundant storage (LRS) becomes effective.
 
 For information about the supported regions, refer to https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/[Products available by region].
-
-=== ##Support for Premium SSD v2 Managed Disks##
-Premium SSD v2 Managed Disks are now supported in Cloud Volumes ONTAP. These premium disks provide higher performance with lower latency, at a lower cost, compared to Premium SSD Shared Managed Disks for both single node and HA pairs. The maximum disk size is 32 TiB. The performance (capacity, throughput, and IOPS) of a Premium SSD v2 Managed Disks can be configured, allowing workloads to be cost effective, while meeting shifting performance needs.
-CVO 9.15.1 in Azure leverages Virtual Machines Scale Sets in Flexible orchestration mode for deploying virtual machine (VM) instances in a single availability zone for single nodes and HA pairs. This deployment mode, by default, makes use of Premium SSD v2 Managed Disks.
 
 == Upgrade notes.
 
