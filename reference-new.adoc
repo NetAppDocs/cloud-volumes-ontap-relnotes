@@ -35,10 +35,13 @@ For HA deployments, CVO 9.15.1 in Azure adopts Virtual Machines Scale Sets in Fl
 * The region supports Virtual Machines Scale Sets in Flexible orchestration mode.
 * The selected zone in a region supports Virtual Machines Scale Sets in Flexible orchestration mode.
 * The subscription is registered to the `Microsoft.Compute/VMOrchestratorZonalMultiFD` feature.
++
+For more information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure[Launching a Cloud Volumes ONTAP HA pair in Azure] and https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html[Enable VMOrchestratorZonalMultiFD for single availability zones].
 
 If any of these criteria is not fulfilled, the previous non-zonal deployment in locally redundant storage (LRS) becomes effective.
 
 For information about the supported regions, refer to https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/[Products available by region].
+
 
 == Upgrade notes.
 
