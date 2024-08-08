@@ -16,8 +16,9 @@ summary: These known limitations are specific to Cloud Volumes ONTAP in Microsof
 The following known limitations are specific to Cloud Volumes ONTAP in Microsoft Azure. Be sure to also review link:reference-limitations.html[Limitations for Cloud Volumes ONTAP in all cloud providers].
 
 == Flash Cache limitations
+Cloud Volumes ONTAP uses the local NVMe storage in some VM types as _Flash Cache_. Note this limitation:
 
-Some VM types include local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. As a limitation for Flash Cache, note that cache rewarming after a reboot is not supported with Cloud Volumes ONTAP.
+* Cache rewarming after a reboot is not supported.
 
 == HA limitations
 
