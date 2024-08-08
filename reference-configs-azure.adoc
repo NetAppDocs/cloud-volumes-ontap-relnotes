@@ -121,6 +121,9 @@ Notes:
 . Data tiering to Azure Blob storage isn't supported with PAYGO Explore.
 
 . This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
+[NOTE]
+##The minimum ONTAP version required for configuring Flash Cache on Azure is 9.13.1 GA.##
+
 
 . These VM types use an https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd[Ultra SSD^] for VNVRAM, which provides better write performance.
 +
