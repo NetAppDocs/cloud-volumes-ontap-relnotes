@@ -33,7 +33,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 |
 | Freemium 
 | Optimized
-| Capacity-based license (Essentials, Professional, and Edge Cache)
+| Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
 (disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
@@ -84,7 +84,7 @@ If you have an existing system running on this machine type, you can keep using 
 
 . The BlueXP interface shows an additional supported machine type for Standard and BYOL: n1-highmem-4. However, this machine type isn't meant for production environments. We've made it available for a specific lab environment only.
 
-. Starting with Cloud Volumes ONTAP software version 9.13.0, _Flash Cache_, high write speed, and a higher maximum transmission unit (MTU) of 8,896 bytes, are available for the following HA pair deployment instances: 
+. Beginning with Cloud Volumes ONTAP 9.13.0, _Flash Cache_, high write speed, and a higher maximum transmission unit (MTU) of 8,896 bytes, are available for the following HA pair deployment instances: 
 * n2-standard-16
 * n2-standard-32
 * n2-standard-48
