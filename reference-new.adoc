@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-new.html
 keywords: what's new, new, features, release notes, enhancements
-summary: Cloud Volumes ONTAP 9.15.0 includes a new enhancement.
+summary: Cloud Volumes ONTAP 9.15.1 includes a new enhancement.
 ---
 
-= What's new in Cloud Volumes ONTAP 9.15.0
+= What's new in Cloud Volumes ONTAP 9.15.1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,34 +13,35 @@ summary: Cloud Volumes ONTAP 9.15.0 includes a new enhancement.
 :imagesdir: ./media/
 
 [.lead]
-Cloud Volumes ONTAP 9.15.0 includes new enhancements.
+Cloud Volumes ONTAP 9.15.1 includes new enhancements.
 
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
-== 9.15.0 P2 (8 August 2024)
-The 9.15.0 P2 patch is now available for Cloud Volumes ONTAP for all cloud providers. BlueXP will prompt you to upgrade your existing systems to this patch release.
-
-https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.0P2[View the list of bugs fixed in the P2 patch^] (NetApp Support Site login required).
-
-== 9.15.0 P1 (10 June 2024)
-The Cloud Volumes ONTAP 9.15.0 P1 is now available in AWS, Azure, and Google Cloud. The P1 version is available for deployment and upgrade. 
+== 9.15.1 GA (22 August 2024)
+The Cloud Volumes ONTAP 9.15.1 GA is now available in AWS, Azure, and Google Cloud. The GA version is available for deployment and upgrade. This release includes the following new features and enhancements.
 
 //Update this section for every major release and every patch. This section has P1 for this version as the patch is the first major rls avl for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM.
 
-This release includes a new feature and an enhancement.
+=== ##Support for Premium SSD v2 Managed Disks##
+Premium SSD v2 Managed Disks are now supported in Cloud Volumes ONTAP. These premium disks provide higher performance with lower latency at a lower cost for both single node and high-availability (HA) pairs, as compared to Premium SSD Shared Managed Disks. Like other managed disks, the maximum disk size is 32 TiB. The performance (capacity, throughput, and IOPS) of a Premium SSD v2 Managed Disks can be configured, allowing workloads to be cost effective, while meeting shifting performance needs.
+CVO 9.15.1 in Azure leverages Virtual Machines Scale Sets in Flexible orchestration mode for deploying virtual machine (VM) instances in single availability zones for high-availability (HA) pairs. This deployment mode, by default, makes use of Premium SSD v2 Managed Disks.
 
-=== Image verification in Azure
-Enhanced security features are now available for verifying signatures of Cloud Volumes ONTAP image files exported through Azure. 
+For information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage.html#azure-storage[Azure storage^].
 
-For more information, see link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-azure-image-verification.html[Learn more about Azure Image Verification^].
+=== ##Azure HA deployments supported in single availability zones##
+Beginning with Cloud Volumes ONTAP 9.15.1, you can deploy virtual machine (VM) instances in single availability zones (AZs) in HA mode. Unlike the previous non-zonal deployments, Cloud Volumes ONTAP 9.15.1 uses Microsoft Virtual Machines Scale Sets in Flexible orchestration mode to deploy all resources, including discrete fault domains, in the same AZ. This deployment covers all flavors of the HA mode, Pageblob, locally-redundant storage (LRS), zone-redundant storage (ZRS) or multi-zonal, and LRS zonal (single AZ), when the following criteria are met: 
 
-=== Azure page blobs no longer supported for new high-availability pair deployments 
+* The version of Cloud Volumes ONTAP is 9.15.1 or later.
+* The region supports Virtual Machines Scale Sets in Flexible orchestration mode. For information about the supported regions, refer to https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/[Microsoft Azure website: Products available by region^].
+* The selected zone in a region supports Virtual Machines Scale Sets in Flexible orchestration mode.
+* The subscription is registered for the `Microsoft.Compute/VMOrchestratorZonalMultiFD` feature.
++
+For more information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure[Launching a Cloud Volumes ONTAP HA pair in Azure^] and https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html[Enable VMOrchestratorZonalMultiFD for single availability zones^].
 
-Starting with Cloud Volumes ONTAP 9.15.0 P1, Azure page blobs are no longer supported for new high-availability pair deployments. If you currently use Azure page blobs in existing high-availability pair deployments, you can migrate to newer VM instance types in the Edsv4-series VMs and Edsv5-series VMs. 
+If any of these criteria is not fulfilled, the previous LRS non-zonal deployment becomes effective.
 
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-azure.html#ha-pairs[Learn more about supported configurations in Azure^].
 
-== Upgrade notes
+== Upgrade notes.
 
 Read through these notes to learn more about upgrading to this release.
 
@@ -52,7 +53,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Supported upgrade path
 
-You can upgrade to Cloud Volumes ONTAP 9.15.0 from 9.14.1 release. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.15.1 from 9.15.0 and 9.14.1 releases. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 //Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. Connector version removed as per code separation verification from engg: MM
 
