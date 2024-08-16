@@ -25,13 +25,13 @@ The Cloud Volumes ONTAP 9.15.1 GA is now available in AWS, Azure, and Google Clo
 === Support for Premium SSD v2 Managed Disks on Azure
 Premium SSD v2 Managed Disks are now supported in Cloud Volumes ONTAP systems on Azure. These premium disks provide higher performance with lower latency at a lower cost for both single node and high-availability (HA) pairs, as compared to Premium SSD Managed Disks. Like other managed disks, the maximum disk size is 32 TiB. The performance (capacity, throughput, and IOPS) of a Premium SSD v2 Managed Disks can be configured, allowing workloads to be cost effective, while meeting shifting performance needs.
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage.html#azure-storage[Azure storage].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage.html#azure-storage[Learn about Azure storage].
 
 
 === Deploy HA pairs in single availability zones on Azure
 Beginning with Cloud Volumes ONTAP 9.15.1, you can deploy virtual machine (VM) instances in HA mode in single availability zones (AZs) on Azure. Unlike the previous non-zonal deployments, Cloud Volumes ONTAP 9.15.1 uses Microsoft Virtual Machines Scale Sets in Flexible orchestration mode to deploy all resources, including separate fault domains within the same AZ, guaranteeing optimal availability. 
 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html[High-availability pairs in Azure].
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html[Learn about High-availability pairs in Azure].
 
 === Support for Virtual Machines Scale Sets to unify all Azure HA types
 Cloud Volumes ONTAP 9.15.1 leverages Virtual Machines Scale Sets in Flexible orchestration mode on Azure for deploying virtual machine (VM) instances in single availability zones for high-availability (HA) pairs. 
@@ -43,8 +43,7 @@ This deployment mode, by default, makes use of Premium SSD v2 Managed Disks. It 
 * The selected zone in a region supports Virtual Machines Scale Sets in Flexible orchestration mode.
 * The subscription is registered for the Microsoft `Microsoft.Compute/VMOrchestratorZonalMultiFD` feature.
 +
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure[Launching a Cloud Volumes ONTAP HA pair in Azure^] 
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html[Enable VMOrchestratorZonalMultiFD for single availability zones^].
+To learn more, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure[Launching a Cloud Volumes ONTAP HA pair in Azure^] and https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html[Enable VMOrchestratorZonalMultiFD for single availability zones^].
 
 If any of these criteria is not fulfilled, the previous LRS non-zonal deployment becomes effective.
 
