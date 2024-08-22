@@ -15,6 +15,6 @@ include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/commo
 include::https://raw.githubusercontent.com/NetAppDocs/common/main/_include/open-source-notice-intro.adoc[]
 
 // Add required link(s)
-* link:media/notice-aws.pdf[Notice for the Cloud Volumes ONTAP 9.14.0 mediator in AWS^]
-* link:media/notice-google-cloud.pdf[Notice for the Cloud Volumes ONTAP 9.14.0 mediator in Google Cloud^]
+* link:media/notice-aws.pdf[Notice for the Cloud Volumes ONTAP 9.15.1 mediator in AWS^]
+* link:media/notice-google-cloud.pdf[Notice for the Cloud Volumes ONTAP 9.15.1 mediator in Google Cloud^]
 * https://docs.netapp.com/us-en/ontap/reference_legal_notices.html#open-source[Notice for ONTAP^]
