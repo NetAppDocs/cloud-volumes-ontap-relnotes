@@ -5,11 +5,12 @@ settings:
     pdf_enabled: true
   prod:
     pdf_enabled: true
-    harmony_enabled: true 
-  rss_page: "whats-new.html"    
+    harmony_enabled: true    
   versions:
-    - version-number: "9.15.0"
+    - version-number: "9.15.1"
       url: /cloud-volumes-ontap-relnotes
+    - version-number: "9.15.0"
+      url: /cloud-volumes-ontap-9150-relnotes      
     - version-number: "9.14.1"
       url: /cloud-volumes-ontap-9141-relnotes
     - version-number: "9.14.0"
