@@ -126,7 +126,7 @@ The minimum ONTAP version required for configuring Flash Cache on Azure is 9.13.
 
 . These VM types use an https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd[Ultra SSD^] for VNVRAM, which provides better write performance.
 +
-If you choose any of these VM types when you deploy a new Cloud Volumes ONTAP system, you can't change to another VM type that _doesn't_ use an Ultra SSD for VNVRAM. For example, you can't change from E8ds_v4 to E8s_v3, but you can change from E8ds_v4 to E32ds_v4 because both of those VM types use Ultra SSDs. Similarly, when you deploy a new Cloud Volumes ONTAP system, you can't change the VM type to one that _doesn't_ support Premium SSD v2 Managed Disks.
+If you choose any of these VM types when you deploy a new Cloud Volumes ONTAP system, you can't change to another VM type that _doesn't_ use an Ultra SSD for VNVRAM. For example, you can't change from E8ds_v4 to E8s_v3, but you can change from E8ds_v4 to E32ds_v4 because both of those VM types use Ultra SSDs. Similarly, when you deploy a new Cloud Volumes ONTAP system, you can't change the VM type to one that _doesn't_ support Premium SSD v2 Managed Disks. To learn more about the supported configurations for Premium SSD v2 Managed Disks, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair[Azure (HA pair)^].
 +
 Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won't be able to change to a VM type that uses an Ultra SSD for VNVRAM. For example, you can't change from E8s_v3 to E8ds_v4.
 
