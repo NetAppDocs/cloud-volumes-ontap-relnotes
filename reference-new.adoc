@@ -23,7 +23,9 @@ The 9.15.1 P1 patch is now available for Cloud Volumes ONTAP for all cloud provi
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P1[View the list of bugs fixed in the P1 patch^] (NetApp Support Site login required).
 
 == 9.15.1 GA (22 August 2024)
-The Cloud Volumes ONTAP 9.15.1 GA is now available in AWS, Azure, and Google Cloud. The GA version is available for deployment and upgrade. This release includes the following new features and enhancements for new deployments. Read on to learn how you can avail these new features.
+The Cloud Volumes ONTAP 9.15.1 GA is now available in AWS, Azure, and Google Cloud. The GA version is available for deployment and upgrade. 
+
+This release includes the following features and enhancements for Azure. Read on to learn more about the specific configurations supporting these new features.
 
 //Update this section for every major release and every patch. This section has P1 for this version as the patch is the first major rls avl for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM.
 
@@ -37,10 +39,8 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage.html#az
 Beginning with Cloud Volumes ONTAP 9.15.1, you can deploy virtual machine (VM) instances in HA mode in single availability zones (AZs) on Azure. Unlike the previous non-zonal deployments, Cloud Volumes ONTAP 9.15.1 uses Microsoft Virtual Machines Scale Sets in Flexible orchestration mode to deploy all resources, including separate fault domains within the same AZ, guaranteeing optimal availability. This deployment mode, by default, uses Premium SSD v2 Managed Disks when the following criteria are met:
 
 * The version of Cloud Volumes ONTAP is 9.15.1 or later.
-* The region and selected zone support Premium SSD v2 Managed Disks. For information about the supported regions, refer to  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/[Microsoft Azure website: Products available by region^].
+* The selected region and zone support Premium SSD v2 Managed Disks. For information about the supported regions, refer to  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/[Microsoft Azure website: Products available by region^]. To learn more about how to add them, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure[Launching a Cloud Volumes ONTAP HA pair in Azure^].
 * The subscription is registered for the Microsoft `Microsoft.Compute/VMOrchestratorZonalMultiFD` feature. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html[Enable VMOrchestratorZonalMultiFD for single availability zones^].
-+
-To learn more, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure[Launching a Cloud Volumes ONTAP HA pair in Azure^].
 
 If any of these criteria is not fulfilled, the previous LRS non-zonal deployment becomes effective.
 
