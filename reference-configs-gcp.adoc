@@ -74,7 +74,7 @@ Notes:
 +
 link:reference-limits-gcp.html[Learn more about disk limits in Google Cloud].
 
-. ##The minimum ONTAP version required for deploying Cloud Volumes ONTAP on Google Cloud is 9.8. Beginning with 9.8, you can deploy only the supported n2 series machine instances. n1 series machines are no longer supported in new deployments, and are retained in only old systems.##  
+. ##The minimum ONTAP version required for deploying Cloud Volumes ONTAP in Google Cloud is 9.8. Beginning with 9.8, you can deploy only the supported n2 series machine instances. n1 series machines are no longer supported in new deployments, and are retained in only old systems.##  
 
 . The custom-4-16384 machine type is no longer supported with new Cloud Volumes ONTAP systems.
 +
