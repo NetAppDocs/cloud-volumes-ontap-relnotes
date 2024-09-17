@@ -74,7 +74,7 @@ Notes:
 +
 link:reference-limits-gcp.html[Learn more about disk limits in Google Cloud].
 
-. Data tiering to Google Cloud Storage isn't supported with PAYGO Explore.
+. ##The minimum ONTAP version required for deploying Cloud Volumes ONTAP on Google Cloud is 9.8. Beginning with 9.8, you can deploy only the supported n2 machine instances. n1 machines are no longer supported in new deployments, and are retained in only old systems.##  
 
 . The custom-4-16384 machine type is no longer supported with new Cloud Volumes ONTAP systems.
 +
@@ -82,6 +82,7 @@ If you have an existing system running on this machine type, you can keep using 
 
 . Enhanced write performance is enabled when using Balanced persistent disks and Performance (SSD) persistent disks.
 
+. Data tiering to Google Cloud Storage isn't supported with PAYGO Explore.
 . The BlueXP interface shows an additional supported machine type for Standard and BYOL: n1-highmem-4. However, this machine type isn't meant for production environments. We've made it available for a specific lab environment only.
 
 . Beginning with Cloud Volumes ONTAP 9.13.0, _Flash Cache_, high write speed, and a higher maximum transmission unit (MTU) of 8,896 bytes, are available for the following HA pair deployment instances: 
