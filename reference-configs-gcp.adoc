@@ -140,7 +140,7 @@ link:reference-limits-gcp.html[Learn more about disk limits in Google Cloud].
 
 . Data tiering to Google Cloud Storage isn't supported with PAYGO Explore.
 
-. The n1 series machines are no longer available for selection on BlueXP when deploying new instances of Cloud Volumes ONTAP in Google Cloud, and are only retained in old, existing systems. New Cloud Volumes ONTAP deployments in Google Cloud are supported from the 9.8 release. We recommend that you switch to the n2 series machine types that are supported by Cloud Volumes ONTAP 9.8 and later.
+. The n1 series machines are no longer available for selection on BlueXP when deploying new instances of Cloud Volumes ONTAP in Google Cloud. The n1 series machines will be retained and supported only in older, existing systems. New deployments of Cloud Volumes ONTAP are supported in Google Cloud only from the 9.8 release. We recommend that you switch to the n2 series machine types that are compatible with Cloud Volumes ONTAP 9.8 and later.
 +
 The custom-4-16384 machine type is no longer supported with new Cloud Volumes ONTAP systems. If you have an existing system running on this machine type, you can keep using it, but we recommend switching to the n2-standard-4 machine type.
 
