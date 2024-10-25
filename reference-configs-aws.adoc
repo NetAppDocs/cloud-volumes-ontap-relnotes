@@ -47,7 +47,7 @@ Each license supports a different maximum system capacity. The maximum system ca
 * Provisioned IOPS SSD (io1) ^3^
 * Throughput Optimized HDD (st1) ^4^
 
-| Cold data tiering to S3 6+| Supported 
+| Cold data tiering to S3 2+| Supported |Not supported 3+|Supported
 
 |===
 
