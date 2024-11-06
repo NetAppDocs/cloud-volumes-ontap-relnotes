@@ -40,16 +40,16 @@ a|
 a| Freemium 
 a| Capacity-based license
 
-a| Maximum system capacity
+a| *Maximum system capacity*
 (disks + object storage) ^1^ | 500 GiB | 2 PiB ^2^   
 
-a| Supported disk types 
+a| *Supported disk types* 
 2+a|
 * General Purpose SSD (gp3 and gp2) ^3^,^5^
 * Provisioned IOPS SSD (io1) ^3^
 * Throughput Optimized HDD (st1) ^4^
 
-a| Cold data tiering to S3 2+a| Supported |
+a| *Cold data tiering to S3* 2+a| Supported |
 
 |===
 
@@ -59,7 +59,7 @@ Notes:
 
 . For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. In those cases, you can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. For information about disk limits, refer to link:reference-limits-aws.html[storage limits].
 
-. Enhanced write performance is enabled when using SSDs with all Cloud Volumes ONTAP configurations, except for PAYGO Explore.
+. Enhanced write performance is enabled when using SSDs with all Cloud Volumes ONTAP configurations.
 
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
 
