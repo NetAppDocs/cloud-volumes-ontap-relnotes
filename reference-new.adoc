@@ -17,6 +17,16 @@ Cloud Volumes ONTAP 9.15.1 includes new enhancements.
 
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
+== 9.15.1 P3 (29 October 2024)
+The 9.15.1 P3 patch is now available for Cloud Volumes ONTAP for all cloud providers. BlueXP will prompt you to upgrade your existing systems to this patch release.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P3[View the list of bugs fixed in the P3 patch^] (NetApp Support Site login required).
+
+== 9.15.1 P2 (14 October 2024)
+The 9.15.1 P2 patch is now available for Cloud Volumes ONTAP for all cloud providers. BlueXP will prompt you to upgrade your existing systems to this patch release.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P2[View the list of bugs fixed in the P2 patch^] (NetApp Support Site login required).
+
 == 9.15.1 P1 (3 September 2024)
 The 9.15.1 P1 patch is now available for Cloud Volumes ONTAP for all cloud providers. BlueXP will prompt you to upgrade your existing systems to this patch release.
 
