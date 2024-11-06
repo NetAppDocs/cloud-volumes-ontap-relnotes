@@ -29,27 +29,68 @@ Cloud Volumes ONTAP supports several types of EBS disks, and S3 object storage f
 
 Each license supports a different maximum system capacity. The maximum system capacity includes disk-based storage plus object storage used for data tiering. NetApp doesn’t support exceeding this limit.
 
-[cols=7*,cols="h,d,d,d,d,d,d",options="header"]
+[role="tabbed-block"]
+====
+
+.Capacity-based licenses
+--
+[cols=3*,cols="h,d,d",options="header"]
+|===
+a|
+a| Freemium 
+a| Capacity-based license
+
+a| *Maximum system capacity*
+(disks + object storage) ^1^ | 500 GiB | 2 PiB ^2^   
+
+a| *Supported disk types* 
+2+a|
+* General Purpose SSD (gp3 and gp2) ^3^,^5^
+* Provisioned IOPS SSD (io1) ^3^
+* Throughput Optimized HDD (st1) ^4^
+
+a| *Cold data tiering to S3* 2+a| Supported |
+
+|===
+
+Notes:
+
+. For an HA pair, the capacity limit is for the entire HA pair. It's not per node. For example, if you use the Premium license, you can have up to 368 TiB of capacity between both nodes.
+
+. For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. In those cases, you can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. For information about disk limits, refer to link:reference-limits-aws.html[storage limits].
+
+. Enhanced write performance is enabled when using SSDs with all Cloud Volumes ONTAP configurations.
+
+. Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
+
+. AWS Local Zones only support the General Purpose SSD (gp2) disk type.
+
+
+--
+
+.Node-based licenses 
+--
+[cols=5*,cols="h,d,d,d,d",options="header"]
 |===
 |
-| Freemium
-| Capacity-based license
 | PAYGO Explore
 | PAYGO Standard
 | PAYGO Premium
 | Node-based BYOL
 
 | Maximum system capacity
-(disks + object storage) ^1^ | 500 GiB | 2 PiB ^2^ | 2 TiB | 10 TiB | 368 TiB ^2^ | 368 TiB per license ^2^ 
+(disks + object storage) | 2 TiB | 10 TiB | 368 TiB ^2^ | 368 TiB per license ^2^ 
 
-| Supported disk types 6+a|
+| Supported disk types 4+a|
 * General Purpose SSD (gp3 and gp2) ^3^,^5^
 * Provisioned IOPS SSD (io1) ^3^
 * Throughput Optimized HDD (st1) ^4^
 
-| Cold data tiering to S3 2+| Supported |Not supported 3+|Supported
+| Cold data tiering to S3 | Not supported 3+| Supported
 
 |===
+
+Notes:
 
 . For an HA pair, the capacity limit is for the entire HA pair. It's not per node. For example, if you use the Premium license, you can have up to 368 TiB of capacity between both nodes.
 
@@ -60,6 +101,9 @@ Each license supports a different maximum system capacity. The maximum system ca
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
 
 . AWS Local Zones only support the General Purpose SSD (gp2) disk type. 
+
+--
+====
 
 === Supported disk sizes
 
