@@ -61,7 +61,7 @@ Cloud Volumes ONTAP 9.15.1 leverages Virtual Machines Scale Sets in Flexible orc
 * https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/[Microsoft Azure documentation: Virtual Machine Scale Sets documentation^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html[Learn about high-availability pairs in Azure^].
 
-== Upgrade notes.
+== Upgrade notes
 
 Read through these notes to learn more about upgrading to this release.
 
