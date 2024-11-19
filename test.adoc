@@ -1,7 +1,6 @@
 ---
-sidebar: sidebar
 permalink: test.html
-keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks, networking, bandwidth, professional package
+keywords: 
 summary: Several Cloud Volumes ONTAP configurations are supported in AWS.
 ---
 
