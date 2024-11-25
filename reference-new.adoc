@@ -69,9 +69,9 @@ Cloud Volumes ONTAP 9.15.1 leverages Virtual Machines Scale Sets in Flexible orc
 === Support for FlexCache write-back
 Beginning with Cloud Volumes ONTAP 9.15.1, FlexCache write-back is supported as an alternate mode of operation for writing at a cache. 
 
-For more information about this feature, refer to the ONTAP documentation https://docs.netapp.com/us-en/ontap/flexcache-writeback/flexcache-write-back-overview.html[FlexCache write-back overview].
+For more information about this feature, refer to the ONTAP documentation https://docs.netapp.com/us-en/ontap/flexcache-writeback/flexcache-write-back-overview.html[FlexCache write-back overview^].
 
-For information about how BlueXP manages FlexCache volumes, refer to the https://docs.netapp.com/us-en/bluexp-volume-caching/index.html[BlueXP volume caching documents].
+For information about how BlueXP manages FlexCache volumes, refer to the https://docs.netapp.com/us-en/bluexp-volume-caching/index.html[BlueXP volume caching documents^].
 
 == Upgrade notes
 
