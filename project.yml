@@ -1,5 +1,5 @@
 settings:
-  name: Cloud Volumes ONTAP release notes
+  name: Cloud Volumes ONTAP
   platform: cloud
   internal:
     pdf_enabled: true
@@ -49,7 +49,7 @@ settings:
       url: /cloud-volumes-ontap-93-relnotes
 sidebar:
   entries:
-    - title: Release notes home
+    - title: Cloud Volumes ONTAP 9.15.1 release notes
       url: /index.html
     - title: What's new
       url: /reference-new.html

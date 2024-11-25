@@ -1,5 +1,5 @@
 [.lead]
-Cloud Volumes ONTAP offers different licensing options that enable you to choose a consumption model that meets your needs.
+Several licensing options are available for Cloud Volumes ONTAP. Each option enables you to choose a consumption model that meets your needs.
 
 The following licensing options are available for new customers.
 
@@ -7,6 +7,9 @@ Capacity-based licensing packages::
 Capacity-based licensing enables you to pay for Cloud Volumes ONTAP per TiB of capacity. The license is associated with your NetApp account and enables you to charge multiple systems against the license, as long as enough capacity is available through the license.
 +
 Capacity-based licensing is available in the form of a _package_. When you deploy a Cloud Volumes ONTAP system, you can choose from several licensing packages based on your business needs.
+
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#packages[Packages^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing-charging.html[More about capacity-based licenses^]
 
 Keystone Flex Subscription::
 A pay-as-you-grow subscription-based service that delivers a seamless hybrid cloud experience for those preferring OpEx consumption models to upfront CapEx or leasing.
