@@ -118,7 +118,7 @@ a|
 
 Notes:
 
-. ^1^ ##The DS_v2 and Es_v3 machine families are no longer available for selection on BlueXP when deploying new instances of Cloud Volumes ONTAP in Azure. These families will be retained and supported only in older, existing systems. New deployments of Cloud Volumes ONTAP are supported in Azure only from the 9.12.1 release. We recommend that you switch to either Es_v4 or any other series compatible with Cloud Volumes ONTAP 9.12.1 and later. The DS_v2 and Es_v3 series machines, however, will be available for new deployments made through the API.##
+. ^1^ The DS_v2 and Es_v3 machine families are no longer available for selection on BlueXP when deploying new instances of Cloud Volumes ONTAP in Azure. These families will be retained and supported only in older, existing systems. New deployments of Cloud Volumes ONTAP are supported in Azure only from the 9.12.1 release. We recommend that you switch to either Es_v4 or any other series compatible with Cloud Volumes ONTAP 9.12.1 and later. The DS_v2 and Es_v3 series machines, however, will be available for new deployments made through the API.
 
 . ^2^ This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 +
@@ -213,7 +213,7 @@ a|
 
 Notes:
 
-. ^1^ ##The DS_v2 and Es_v3 machine families are no longer available for selection on BlueXP when deploying new instances of Cloud Volumes ONTAP in Azure. These families will be retained and supported only in older, existing systems. New deployments of Cloud Volumes ONTAP are supported in Azure only from the 9.12.1 release. We recommend that you switch to either Es_v4 or any other series compatible with Cloud Volumes ONTAP 9.12.1 and later. The DS_v2 and Es_v3 series machines, however, will be available for new deployments made through the API.##
+. ^1^ The DS_v2 and Es_v3 machine families are no longer available for selection on BlueXP when deploying new instances of Cloud Volumes ONTAP in Azure. These families will be retained and supported only in older, existing systems. New deployments of Cloud Volumes ONTAP are supported in Azure only from the 9.12.1 release. We recommend that you switch to either Es_v4 or any other series compatible with Cloud Volumes ONTAP 9.12.1 and later. The DS_v2 and Es_v3 series machines, however, will be available for new deployments made through the API.
 
 . ^2^ This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 
