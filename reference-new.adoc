@@ -19,7 +19,7 @@ Additional features and enhancements are also introduced in the latest versions 
 
 
 == 9.16.1 RC1 (9 December 2024)
-The Cloud Volumes ONTAP 9.16.1 is now available in AWS, Azure, and Google Cloud. The RC1 version is available for deployment and upgrade. 
+The Release Candidate 1 of Cloud Volumes ONTAP 9.16.1 is now available for deployment and upgrade in AWS, Azure, and Google Cloud.
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
 
