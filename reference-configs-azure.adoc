@@ -582,4 +582,4 @@ HA pairs use Azure Managed Disks. The following disk type and sizes are supporte
 
 == Supported regions
 
-For Azure region support, see https://cloud.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+For Azure region support, see https://bluexp.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
