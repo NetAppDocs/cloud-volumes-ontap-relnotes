@@ -243,4 +243,4 @@ High write speed isn't supported with these instance types in AWS Local Zones.
 
 == Supported regions
 
-For AWS region support, see https://cloud.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+For AWS region support, see https://bluexp.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
