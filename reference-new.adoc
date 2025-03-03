@@ -19,7 +19,7 @@ Additional features and enhancements are also introduced in the latest versions 
 
 
 == 9.16.1 GA (4 March 2025)
-The Cloud Volumes ONTAP 9.16.1 GA is now available for deployment and upgrade in only Azure and Google Cloud. This version is not available for deployment and upgrade in AWS.
+The Cloud Volumes ONTAP 9.16.1 GA is now available for deployment in only Azure and Google Cloud. This version is available for upgrade in AWS, Azure, and Google Cloud.
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
 
@@ -36,10 +36,7 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === Supported upgrade path
 
-You can upgrade to Cloud Volumes ONTAP 9.16.1 from the 9.15.1 release in Azure and Google Cloud. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
-
-[NOTE]
-For AWS you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTAP 9.16.1 is not supported in AWS.
+You can upgrade to Cloud Volumes ONTAP 9.16.1 from the 9.15.1 release in AWS, Azure and Google Cloud. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 //Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. Connector version removed as per code separation verification from engg: MM
 
@@ -47,7 +44,7 @@ For AWS you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTAP
 
 * The upgrade of a single node system takes the system offline for up to 25 minutes, during which I/O is interrupted.
 
-* Upgrading an HA pair is nondisruptive and I/O is uninterrupted. During this nondisruptive upgrade process, each node is upgraded in tandem to continue serving I/O to clients.
+* Upgrading an HA pair is non-disruptive and I/O is uninterrupted. During this non-disruptive upgrade process, each node is upgraded in tandem to continue serving I/O to clients.
 
 === c4, m4, and r4 instances no longer supported
 
