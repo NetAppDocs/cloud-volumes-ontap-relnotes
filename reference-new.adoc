@@ -18,8 +18,8 @@ Cloud Volumes ONTAP 9.16.1 includes new enhancements.
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
 
-== 9.16.1 GA (4 March 2025)
-The Cloud Volumes ONTAP 9.16.1 General Availability release is now available for deployment in only Azure and Google Cloud. However, this version is available for upgrade in all cloud providers, AWS, Azure, and Google Cloud.
+== 9.16.1 GA (6 March 2025)
+You can now use the Cloud Volumes ONTAP 9.16.1 General Availability release for deployment and upgrade in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS.
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
 
@@ -35,8 +35,10 @@ Upgrades of Cloud Volumes ONTAP must be completed from BlueXP. You should not up
 link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when BlueXP notifies you^].
 
 === Supported upgrade path
+You can upgrade to Cloud Volumes ONTAP 9.16.1 GA from the 9.15.1 release in Azure and Google Cloud. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
-You can upgrade to Cloud Volumes ONTAP 9.16.1 from the 9.15.1 release. BlueXP will prompt you to upgrade the eligible Cloud Volumes ONTAP systems to this release.
+[NOTE]
+For AWS you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTAP 9.16.1 GA is not supported in AWS.
 
 //Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. Connector version removed as per code separation verification from engg: MM
 
