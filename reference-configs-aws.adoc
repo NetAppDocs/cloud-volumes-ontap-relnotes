@@ -5,7 +5,7 @@ keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maxim
 summary: Several Cloud Volumes ONTAP configurations are supported in AWS.
 ---
 
-= Supported configurations in AWS
+= Supported configurations for Cloud Volumes ONTAP in AWS
 :hardbreaks:
 :nofooter:
 :icons: font
