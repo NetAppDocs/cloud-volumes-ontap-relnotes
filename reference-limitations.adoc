@@ -5,7 +5,7 @@ keywords: limitations, detaching, snapmanager, features, disks, aggregates, feat
 summary: Known limitations identify platforms, devices, or functions that are not supported by this release of the product, or that do not interoperate correctly with it. Review these limitations carefully.
 ---
 
-= Limitations in all cloud providers
+= Known limitations for Cloud Volumes ONTAP in all cloud providers
 :hardbreaks:
 :nofooter:
 :icons: font

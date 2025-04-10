@@ -5,7 +5,7 @@ keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider,
 summary: These known limitations are specific to Cloud Volumes ONTAP in Microsoft Azure.
 ---
 
-= Known limitations in Azure
+= Known limitations for Cloud Volumes ONTAP in Azure
 :hardbreaks:
 :nofooter:
 :icons: font
