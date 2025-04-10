@@ -5,7 +5,7 @@ keywords: limits, maximum, storage, aggregates, disks, volumes, capacity, luns, 
 summary: Cloud Volumes ONTAP has storage configuration limits in Azure to provide reliable operations. For best performance, do not configure your system at the maximum values.
 ---
 
-= Storage limits in Azure
+= Storage limits for Cloud Volumes ONTAP in Azure
 :hardbreaks:
 :nofooter:
 :icons: font

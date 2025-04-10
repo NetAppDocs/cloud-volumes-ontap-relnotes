@@ -5,7 +5,7 @@ keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maxim
 summary: Several Cloud Volumes ONTAP configurations are supported in AWS.
 ---
 
-= Supported configurations in AWS
+= Supported configurations for Cloud Volumes ONTAP in AWS
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -63,7 +63,7 @@ Notes:
 
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
 
-. AWS Local Zones only support the General Purpose SSD (gp2) disk type.
+. Cloud Volumes ONTAP configurations in AWS Local Zones only support the General Purpose SSD (gp2) disk type.
 
 
 --
@@ -100,7 +100,7 @@ Notes:
 
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
 
-. AWS Local Zones only support the General Purpose SSD (gp2) disk type. 
+. Cloud Volumes ONTAP configurations in AWS Local Zones only support the General Purpose SSD (gp2) disk type. 
 
 --
 ====

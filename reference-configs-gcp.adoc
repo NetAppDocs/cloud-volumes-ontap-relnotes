@@ -5,7 +5,7 @@ keywords: google, gcp, google cloud platform, explore, standard, premium, byol, 
 summary: Several Cloud Volumes ONTAP configurations are supported in Google Cloud.
 ---
 
-= Supported configurations in Google Cloud
+= Supported configurations for Cloud Volumes ONTAP in Google Cloud
 :hardbreaks:
 :nofooter:
 :icons: font

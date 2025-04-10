@@ -5,7 +5,7 @@ keywords: maintenance event, azure maintenance event, cloud provider, issues, su
 summary: This page describes how NetApp works with cloud providers to resolve issues that might arise.
 ---
 
-= Cloud provider integrations
+= Collaboration with cloud providers for Cloud Volumes ONTAP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +13,7 @@ summary: This page describes how NetApp works with cloud providers to resolve is
 :imagesdir: ./media/
 
 [.lead]
-This page describes how NetApp works with cloud providers to resolve issues that might arise.
+Learn how NetApp collaborates with cloud providers to address potential issues.
 
 == Collaborative support best practices
 

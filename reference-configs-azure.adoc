@@ -5,7 +5,7 @@ keywords: vm, explore, standard, premium, byol, capacity, maximum, virtual machi
 summary: Several Cloud Volumes ONTAP configurations are supported in Azure.
 ---
 
-= Supported configurations in Azure
+= Supported configurations for Cloud Volumes ONTAP in Azure
 :hardbreaks:
 :nofooter:
 :icons: font

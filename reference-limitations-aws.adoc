@@ -5,7 +5,7 @@ keywords: limitations, aws, amazon web services, flashe cache, alarms, cloudwatc
 summary: These known limitations are specific to Cloud Volumes ONTAP in Amazon Web Services.
 ---
 
-= Known limitations in AWS
+= Known limitations for Cloud Volumes ONTAP in AWS
 :hardbreaks:
 :nofooter:
 :icons: font
