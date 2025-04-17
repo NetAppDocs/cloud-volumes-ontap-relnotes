@@ -18,6 +18,16 @@ Cloud Volumes ONTAP 9.16.1 includes new enhancements.
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
 
+== 9.16.1 P2 (17 April 2025)
+The 9.16.1 P2 patch can now be deployed and upgraded for Cloud Volumes ONTAP in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS. BlueXP will prompt you to upgrade your existing systems to this patch release.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P2[View the list of bugs fixed in the P2 patch^] (NetApp Support Site login required).
+
+== 9.16.1 P1 (17 April 2025)
+The 9.16.1 P1 patch can now be deployed and upgraded for Cloud Volumes ONTAP in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS. BlueXP will prompt you to upgrade your existing systems to this patch release.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P1[View the list of bugs fixed in the P1 patch^] (NetApp Support Site login required).
+
 == 9.16.1 GA (6 March 2025)
 You can now use the Cloud Volumes ONTAP 9.16.1 General Availability release for deployment and upgrade in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS.
 
