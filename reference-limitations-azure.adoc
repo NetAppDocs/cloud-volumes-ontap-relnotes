@@ -30,7 +30,7 @@ High-availability (HA) pairs aren't supported in some regions.
 https://bluexp.netapp.com/cloud-volumes-global-regions[View the list of supported Azure regions^].
 
 == Limitations with HA deployments in single availability zones
-Beginning with Cloud Volumes ONTAP 9.15.1, the deployment of virtual machine (VM) instances in HA mode in single availability zones (AZs) is possible in Azure. For information about the criteria supporting this feature, refer to link:reference-new.html#deploy-ha-pairs-in-single-availability-zones-in-azure[Deploy HA pairs in single availability zones in Azure^].
+Beginning with Cloud Volumes ONTAP 9.15.1, the deployment of virtual machine (VM) instances in HA mode in single availability zones (AZs) is possible in Azure. For information about the criteria supporting this feature, refer to https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure[Deploy HA pairs in single availability zones in Azure^].
 
 If the Cloud Volumes ONTAP version is earlier than 9.15.1 or if any of these conditions are not met, the previous deployment model utilizing availability sets becomes effective. This applies to only HA configurations.
 
