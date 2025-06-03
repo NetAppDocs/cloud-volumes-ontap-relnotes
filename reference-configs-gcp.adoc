@@ -162,6 +162,11 @@ NOTE: _Flash cache_, high write mode, and an MTU of 8,896 are feature-dependent 
 --
 ====
 
+For more information about specific machine types, refer to the Google Cloud documentation:
+
+* https://cloud.google.com/compute/docs/general-purpose-machines#n1_machines[n1 series general-purpose machine types^]
+* https://cloud.google.com/compute/docs/general-purpose-machines#n2_series[N2 series general-purpose machine types^]
+
 == Supported disk sizes
 
 In Google Cloud, an aggregate can contain up to 6 disks that are all the same type and size. The following disk sizes are supported:
@@ -178,3 +183,5 @@ In Google Cloud, an aggregate can contain up to 6 disks that are all the same ty
 == Supported regions
 
 For Google Cloud region support, see https://bluexp.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+
+//BLUEXPDOC-322

@@ -18,7 +18,10 @@ Cloud Volumes ONTAP 9.16.1 includes new enhancements.
 Additional features and enhancements are also introduced in the latest versions of BlueXP. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[BlueXP Release Notes^] for details.
 
 //== 9.16.1 P4 ( 2025)
-//The 9.16.1 P4 patch can now be deployed and upgraded for Cloud Volumes ONTAP in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS. BlueXP will prompt you to upgrade your existing systems to this patch release.
+//The 9.16.1 P4 patch can now be deployed and upgraded for Cloud Volumes ONTAP in AWS, Azure, and Google Cloud. BlueXP will prompt you to upgrade your existing systems to this patch release. 
+
+//[NOTE]
+//Cloud Volumes ONTAP 9.16.1 in AWS is available in this and later patch versions only, not the earlier ones.
 
 //link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P4[View the list of bugs fixed in the P4 patch^] (NetApp Support Site login required).
 
@@ -68,10 +71,3 @@ For AWS, you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTA
 
 * Upgrading an HA pair is non-disruptive and I/O is uninterrupted. During this non-disruptive upgrade process, each node is upgraded in tandem to continue serving I/O to clients.
 
-=== c4, m4, and r4 instances no longer supported
-
-In AWS, the c4, m4, and r4 EC2 instance types are no longer supported with Cloud Volumes ONTAP. If you have an existing system that's running on a c4, m4, or r4 instance type, you must change to an instance type in the c5, m5, or r5 instance family. You can't upgrade to this release until you change the instance type.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html[Learn how to change the EC2 instance type for Cloud Volumes ONTAP^].
-
-Refer to link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html[NetApp Support^] to learn more about the end of availability and support for these instance types. 
