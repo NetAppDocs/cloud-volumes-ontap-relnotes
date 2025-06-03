@@ -247,7 +247,12 @@ Cloud Volumes ONTAP no longer supports the c4, m4, and r4 EC2 instance types in 
 
 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html[Learn how to change the EC2 instance type for Cloud Volumes ONTAP^].
 
-Refer to link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html[NetApp Support^] to learn more about the end of availability and support for these instance types. 
+For more information, refer to:
+
+* https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Converting_an_AWS_Xen_CVO_instance_to_Nitro_KVM[Knowledge base (KB) article: Converting an AWS Xen CVO instance to Nitro KVM^]
+* https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Unable_to_change_the_instance_type_from_r4_to_r5_with_disk_count_error[KB article: Unable to change the instance type from r4 to r5 with disk count error^]
+* link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html[Learn more about the end of availability and support for these instance types^] 
+
 
 == Supported regions
 
