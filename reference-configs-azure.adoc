@@ -23,11 +23,13 @@ Upgrading a single node system to an HA pair is not supported. If you want to sw
 
 Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported.
 
+For supported instances specifications, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview[Microsoft Azure documentation^].
+
 === Single node systems
 
 You can choose from the following capacity-based or node-based licensing configurations when deploying Cloud Volumes ONTAP as a single-node system in Azure. 
 
-Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported.
+Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported. 
 
 [role="tabbed-block"]
 ====
@@ -131,7 +133,7 @@ Similarly, when you deploy a new Cloud Volumes ONTAP system, you can't change th
 +
 Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won't be able to change to a VM type that uses an Ultra SSD for VNVRAM. For example, you can't change from E8s_v3 to E8ds_v4.
 
-. ^4^ High write speed is supported with all instance types when using a single node system. You can enable high write speed from BlueXP during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^]. Enhanced write performance is enabled when using SSDs.
+. ^4^ For information about the supported disk types in single node deployments, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node[Azure (single node)^]. High write speed is supported with all instance types when using a single node system. You can enable high write speed from BlueXP during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^]. Enhanced write performance is enabled when using SSDs.
 
 --
 
@@ -431,7 +433,7 @@ a|
 * L48s_v3 ^1,3,5^
 * L64s_v3 ^1,3,5^
 
-| Supported disk types 3+| Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, and Premium SSD v2 Managed Disks.
+| Supported disk types ^6^ 3+| Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, and Premium SSD v2 Managed Disks.
 
 
 |===
@@ -447,6 +449,7 @@ Notes:
 . Multiple availability zone support starts from ONTAP version 9.14.1 RC1.  
 
 . This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
+. For information about the supported disk types for HA deployments single and multiple availability zones, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair[Azure (HA pair)^].
 
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
@@ -583,3 +586,5 @@ HA pairs use Azure Managed Disks. The following disk type and sizes are supporte
 == Supported regions
 
 For Azure region support, see https://bluexp.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+
+//BLUEXPDOC-322, https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/issues/147
