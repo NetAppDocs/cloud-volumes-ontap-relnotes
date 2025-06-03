@@ -23,6 +23,8 @@ Upgrading a single node system to an HA pair is not supported. If you want to sw
 
 Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported.
 
+For supported instances specifications, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview[Microsoft Azure documentation^].
+
 === Single node systems
 
 You can choose from the following capacity-based or node-based licensing configurations when deploying Cloud Volumes ONTAP as a single-node system in Azure. 
@@ -583,3 +585,5 @@ HA pairs use Azure Managed Disks. The following disk type and sizes are supporte
 == Supported regions
 
 For Azure region support, see https://bluexp.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+
+//BLUEXPDOC-322
