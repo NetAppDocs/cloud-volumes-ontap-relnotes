@@ -40,7 +40,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 |===
 |
 | Freemium 
-| Optimized
+| Optimized ^5^ 
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
@@ -134,6 +134,7 @@ Similarly, when you deploy a new Cloud Volumes ONTAP system, you can't change th
 Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won't be able to change to a VM type that uses an Ultra SSD for VNVRAM. For example, you can't change from E8s_v3 to E8ds_v4.
 
 . ^4^ For information about the supported disk types in single node deployments, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node[Azure (single node)^]. High write speed is supported with all instance types when using a single node system. You can enable high write speed from BlueXP during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^]. Enhanced write performance is enabled when using SSDs.
+. ^5^ Beginning on July 1, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure and Google Cloud marketplaces for pay-as-you-go (PAYGO) subscriptions. For information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new in Cloud Volumes ONTAP^].
 
 --
 
@@ -248,7 +249,7 @@ NOTE: Azure page blobs are not supported for any new deployment.
 |===
 |
 | Freemium 
-| Optimized
+| Optimized ^4^
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
@@ -310,6 +311,7 @@ Notes:
 . This VM is recommended only when Azure maintenance control is needed. It's not recommended for any other use case due to the higher pricing.
 
 . These VMs are only supported in deployments of Cloud Volumes ONTAP 9.11.1 or earlier. With these VM types you can upgrade an existing page blob deployment from Cloud Volumes ONTAP 9.11.1 to 9.12.1. You cannot perform new page blob deployments with Cloud Volumes ONTAP 9.12.1 or above. 
+. Beginning on July 1, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure and Google Cloud marketplaces for pay-as-you-go (PAYGO) subscriptions. For information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new in Cloud Volumes ONTAP^].
 
 --
 
@@ -391,7 +393,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 |===
 |
 | Freemium 
-| Optimized
+| Optimized ^7^
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
@@ -409,6 +411,7 @@ a|
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+* ##L8s_v3 ^1,3,5^##
 * L16s_v3 ^1,3,5^
 * L32s_v3 ^1,3,5^
 * L48s_v3 ^1,3,5^
@@ -428,6 +431,7 @@ a|
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+##L8s_v3 ^1,3,5^##
 * L16s_v3 ^1,3,5^
 * L32s_v3 ^1,3,5^
 * L48s_v3 ^1,3,5^
@@ -450,6 +454,7 @@ Notes:
 
 . This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 . For information about the supported disk types for HA deployments single and multiple availability zones, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair[Azure (HA pair)^].
+. ##Beginning on July 1, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure and Google Cloud marketplaces for pay-as-you-go (PAYGO) subscriptions. For information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new in Cloud Volumes ONTAP^].##
 
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
