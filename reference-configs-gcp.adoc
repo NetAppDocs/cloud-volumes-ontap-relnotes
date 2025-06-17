@@ -32,7 +32,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 |===
 |
 | Freemium 
-| Optimized
+| Optimized ^4^
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
@@ -90,6 +90,7 @@ Beginning with Cloud Volumes ONTAP 9.13.0, _Flash Cache_, high write speed, and 
 You can enable _Flash Cache_, and high write speed when deploying an eligible instance type. To enable the higher maximum transmission unit of 8,896 bytes, you must chose VPC-1, VPC-2, or VPC-3 for the deployment. The higher MTU enables higher network throughput. For more information on launching one of these deployments, see https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html#launching-an-ha-pair-in-google-cloud[Launching an HA pair in Google Cloud].
 
 NOTE: _Flash cache_, high write mode, and an MTU of 8,896 are feature-dependent and cannot be disabled individually within a configured instance. 
+. ^4^ Beginning on July 1, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Google Cloud marketplace for pay-as-you-go (PAYGO) subscriptions. For information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new in Cloud Volumes ONTAP^].
 
 --
 
