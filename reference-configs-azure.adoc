@@ -472,6 +472,7 @@ Notes:
 a|
 * E8ds_v4 ^4^
 * E8ds_v5 
+* L8s_v3 ^4,5^
 
 a|
 * E32ds_v4 ^1,4^
