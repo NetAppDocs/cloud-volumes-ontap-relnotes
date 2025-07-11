@@ -1,6 +1,5 @@
 settings:
   name: Cloud Volumes ONTAP release notes
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
