@@ -16,7 +16,7 @@ summary: These known limitations are specific to Cloud Volumes ONTAP in Microsof
 The following known limitations are specific to Cloud Volumes ONTAP in Microsoft Azure. Be sure to also review link:reference-limitations.html[Limitations for Cloud Volumes ONTAP in all cloud providers].
 
 == Limitations with using Azure VM extensions
-Cloud Volumes ONTAP does not support Azure virtual machine (VM) extensions because they impact BlueXP management operations. If VM extensions are installed on your clusters, Cloud Volumes ONTAP disables them during deployment. If you have installed these extensions on your existing Cloud Volumes ONTAP VMs (enabled or disabled), NetApp strongly recommends contacting Microsoft Azure Support to remove them.
+Cloud Volumes ONTAP does not support Azure virtual machine (VM) extensions because they affect BlueXP management operations. During deployment, BlueXP prevents the installation of any extensions on your VMs. If extensions are already installed on your existing Cloud Volumes ONTAP VMs, NetApp strongly recommends that you contact Microsoft Azure Support to remove them.
  
 Starting July 14, 2025, NetApp will notify you in BlueXP and send emails if VM extensions are detected on your Cloud Volumes ONTAP VMs.
 
