@@ -1,11 +1,10 @@
 settings:
   name: Cloud Volumes ONTAP release notes
-  platform: cloud
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
-    harmony_enabled: true
+    harmony_enabled: true    
   versions:
     - version-number: "9.16.1"
       url: /cloud-volumes-ontap-relnotes
