@@ -16,7 +16,9 @@ summary: These known limitations are specific to Cloud Volumes ONTAP in Microsof
 The following known limitations are specific to Cloud Volumes ONTAP in Microsoft Azure. Be sure to also review link:reference-limitations.html[Limitations for Cloud Volumes ONTAP in all cloud providers].
 
 == Limitations with using Azure VM extensions
-Cloud Volumes ONTAP does not support Azure virtual machine (VM) extensions because they delay operations. After deploying Cloud Volumes ONTAP, BlueXP periodically disables VM extensions. If you have installed these extensions in your working environment, contact Microsoft Azure Support to disable or delete them.
+Cloud Volumes ONTAP does not support Azure virtual machine (VM) extensions because they impact BlueXP management operations. If VM extensions are installed on your clusters, Cloud Volumes ONTAP disables them during deployment. If you have installed these extensions on your existing Cloud Volumes ONTAP VMs (enabled or disabled), NetApp strongly recommends contacting Microsoft Azure Support to remove them.
+ 
+Starting July 14, 2025, NetApp will notify you in BlueXP and send emails if VM extensions are detected on your Cloud Volumes ONTAP VMs.
 
 == Flash Cache limitations
 Cloud Volumes ONTAP uses the local NVMe storage in some VM types as _Flash Cache_. Note this limitation:
