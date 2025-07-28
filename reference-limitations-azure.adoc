@@ -36,4 +36,6 @@ Beginning with Cloud Volumes ONTAP 9.15.1, you can deploy virtual machine (VM) i
 
 If the Cloud Volumes ONTAP version is earlier than 9.15.1 or if any of these conditions are not met, the previous deployment model utilizing availability sets becomes effective. This applies to only HA configurations.
 
+
+
 //https://jira.ngage.netapp.com/browse/BLUEXPDOC-373 
