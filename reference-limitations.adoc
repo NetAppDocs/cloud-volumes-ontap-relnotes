@@ -40,8 +40,9 @@ Enabling multi-admin verification on Cloud Volumes ONTAP will result in an unsup
 * SnapLock Compliance and Enterprise modes (only Cloud WORM is supported)
 * SnapMirror Synchronous
 * VLANs
-* SMB Continuous Availability (CA) is not supported in Cloud Volumes ONTAP. You can't create continuously available SMB shares for nondisruptive operations. For information about continuously available SMB shares, refer to the https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares[KB: What are SMB Continuous Availability (CA) Shares?^]
-  
+* SMB Continuous Availability (CA)
++
+https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares[Continuously available SMB shares^] for nondisruptive operations are not supported.
 
 == Maximum concurrent replication operations
 
