@@ -32,5 +32,5 @@ When the maintenance window is announced, the partner node of the targeted node 
 CIFS/SMB clients that use Cloud Volumes ONTAP non-continuously available CIFS shares will experience a loss of session both when a takeover occurs, and when the aggregate that the session is using is given back to the aggregate's home node. This is a limitation imposed by the CIFS/SMB protocol itself. Customers may wish to use third-party products to avoid issues that may arise from takeover and giveback. For further assistance, contact NetApp Support.
 
 [NOTE]
-SMB Continuous Availability (CA) feature is not supported in Cloud Volumes ONTAP.
+You can't create continuously available SMB shares for nondisruptive operations in Cloud Volumes ONTAP.
 

@@ -36,8 +36,6 @@ Beginning with Cloud Volumes ONTAP 9.15.1, you can deploy virtual machine (VM) i
 
 If the Cloud Volumes ONTAP version is earlier than 9.15.1 or if any of these conditions are not met, the previous deployment model utilizing availability sets becomes effective. This applies to only HA configurations.
 
-== Limitations with SMB shares
 
-SMB Continuous Availability (CA) feature is not supported in Cloud Volumes ONTAP. For information about SMB CA shares, refer to https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares[What are SMB Continuous Availability (CA) Shares?]
 
 //https://jira.ngage.netapp.com/browse/BLUEXPDOC-373 
