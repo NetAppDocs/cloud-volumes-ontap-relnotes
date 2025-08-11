@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: reference-provider-integrations.html
-keywords: maintenance event, azure maintenance event, cloud provider, issues, support
+keywords: maintenance event, azure maintenance event, cloud provider, issues, support, SMB CA in CVO
 summary: This page describes how NetApp works with cloud providers to resolve issues that might arise.
 ---
 
@@ -29,4 +29,8 @@ Special handling of the maintenance events is supported for Cloud Volumes ONTAP 
 
 When the maintenance window is announced, the partner node of the targeted node will perform a takeover. When the maintenance is complete, a giveback will be initiated. After the giveback, the HA pair is expected to return to a healthy state. If this doesn't occur, contact NetApp Support for assistance. Note that maintenance events are targeted at one of the VMs in an HA pair at a time, and typically both nodes are targeted in a relatively short period of time.
 
-CIFS/SMB clients that use Cloud Volumes ONTAP non-continuously available CIFS shares will experience a loss of session both when a takeover occurs, and when the aggregate that the session is using is given back to the aggregate's home node. This is a limitation imposed by the CIFS/SMB protocol itself. Customers may wish to use third-party products to avoid issues that may arise from takeover and giveback. For further assistance, contact NetApp Support.
+CIFS/SMB clients that use Cloud Volumes ONTAP non-continuously available CIFS shares will experience a loss of session both when a takeover occurs, and when the aggregate that the session is using is given back to the aggregate's home node. This is a limitation imposed by the CIFS/SMB protocol itself. You can use approved third-party products to avoid issues resulting from takeover and giveback. For further assistance, contact NetApp Support.
+
+[NOTE]
+https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares[Continuously available SMB shares^] for nondisruptive operations are not supported in Cloud Volumes ONTAP.
+

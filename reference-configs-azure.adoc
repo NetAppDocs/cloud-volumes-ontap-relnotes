@@ -40,7 +40,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 |===
 |
 | Freemium 
-| Optimized ^5^ 
+| Optimized 
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
@@ -249,7 +249,7 @@ NOTE: Azure page blobs are not supported for any new deployment.
 |===
 |
 | Freemium 
-| Optimized ^4^
+| Optimized 
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
@@ -393,7 +393,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 |===
 |
 | Freemium 
-| Optimized ^7^
+| Optimized 
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
@@ -411,6 +411,7 @@ a|
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+* L8s_v3 ^1,3,5^
 * L16s_v3 ^1,3,5^
 * L32s_v3 ^1,3,5^
 * L48s_v3 ^1,3,5^
@@ -430,6 +431,7 @@ a|
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+* L8s_v3 ^1,3,5^
 * L16s_v3 ^1,3,5^
 * L32s_v3 ^1,3,5^
 * L48s_v3 ^1,3,5^
@@ -473,6 +475,7 @@ Notes:
 a|
 * E8ds_v4 ^4^
 * E8ds_v5 
+* L8s_v3 ^4,5^
 
 a|
 * E32ds_v4 ^1,4^
