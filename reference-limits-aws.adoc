@@ -33,7 +33,10 @@ For some configurations, disk limits prevent you from reaching the capacity limi
 | PAYGO Standard | 10 TiB
 | PAYGO Premium | 368 TiB
 | Node-based license | 2 PiB (requires multiple licenses)
-| Capacity-based license | 2 PiB
+a| Capacity-based license a| include::_include/capacity-limit.adoc[] 
+Refer to the https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html[AWS documentation^] for more information.
+
+
 
 |===
 

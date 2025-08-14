@@ -31,7 +31,8 @@ NetApp doesn't support exceeding the system capacity limit. If you reach the lic
 | PAYGO Standard | 10 TiB
 | PAYGO Premium | 368 TiB
 | Node-based license | 2 PiB (requires multiple licenses)
-| Capacity-based license | 2 PiB
+| Capacity-based license a| include::_include/capacity-limit.adoc[]
+For more information, refer to the https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account[Azure documentation for managed disks^] and https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets[Azure documentation for blob storage^].
 
 |===
 

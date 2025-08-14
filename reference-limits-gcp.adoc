@@ -33,7 +33,8 @@ For some configurations, disk limits prevent you from reaching the capacity limi
 | PAYGO Standard | 10 TB
 | PAYGO Premium | 368 TB
 | Node-based license | 2 PiB (requires multiple licenses)
-| Capacity-based license | 2 PiB
+| Capacity-based license a| include::_include/capacity-limit.adoc[] 
+Refer to the https://cloud.google.com/storage/docs/buckets[Google Cloud documentation^] for more information.
 
 |===
 
