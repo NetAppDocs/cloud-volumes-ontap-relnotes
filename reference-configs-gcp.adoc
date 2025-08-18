@@ -36,7 +36,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
+(disks + object storage) | 500 GiB 2+a| include::_include/capacity-limit.adoc[]  
 
 | Supported machine types ^1^
 
