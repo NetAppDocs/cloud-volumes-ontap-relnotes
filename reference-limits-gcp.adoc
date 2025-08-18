@@ -23,6 +23,13 @@ NetApp doesn't support exceeding the system capacity limit. If you reach the lic
 
 For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. You can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. Refer to the disk limits below for more details.
 
+[[cap-license-gcp]]
+.Capacity limit for capacity-based licenses
+include::_include/capacity-limit.adoc[]
+Refer to the https://cloud.google.com/storage/docs/buckets[Google Cloud documentation^] for more information.
+
+.Capacity limits for other license types
+
 [cols="25,75",width=65%,options="header"]
 |===
 | License
@@ -33,8 +40,6 @@ For some configurations, disk limits prevent you from reaching the capacity limi
 | PAYGO Standard | 10 TB
 | PAYGO Premium | 368 TB
 | Node-based license | 2 PiB (requires multiple licenses)
-| Capacity-based license a| include::_include/capacity-limit.adoc[] 
-Refer to the https://cloud.google.com/storage/docs/buckets[Google Cloud documentation^] for more information.
 
 |===
 
@@ -44,7 +49,8 @@ The capacity limit is for the entire HA pair. It is not per node. For example, i
 
 .For an HA pair, does mirrored data count against the licensed capacity limit?
 
-No, it doesn't. Data in an HA pair is synchronously mirrored between the nodes so that the data is available in the event of failure in Google Cloud. For example, if you purchase an 8 TB disk on node A, BlueXP also allocates an 8 TB disk on node B that is used for mirrored data. While 16 TB of capacity was provisioned, only 8 TB counts against the license limit.
+No, it doesn't. Data in an HA pair is synchronously mirrored between the nodes so that the data is available in the event of failure in Google Cloud. For example, if you purchase an 8 TB disk on node A, BlueXP also allocates an 8 TB disk on node B that is used for mirrored data. While 16 TB of capacity is set up, only 8 TB counts against the license limit.
+
 
 == Aggregate limits
 
@@ -67,7 +73,7 @@ Notes:
 
 . The maximum number of data aggregates doesn't include the root aggregate.
 
-. The aggregate capacity limit is based on the disks that comprise the aggregate. The limit does not include object storage used for data tiering.
+. The disks that comprise the aggregate determine the aggregate capacity limit. This limit does not include object storage used for data tiering.
 
 . All disks in an aggregate must be the same size.
 
@@ -95,7 +101,7 @@ The table below shows the maximum system capacity with disks alone, and with dis
 
 Some configurations enable you to create additional storage VMs (SVMs) for Cloud Volumes ONTAP.
 
-These are the tested limits. While it is theoretically possible to configure additional storage VMs, it's not supported.
+These are the tested limits. Configuring more storage VMs is not supported.
 
 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.html[Learn how to create additional storage VMs^].
 
@@ -123,7 +129,7 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-gcp.
 
 . For capacity-based licensing, there are no extra licensing costs for additional storage VMs, but there is a 4 TiB minimum capacity charge per storage VM. For example, if you create two storage VMs and each has 2 TiB of provisioned capacity, you'll be charged a total of 8 TiB.
 
-. For node-based BYOL, an add-on license is required for each additional _data-serving_ storage VM beyond the first storage VM that comes with Cloud Volumes ONTAP by default. Contact your account team to obtain a storage VM add-on license.
+. For node-based BYOL, an add-on license is required for each additional _data-serving_ storage VM beyond the first storage VM that comes with Cloud Volumes ONTAP by default. Contact your account team to get a storage VM add-on license.
 +
 Storage VMs that you configure for disaster recovery (DR) don't require an add-on license (they are free of charge), but they do count against the storage VM limit. For example, if you have 12 data-serving storage VMs and 12 storage VMs configured for disaster recovery, then you've reached the limit and can't create any additional storage VMs.
 
