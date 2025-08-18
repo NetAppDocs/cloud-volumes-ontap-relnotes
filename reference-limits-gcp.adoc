@@ -28,7 +28,7 @@ For some configurations, disk limits prevent you from reaching the capacity limi
 include::_include/capacity-limit.adoc[]
 Refer to the https://cloud.google.com/storage/docs/buckets[Google Cloud documentation^] for more information.
 
-.Capacity limits for other license types
+Capacity limits for other license types::
 
 [cols="25,75",width=65%,options="header"]
 |===
