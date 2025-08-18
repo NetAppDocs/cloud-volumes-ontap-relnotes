@@ -34,7 +34,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 [role="tabbed-block"]
 ====
 
-.Capacity-based licenses
+.##Capacity-based licenses##
 --
 [cols=4*,cols="h,d,d,d",options="header"]
 |===
@@ -244,7 +244,7 @@ NOTE: Azure page blobs are not supported for any new deployment.
 
 [role="tabbed-block"]
 ====
-.Capacity-based licenses
+.##Capacity-based licenses##
 --
 [cols=4*,cols="h,d,d,d",options="header"]
 |===
@@ -388,7 +388,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 
 [role="tabbed-block"]
 ====
-.Capacity-based licenses
+.##Capacity-based licenses##
 --
 [cols=4*,cols="h,d,d,d",options="header"]
 |===
@@ -398,7 +398,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB 2+a| include::_include/capacity-limit.adoc[]  
+(disks + object storage) | 500 GiB 2+a| include::_include/capacity-limit.adoc[]
 
 | Supported virtual machine types
 

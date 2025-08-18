@@ -24,11 +24,11 @@ NetApp doesn't support exceeding the system capacity limit. If you reach the lic
 For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. You can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. Refer to the disk limits below for more details.
 
 [[cap-license-gcp]]
-.Capacity limit for capacity-based licenses
+##.Capacity limit for capacity-based licenses##
 include::_include/capacity-limit.adoc[]
 Refer to the https://cloud.google.com/storage/docs/buckets[Google Cloud documentation^] for more information.
 
-Capacity limits for other license types::
+##Capacity limits for other license types::##
 
 [cols="25,75",width=65%,options="header"]
 |===
