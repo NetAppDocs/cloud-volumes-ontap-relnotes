@@ -26,7 +26,7 @@ NetApp doesn't support exceeding the system capacity limit. If you reach the lic
 include::_include/capacity-limit.adoc[]
 Refer to the https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account[Azure documentation for managed disks^] and https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets[Azure documentation for blob storage^].
 
-##Capacity limits for other license types::##
+Capacity limits for other license types::
 
 [cols="25,75",width=65%,options="header"]
 |===
@@ -93,7 +93,7 @@ The limits do not include the root disk, core disk, and VNVRAM.
 === Limits for different deployment modes of capacity-based licensing
 The following disk limits apply to Cloud Volumes ONTAP systems using a capacity-based licensing package. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html[Learn about Cloud Volumes ONTAP licensing options^]. 
 
-##[NOTE]##
+[NOTE]
 For maximum system capacity and data tiering capacity limits for single node, HA pairs in a single availability zone with page blobs, and HA pairs in a single and multiple availability zones with shared managed disks, refer to <<cap-license-azure>>.
 
 ==== Single node

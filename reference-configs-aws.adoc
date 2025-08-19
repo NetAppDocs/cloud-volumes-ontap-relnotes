@@ -58,7 +58,7 @@ Notes:
 . For an HA pair, the capacity limit is for the entire HA pair. It's not per node. For example, if you use the Premium license, you can have up to 368 TiB of capacity between both nodes.
 
 . For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. In those cases, you can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. For information about disk limits, refer to link:reference-limits-aws.html[storage limits].
-+##Review##
++
 include::_include/capacity-limit.adoc[]
 
 . Enhanced write performance is enabled when using SSDs with all Cloud Volumes ONTAP configurations.

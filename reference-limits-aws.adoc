@@ -24,11 +24,11 @@ NetApp doesn't support exceeding the system capacity limit. If you reach the lic
 For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. In those cases, you can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. Refer to capacity and disk limits below for more details.
 
 [[cap-license-aws]]
-##.Capacity limit for capacity-based licenses##
+.Capacity limit for capacity-based licenses
 include::_include/capacity-limit.adoc[]
 Refer to the https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html[AWS documentation^] for more information.
 
-##Capacity limits for other license types::##
+Capacity limits for other license types::
 [cols="25,75",width=65%,options="header"]
 |===
 | License
@@ -97,14 +97,14 @@ The limits do not include the boot disk and root disk.
 
 * Cloud Volumes ONTAP uses EBS volumes as disks, with a maximum disk size of 16 TiB.
 
-=== ##Limits for different deployment modes of capacity-based licensing##
+=== Limits for different deployment modes of capacity-based licensing
 
 The following disk limits apply to Cloud Volumes ONTAP systems that use a capacity-based licensing package. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html[Learn about Cloud Volumes ONTAP licensing options^]
 
-##[NOTE]##
+[NOTE]
 For maximum system capacity and data tiering capacity limits for single node and HA pairs configurations, refer to <<cap-license-aws>>.
 
-==== ##Single node##
+==== Single node
 
 [cols="18,18,32,width=100%,options="header"]
 |===
@@ -121,7 +121,7 @@ a|
 
 . This instance type has more local NVMe disks than other instance types, which means a smaller number of data disks are supported.
 
-==== ##HA pairs##
+==== HA pairs
 
 [cols="18,18,32,width=100%,options="header"]
 |===
