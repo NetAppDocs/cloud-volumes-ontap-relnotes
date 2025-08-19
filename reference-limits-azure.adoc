@@ -98,12 +98,11 @@ For maximum system capacity and data tiering capacity limits for single node, HA
 
 ==== Single node
 
-[cols="14,20,31,33",width=68%,options="header"]
+[cols="14,20,31",width=68%,options="header"]
 |===
 | VM size
 | Max data disks per node
 | Max system capacity with disks alone
-
 
 | DS4_v2 | 29 | 896 TiB 
 | DS5_v2 | 61 | 896 TiB 
@@ -135,7 +134,7 @@ For maximum system capacity and data tiering capacity limits for single node, HA
 |===
 
 ==== HA pairs in a single availability zone with page blobs
-[cols="14,20,31,33",width=68%,options="header"]
+[cols="14,20,31",width=68%,options="header"]
 |===
 | VM size
 | Max data disks for an HA pair
@@ -158,7 +157,7 @@ For maximum system capacity and data tiering capacity limits for single node, HA
 
 ==== HA pairs in a single availability zone with shared managed disks
 
-[cols="14,20,31,33",width=68%,options="header"]
+[cols="14,20,31",width=68%,options="header"]
 |===
 | VM size
 | Max data disks for an HA pair
@@ -182,7 +181,7 @@ For maximum system capacity and data tiering capacity limits for single node, HA
 
 ==== HA pairs in multiple availability zones with shared managed disks
 
-[cols="14,20,31,33",width=68%,options="header"]
+[cols="14,20,31",width=68%,options="header"]
 |===
 | VM size
 | Max data disks for an HA pair
