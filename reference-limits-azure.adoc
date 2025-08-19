@@ -22,7 +22,7 @@ The maximum system capacity for a Cloud Volumes ONTAP system is determined by it
 NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, BlueXP displays an action required message and blocks you from adding more disks.
 
 [[cap-license-azure]]
-##.Capacity limit for capacity-based licenses##
+.Capacity limit for capacity-based licenses
 include::_include/capacity-limit.adoc[]
 Refer to the https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account[Azure documentation for managed disks^] and https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets[Azure documentation for blob storage^].
 
