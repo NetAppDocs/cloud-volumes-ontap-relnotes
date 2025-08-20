@@ -102,7 +102,7 @@ The limits do not include the boot disk and root disk.
 The following disk limits apply to Cloud Volumes ONTAP systems that use a capacity-based licensing package. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html[Learn about Cloud Volumes ONTAP licensing options^]
 
 [NOTE]
-For maximum system capacity and data tiering capacity limits for single node and HA pairs configurations, refer to <<cap-license-aws>>.
+For maximum system capacity and data tiering capacity limits for single node and HA configurations, refer to <<cap-license-aws>>.
 
 ==== Single node
 
