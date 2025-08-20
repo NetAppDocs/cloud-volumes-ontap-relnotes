@@ -44,7 +44,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
+(disks + object storage) | 500 GiB 2+a| include::_include/capacity-limit.adoc[] 
 
 | Supported virtual machine types
 
@@ -135,6 +135,7 @@ Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won
 +
 . ^4^ For information about the supported disk types in single node deployments, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node[Azure (single node)^]. High write speed is supported with all instance types when using a single node system. You can enable high write speed from BlueXP during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^]. Enhanced write performance is enabled when using SSDs.
 . ^5^ Beginning on August 11, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure marketplace for pay-as-you-go (PAYGO) subscriptions. For more information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025[End of availability of Optimized licenses^].
+
 
 --
 
@@ -253,7 +254,7 @@ NOTE: Azure page blobs are not supported for any new deployment.
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
+(disks + object storage) | 500 GiB 2+a| include::_include/capacity-limit.adoc[]  
 
 | Supported virtual machine types
 
@@ -397,7 +398,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 | Capacity-based license (Essentials and Professional)
 
 | Maximum system capacity
-(disks + object storage) | 500 GiB | 2 PiB | 2 PiB 
+(disks + object storage) | 500 GiB 2+a| include::_include/capacity-limit.adoc[]
 
 | Supported virtual machine types
 
