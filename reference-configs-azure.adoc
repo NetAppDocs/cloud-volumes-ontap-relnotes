@@ -368,7 +368,7 @@ a|
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
 
-| Supported disk types 3+| Page blobs
+| Supported data disk types 3+| Page blobs
 
 |===
 
@@ -438,7 +438,7 @@ a|
 * L48s_v3 ^1,3,5^
 * L64s_v3 ^1,3,5^
 
-| Supported disk types ^6^ 3+| Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, and Premium SSD v2 Managed Disks.
+| Supported disk types ^6^ 3+| Premium SSD Managed Disks or Premium SSD v2 Managed Disks.
 
 
 |===
@@ -454,8 +454,8 @@ Notes:
 . ^4^ Multiple availability zone support starts from ONTAP version 9.14.1 RC1.  
 
 . ^5^ This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
-. ^6^ For information about the supported disk types for HA deployments single and multiple availability zones, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair[Azure (HA pair)^].
-. ^7^ Beginning on August 11, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure marketplace for pay-as-you-go (PAYGO) subscriptions. For more information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new in Cloud Volumes ONTAP^].
+. ^6^ For information about the internal disks for system data for HA deployments single and multiple availability zones, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair[Azure (HA pair)^].
+. ^7^ Beginning on August 11, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure marketplace for pay-as-you-go (PAYGO) subscriptions. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025[End of availability of Optimized licenses^].
 
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
