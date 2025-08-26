@@ -17,12 +17,18 @@ Cloud Volumes ONTAP has storage configuration limits to provide reliable operati
 
 == Maximum system capacity by license
 
-The maximum system capacity for a Cloud Volumes ONTAP system is determined by its license. The maximum system capacity includes disk-based storage plus object storage used for data tiering.
+The maximum system capacity includes disk-based storage plus object storage used for data tiering.
 
 NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, BlueXP displays an action required message and no longer allows you to add additional disks.
 
 For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. In those cases, you can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. Refer to capacity and disk limits below for more details.
 
+[[cap-license-aws]]
+.Capacity limit for capacity-based licenses
+include::_include/capacity-limit.adoc[]
+Refer to the https://docs.aws.amazon.com/AmazonS3/latest/userguide/BucketRestrictions.html[AWS documentation^] for more information.
+
+Capacity limits for other license types::
 [cols="25,75",width=65%,options="header"]
 |===
 | License
@@ -33,13 +39,12 @@ For some configurations, disk limits prevent you from reaching the capacity limi
 | PAYGO Standard | 10 TiB
 | PAYGO Premium | 368 TiB
 | Node-based license | 2 PiB (requires multiple licenses)
-| Capacity-based license | 2 PiB
 
 |===
 
 .For HA, is the license capacity limit per node or for the entire HA pair?
 
-The capacity limit is for the entire HA pair. It is not per node. For example, if you use the Premium license, you can have up to 368 TiB of capacity between both nodes.
+The capacity limit is for the entire HA pair. It is not per node. For example, the Premium license allows up to 368 TiB across both nodes.
 
 .For an HA system in AWS, does mirrored data count against the capacity limit?
 
@@ -70,11 +75,11 @@ a|
 
 Notes:
 
-. It's not possible to create 18 aggregates on both nodes in an HA pair because doing so would exceed the data disk limit.
+. You cannot create 18 aggregates on both nodes in an HA pair because that would exceed the data disk limit.
 
-. The maximum aggregate size is based on the disks that comprise the aggregate. The limit does not include object storage used for data tiering.
+. The maximum aggregate size depends on its disks and does not include object storage you use for data tiering.
 
-. If you have a configuration that supports the Amazon EBS Elastic Volumes feature, then an aggregate can contain up to 8 disks, which provides up to 128 TiB of capacity. The Amazon EBS Elastic Volumes feature is enabled by default on _new_ Cloud Volumes ONTAP 9.11.0 or later systems when using gp3 or io1 disks. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html[Learn more about support for Elastic Volumes^]
+. If you have a configuration that supports the Amazon EBS Elastic Volumes feature, then an aggregate can contain up to 8 disks, which provides up to 128 TiB of capacity. By default, Cloud Volumes ONTAP 9.11.0 and later systems have Amazon EBS Elastic Volumes enabled when you use gp3 or io1 disks. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-aws-elastic-volumes.html[Learn more about support for Elastic Volumes^]
 
 . All disks in an aggregate must be the same size.
 
@@ -92,46 +97,48 @@ The limits do not include the boot disk and root disk.
 
 * Cloud Volumes ONTAP uses EBS volumes as disks, with a maximum disk size of 16 TiB.
 
-=== Limits for capacity-based licensing
+=== Limits for different deployment modes of capacity-based licensing
 
 The following disk limits apply to Cloud Volumes ONTAP systems that use a capacity-based licensing package. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html[Learn about Cloud Volumes ONTAP licensing options^]
 
+[NOTE]
+For maximum system capacity and data tiering capacity limits for single node and HA configurations, refer to <<cap-license-aws>>.
+
 ==== Single node
 
-[cols="18,18,32,32",width=100%,options="header"]
+[cols="18,18,32,width=100%,options="header"]
 |===
 | Instance
 | Max disks per node
 | Max system capacity with disks alone
-| Max system capacity with disks and data tiering
 
-| c5, m5, and r5 instances | 21 | 336 TiB | 2 PiB
+| c5, m5, and r5 instances | 21 | 336 TiB 
 a|
 * m5dn.24xlarge
 * m6id.32xlarge
-| 19 ^1^ | 304 TiB | 2 PiB
+| 19 ^1^ | 304 TiB 
 |===
 
 . This instance type has more local NVMe disks than other instance types, which means a smaller number of data disks are supported.
 
 ==== HA pairs
 
-[cols="18,18,32,32",width=100%,options="header"]
+[cols="18,18,32,width=100%,options="header"]
 |===
 | Instance
 | Max disks per node
 | Max system capacity with disks alone
-| Max system capacity with disks and data tiering
 
-| c5, m5, and r5 instances | 18 | 288 TiB | 2 PiB
-a|
+| c5, m5, and r5 instances | 18 | 288 TiB 
+a| 
 * m5dn.24xlarge
-* m6id.32xlarge | 16 ^1^ | 256 TiB | 2 PiB
+* m6id.32xlarge | 16 ^1^ | 256 TiB 
+
 |===
 
 . This instance type has more local NVMe disks than other instance types, which means a smaller number of data disks are supported.
 
-=== Limits for node-based licensing
+=== Limits for different deployment modes of node-based licensing
 
 The following disk limits apply to Cloud Volumes ONTAP systems that use node-based licensing, which is the previous generation licensing model that enabled you to license Cloud Volumes ONTAP by node. Node-based licensing is still available for existing customers.
 

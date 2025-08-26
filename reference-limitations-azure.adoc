@@ -16,9 +16,9 @@ summary: These known limitations are specific to Cloud Volumes ONTAP in Microsof
 The following known limitations are specific to Cloud Volumes ONTAP in Microsoft Azure. Be sure to also review link:reference-limitations.html[Limitations for Cloud Volumes ONTAP in all cloud providers].
 
 == Limitations with using Azure VM extensions
-Cloud Volumes ONTAP does not support Azure virtual machine (VM) extensions because they affect BlueXP management operations. During deployment, BlueXP prevents the installation of any extensions on your VMs. If extensions are already installed on your existing Cloud Volumes ONTAP VMs, NetApp strongly recommends that you contact Microsoft Azure Support to remove them.
+Cloud Volumes ONTAP does not support Azure virtual machine (VM) extensions because they affect BlueXP management operations. During deployment, BlueXP prevents the installation of any extensions on your VMs. If extensions are already installed on your existing Cloud Volumes ONTAP VMs, contact Microsoft Azure Support to remove them. For guidance, refer to the knowledge base (KB) article https://kb.netapp.com/Cloud/Cloud_Volumes_ONTAP/Can_Azure_VM_Management_Extensions_be_installed_into_Cloud_Volume_ONTAP[Can Azure VM Management Extensions be installed into Cloud Volume ONTAP?^]
  
-Starting July 14, 2025, NetApp will notify you in BlueXP and send emails if VM extensions are detected on your Cloud Volumes ONTAP VMs.
+Starting July 14, 2025, NetApp will send emails and notify you in BlueXP if VM extensions are detected on your Cloud Volumes ONTAP VMs.
 
 == Flash Cache limitations
 Cloud Volumes ONTAP uses the local NVMe storage in some VM types as _Flash Cache_. Note this limitation:
@@ -35,5 +35,7 @@ https://bluexp.netapp.com/cloud-volumes-global-regions[View the list of supporte
 Beginning with Cloud Volumes ONTAP 9.15.1, you can deploy virtual machine (VM) instances in HA mode in single availability zones (AZs) in Azure. For information about the criteria supporting this feature, refer to https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure[Deploy HA pairs in single availability zones in Azure^].
 
 If the Cloud Volumes ONTAP version is earlier than 9.15.1 or if any of these conditions are not met, the previous deployment model utilizing availability sets becomes effective. This applies to only HA configurations.
+
+
 
 //https://jira.ngage.netapp.com/browse/BLUEXPDOC-373 
