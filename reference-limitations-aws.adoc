@@ -17,7 +17,7 @@ The following known limitations are specific to Cloud Volumes ONTAP in Amazon We
 
 == AWS Outpost limitations
 
-If you have an AWS Outpost, you can deploy Cloud Volumes ONTAP in that Outpost by selecting the Outpost VPC in the Working Environment wizard. The experience is the same as any other VPC that resides in AWS. Note that you will need to first deploy a Connector in your AWS Outpost.
+If you have an AWS Outpost, you can deploy Cloud Volumes ONTAP in that Outpost by selecting the Outpost VPC during deployment. The experience is the same as any other VPC that resides in AWS. Note that you will need to first deploy a Console agent in your AWS Outpost.
 
 There are a few limitations to point out:
 
@@ -31,7 +31,7 @@ C5D and R5D instance types include local NVMe storage, which Cloud Volumes ONTAP
 
 * Compression must be disabled on all volumes to take advantage of the Flash Cache performance improvements up to Cloud Volumes ONTAP 9.12.0. When you deploy or upgrade to Cloud Volumes ONTAP 9.12.1, you don't need to disable compression.
 +
-You can choose no storage efficiency when creating a volume from the Console, or you can create a volume and then http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html[disable data compression by using the CLI^].
+You can choose no storage efficiency when creating a volume from the NetApp Console, or you can create a volume and then http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html[disable data compression by using the CLI^].
 
 * Cache rewarming after a reboot is not supported with Cloud Volumes ONTAP.
 

@@ -19,7 +19,7 @@ Cloud Volumes ONTAP has storage configuration limits to provide reliable operati
 
 The maximum system capacity for a Cloud Volumes ONTAP system is determined by its license. The maximum system capacity includes disk-based storage plus object storage used for data tiering.
 
-NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, the Console displays an action required message and blocks you from adding more disks.
+NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, the NetApp Console displays an action required message and blocks you from adding more disks.
 
 [[cap-license-azure]]
 .Capacity limit for capacity-based licenses

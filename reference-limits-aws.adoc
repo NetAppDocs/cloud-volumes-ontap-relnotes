@@ -19,7 +19,7 @@ Cloud Volumes ONTAP has storage configuration limits to provide reliable operati
 
 The maximum system capacity includes disk-based storage plus object storage used for data tiering.
 
-NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, the Console displays an action required message and no longer allows you to add additional disks.
+NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, the NetApp Console displays an action required message and no longer allows you to add additional disks.
 
 For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. In those cases, you can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. Refer to capacity and disk limits below for more details.
 

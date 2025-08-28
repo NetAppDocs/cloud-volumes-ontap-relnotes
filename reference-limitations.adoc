@@ -64,9 +64,9 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 
 Automatic application resource management solutions should not manage Cloud Volumes ONTAP systems. Doing so can result in a change to an unsupported configuration. For example, the solution might change Cloud Volumes ONTAP to an unsupported VM instance type.
 
-== Software updates must be completed by the Console
+== Software updates must be completed by the NetApp Console
 
-Upgrades of Cloud Volumes ONTAP must be completed from the Console. You should not upgrade Cloud Volumes ONTAP by using System Manager or the CLI. Doing so can impact system stability.
+Upgrades of Cloud Volumes ONTAP must be completed from the NetApp Console. You should not upgrade Cloud Volumes ONTAP by using System Manager or the CLI. Doing so can impact system stability.
 
 == Cloud Volumes ONTAP deployment must not be modified from your cloud provider’s console
 
