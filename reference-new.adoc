@@ -15,7 +15,7 @@ summary: Cloud Volumes ONTAP 9.16.1 includes a new enhancement.
 [.lead]
 Cloud Volumes ONTAP 9.16.1 includes new enhancements.
 
-Additional features and enhancements are also introduced in the latest versions of NetApp Console. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[NetApp Console Release Notes^] for details.
+Additional features and enhancements are also introduced in the latest versions of the NetApp Console. See the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[NetApp Console Release Notes^] for details.
 
 == 9.16.1 P5 (28 July 2025)
 The 9.16.1 P5 patch can now be deployed and upgraded for Cloud Volumes ONTAP in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS. The Console will prompt you to upgrade your existing systems to this patch release.
