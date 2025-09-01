@@ -148,7 +148,7 @@ The custom-4-16384 machine type is no longer supported with new Cloud Volumes ON
 
 . ^4^ Enhanced write performance is enabled when using Balanced persistent disks and Performance (SSD) persistent disks.
 
-The NetApp Console shows an additional supported machine type for Standard and BYOL: n1-highmem-4. However, this machine type isn't meant for production environments. We've made it available for a specific lab environment only.
+The Console shows an additional supported machine type for Standard and BYOL: n1-highmem-4. However, this machine type isn't meant for production environments. We've made it available for a specific lab environment only.
 
 Starting with Cloud Volumes ONTAP software version 9.13.0, _Flash Cache_, high write speed, and a higher maximum transmission unit (MTU) of 8,896 bytes, are available for the following HA pair deployment instances:
 
