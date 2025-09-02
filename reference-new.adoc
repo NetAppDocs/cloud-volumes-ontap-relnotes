@@ -13,9 +13,9 @@ summary: Cloud Volumes ONTAP 9.17.1 includes a new enhancement.
 :imagesdir: ./media/
 
 [.lead]
-Cloud Volumes ONTAP 9.17.1 includes new enhancements.
+Cloud Volumes ONTAP 9.17.1 is available for deployment and upgrade in Azure and Google Cloud.
 
-== 9.17.1 RC (9 September 2025)
+== 9.17.1 RC (4 September 2025)
 You can now use the Release Candidate 1 of Cloud Volumes ONTAP 9.17.1 for deployment and upgrade in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS.
 
 The last Cloud Volumes ONTAP version supported in AWS is 9.15.1.
