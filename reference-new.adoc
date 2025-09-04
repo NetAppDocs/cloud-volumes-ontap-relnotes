@@ -15,10 +15,8 @@ summary: Cloud Volumes ONTAP 9.17.1 includes a new enhancement.
 [.lead]
 Cloud Volumes ONTAP 9.17.1 is available for deployment and upgrade in Azure and Google Cloud.
 
-== 9.17.1 RC (4 September 2025)
+== 9.17.1 RC1 (4 September 2025)
 You can now use the Release Candidate 1 of Cloud Volumes ONTAP 9.17.1 for deployment and upgrade in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS.
-
-The last Cloud Volumes ONTAP version supported in AWS is 9.15.1.
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
 
@@ -34,10 +32,10 @@ Upgrades of Cloud Volumes ONTAP must be completed from BlueXP. You should not up
 link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when BlueXP notifies you^].
 
 === Supported upgrade path
-You can upgrade to Cloud Volumes ONTAP 9.17.1 GA from the 9.16.1 release in Azure and Google Cloud. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.17.1 RC1 from the 9.16.1 release in Azure and Google Cloud. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 [NOTE]
-The last Cloud Volumes ONTAP version supported in AWS is 9.15.1.
+For AWS, you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTAP 9.17.1 RC1 is not supported in AWS.
 
 
 //Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. Connector version removed as per code separation verification from engg: MM
