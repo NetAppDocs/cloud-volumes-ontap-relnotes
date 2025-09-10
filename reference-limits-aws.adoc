@@ -19,7 +19,7 @@ Cloud Volumes ONTAP has storage configuration limits to provide reliable operati
 
 The maximum system capacity includes disk-based storage plus object storage used for data tiering.
 
-NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, BlueXP displays an action required message and no longer allows you to add additional disks.
+NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, the NetApp Console displays an action required message and no longer allows you to add additional disks.
 
 For some configurations, disk limits prevent you from reaching the capacity limit by using disks alone. In those cases, you can reach the capacity limit by https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html[tiering inactive data to object storage^]. Refer to capacity and disk limits below for more details.
 
@@ -48,7 +48,7 @@ The capacity limit is for the entire HA pair. It is not per node. For example, t
 
 .For an HA system in AWS, does mirrored data count against the capacity limit?
 
-No, it doesn't. Data in an AWS HA pair is synchronously mirrored between the nodes so that the data is available in the event of failure. For example, if you purchase an 8 TiB disk on node A, BlueXP also allocates an 8 TiB disk on node B that is used for mirrored data. While 16 TiB of capacity was provisioned, only 8 TiB counts against the license limit.
+No, it doesn't. Data in an AWS HA pair is synchronously mirrored between the nodes so that the data is available in the event of failure. For example, if you purchase an 8 TiB disk on node A, the Console also allocates an 8 TiB disk on node B that is used for mirrored data. While 16 TiB of capacity was provisioned, only 8 TiB counts against the license limit.
 
 == Aggregate limits
 
@@ -313,7 +313,7 @@ The instances listed below are for the c5, m5, and r5 instance families.
 
 . This number indicates how many _remaining_ private IP addresses are available on port e0a after Cloud Volumes ONTAP is deployed and set up. For example, a *.2xlarge system supports a maximum of 15 IP addresses per network interface. When an HA pair is deployed in a single AZ, 5 private IP addresses are allocated to port e0a. As a result, an HA pair that uses a *.2xlarge instance type has 10 private IP addresses remaining for additional storage VMs.
 
-. The number listed in these columns includes the initial storage VM that BlueXP creates by default. For example, if 24 is listed in this column, it means that you can create 23 additional storage VMs for a total of 24.
+. The number listed in these columns includes the initial storage VM that the Console creates by default. For example, if 24 is listed in this column, it means that you can create 23 additional storage VMs for a total of 24.
 
 . A management LIF for the storage VM is optional. A management LIF provides a connection to management tools like SnapCenter.
 +
@@ -342,7 +342,7 @@ Because it requires a private IP address, it will limit the number of additional
 . Beginning with ONTAP 9.12.1P2, the limit is 128 TB. In ONTAP 9.11.1 and earlier versions, the limit is 16 TB.
 . FlexVol volume creation up to maximum size of 300 TiB is supported using the following tools and minimum versions:  
 * System Manager and the ONTAP CLI starting from Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2
-* BlueXP starting from Cloud Volumes ONTAP 9.13.1
+* Beginning with Cloud Volumes ONTAP 9.13.1
 
 == iSCSI storage limits
 

@@ -27,12 +27,12 @@ Read through these notes to learn more about upgrading to this release.
 
 === How to upgrade
 
-Upgrades of Cloud Volumes ONTAP must be completed from BlueXP. You should not upgrade Cloud Volumes ONTAP by using System Manager or the CLI. Doing so can impact system stability.
+Upgrades of Cloud Volumes ONTAP must be completed from the NetApp Console. You should not upgrade Cloud Volumes ONTAP by using System Manager or the CLI. Doing so can impact system stability.
 
-link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when BlueXP notifies you^].
+link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when the Console notifies you^].
 
 === Supported upgrade path
-You can upgrade to Cloud Volumes ONTAP 9.17.1 RC1 from the 9.16.1 release in Azure and Google Cloud. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.17.1 RC1 from the 9.16.1 release in Azure and Google Cloud. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 [NOTE]
 For AWS, you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTAP 9.17.1 RC1 is not supported in AWS.
