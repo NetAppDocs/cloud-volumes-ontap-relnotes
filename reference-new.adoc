@@ -38,7 +38,7 @@ You can upgrade to Cloud Volumes ONTAP 9.17.1 RC1 from the 9.16.1 release in Azu
 For AWS, you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTAP 9.17.1 RC1 is not supported in AWS.
 
 
-//Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. Connector version removed as per code separation verification from engg: MM
+//Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. The Console agent version removed as per code separation verification from engg: MM
 
 === Downtime
 
