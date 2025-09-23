@@ -21,18 +21,16 @@ Cloud Volumes ONTAP does not support Azure virtual machine (VM) extensions becau
 Starting July 14, 2025, NetApp will send emails and notify you in BlueXP if VM extensions are detected on your Cloud Volumes ONTAP VMs.
 
 == Premium SSD v2 disks limitations for HA configurations
-Premium SSD v2 Managed Disks have the following limitations for high-availability (HA) deployments:
+Premium SSD v2 Managed Disks have the following limitations for high-availability (HA) deployments in Azure:
 
 * Not supported in HA deployments across multiple availability zones.
 * Only supported in HA configurations deployed within single availability zones.
 
 To use Premium SSD v2 Managed Disks with Cloud Volumes ONTAP HA configurations, ensure the following requirements are met:
 
-* Cloud Volumes ONTAP version 9.15.1 or later
-* HA deployment in a single availability zone in Azure
-* Selective regions and zones support Premium SSD v2 Managed Disks
-
-For information about the supported regions, refer to https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/[Microsoft Azure website: Products available by region].
+* Cloud Volumes ONTAP version is 9.15.1 or later.
+* The HA deployment is in an Azure single availability zone.
+* The selected regions and zones support Premium SSD v2 Managed Disks. For information about the supported regions, refer to the https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/[Microsoft Azure website: Products available by region].
 
 
 == Limitations with HA deployments in single availability zones
