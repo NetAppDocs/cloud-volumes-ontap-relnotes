@@ -23,6 +23,7 @@ Starting July 14, 2025, NetApp will send emails and notify you in BlueXP if VM e
 == Premium SSD v2 disks limitations for HA configurations
 Premium SSD v2 Managed Disks have the following limitations for high-availability (HA) deployments in Azure:
 
+* Not supported in HA deployments in non-zonal regions.
 * Not supported in HA deployments across multiple availability zones.
 * Only supported in HA configurations deployed within single availability zones.
 
