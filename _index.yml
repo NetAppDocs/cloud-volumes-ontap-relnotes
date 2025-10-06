@@ -36,9 +36,9 @@ indexpage:
           url: reference-limitations-azure.html
     - title: Blogs & community
       links:
+        - title: NetApp Console
+          url: https://www.netapp.com/console
+        - title: NetApp Data Services
+          url: https://www.netapp.com/data-services/
         - title: NetApp Community
-          url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-        - title: BlueXP blog
-          url: https://bluexp.netapp.com/blog
-        - title: Cloud webinars
-          url: https://bluexp.netapp.com/events
+          url: https://community.netapp.com/

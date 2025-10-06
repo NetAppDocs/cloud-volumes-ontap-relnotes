@@ -91,5 +91,5 @@ sidebar:
     - title: Legal notices
       url: /legal-notices.html
 product-family:
-  name: BlueXP
-  repo: bluexp-family
+  name: Storage Management
+  repo: storage-management-family
