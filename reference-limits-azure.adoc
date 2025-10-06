@@ -19,7 +19,7 @@ Cloud Volumes ONTAP has storage configuration limits to provide reliable operati
 
 The maximum system capacity for a Cloud Volumes ONTAP system is determined by its license. The maximum system capacity includes disk-based storage plus object storage used for data tiering.
 
-NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, BlueXP displays an action required message and blocks you from adding more disks.
+NetApp doesn't support exceeding the system capacity limit. If you reach the licensed capacity limit, the NetApp Console displays an action required message and blocks you from adding more disks.
 
 [[cap-license-azure]]
 .Capacity limit for capacity-based licenses
@@ -433,8 +433,8 @@ Storage VMs for disaster recovery (DR) do not need an add-on license, but they c
 . Hierarchical clone depth is the maximum depth of a nested hierarchy of FlexClone volumes that can be created from a single FlexVol volume.
 . Beginning with ONTAP 9.12.1P2, the limit is 128 TB. In ONTAP 9.11.1 and earlier versions, the limit is 16 TB.
 . FlexVol volume creation up to maximum size of 300 TiB is supported using the following tools and minimum versions:  
-* System Manager and the ONTAP CLI starting from Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2
-* BlueXP starting from Cloud Volumes ONTAP 9.13.1
+* System Manager and the ONTAP CLI beginning with Cloud Volumes ONTAP 9.12.1 P2 and 9.13.0 P2
+* Beginning with Cloud Volumes ONTAP 9.13.1
 
 == iSCSI storage limits
 

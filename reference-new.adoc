@@ -27,18 +27,18 @@ Read through these notes to learn more about upgrading to this release.
 
 === How to upgrade
 
-Upgrades of Cloud Volumes ONTAP must be completed from BlueXP. You should not upgrade Cloud Volumes ONTAP by using System Manager or the CLI. Doing so can impact system stability.
+Upgrades of Cloud Volumes ONTAP must be completed from the NetApp Console. You should not upgrade Cloud Volumes ONTAP by using System Manager or the CLI. Doing so can impact system stability.
 
-link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when BlueXP notifies you^].
+link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when the Console notifies you^].
 
 === Supported upgrade path
-You can upgrade to Cloud Volumes ONTAP 9.17.1 RC1 from the 9.16.1 release in Azure and Google Cloud. BlueXP will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.17.1 RC1 from the 9.16.1 release in Azure and Google Cloud. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 [NOTE]
 For AWS, you won't be prompted for this upgrade. Upgrading to Cloud Volumes ONTAP 9.17.1 RC1 is not supported in AWS.
 
 
-//Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. Connector version removed as per code separation verification from engg: MM
+//Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. The Console agent version removed as per code separation verification from engg: MM
 
 === Downtime
 
