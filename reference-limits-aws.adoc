@@ -69,8 +69,8 @@ a|
 | Disks per aggregate	^4^
 a|
 * 1-6
-* ##4 or 8## with Elastic Volumes ^3^
-| Maximum number of RAID groups per aggregate	| ##2##
+* 4 or 8 with Elastic Volumes ^3^
+| Maximum number of RAID groups per aggregate	| 2
 |===
 
 Notes:
