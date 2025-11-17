@@ -23,7 +23,10 @@ The Cloud Volumes ONTAP 9.17.1 P1 patch is now available for deployment and upgr
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P1[View the list of bugs fixed in the P1 patch^] (NetApp Support Site login required).
 
 == 9.17.1 RC1 (4 September 2025)
-You can now use the Release Candidate 1 of Cloud Volumes ONTAP 9.17.1 for deployment and upgrade in Azure and Google Cloud. However, this version is unavailable for deployment and upgrade in AWS.
+You can now use the Release Candidate 1 of Cloud Volumes ONTAP 9.17.1 for deployment and upgrade in Azure and Google Cloud. 
+
+[NOTE]
+This version is unavailable for deployment and upgrade in AWS.
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
 
