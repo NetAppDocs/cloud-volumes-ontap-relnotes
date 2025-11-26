@@ -128,8 +128,9 @@ The minimum ONTAP version required for configuring Flash Cache on Azure is 9.13.
 
 . ^3^ These VM types use an https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd[Ultra SSD^] for VNVRAM, which provides better write performance.
 +
-If you choose any of these VM types when you deploy a new Cloud Volumes ONTAP system, you can't change to another VM type that _doesn't_ use an Ultra SSD for VNVRAM. For example, you can't change from E8ds_v4 to E8s_v3, but you can change from E8ds_v4 to E32ds_v4 because both of those VM types use Ultra SSDs. 
-Similarly, if you choose to deploy Premium SSD Managed Disks in an environment that fulfils the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks[criteria^] for Premium SSD v2 Managed Disks, the Console automatically provisions Premium SSD v2 Managed Disks. You cannot switch to Premium SSD v1 Managed Disks..
+If you choose any of these VM types when you deploy a new Cloud Volumes ONTAP system, you can't change to another VM type that _doesn't_ use an Ultra SSD for VNVRAM. For example, you can't change from E8ds_v4 to E8s_v3, but you can change from E8ds_v4 to E32ds_v4 because both of those VM types use Ultra SSDs.
+
+Similarly, if you choose Premium SSD Managed Disks for an environment that fulfils the https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html#ha-single-availability-zone-configuration-with-shared-managed-disks[criteria^] for Premium SSD v2 Managed Disks, the Console automatically deploys Premium SSD v2 Managed Disks. You cannot switch to Premium SSD v1 Managed Disks..
 +
 Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won't be able to change to a VM type that uses an Ultra SSD for VNVRAM. For example, you can't change from E8s_v3 to E8ds_v4.
 +
