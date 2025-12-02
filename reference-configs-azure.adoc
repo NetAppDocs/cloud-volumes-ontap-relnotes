@@ -146,7 +146,7 @@ Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won
 +
 . ^4^ For information about the supported disk types in single node deployments, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node[Azure (single node)^]. High write speed is supported with all instance types when using a single node system. You can enable high write speed from the Console during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^]. Enhanced write performance is enabled when using SSDs.
 . ^5^ Beginning on August 11, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure marketplace for pay-as-you-go (PAYGO) subscriptions. For more information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025[End of availability of Optimized licenses^].
-. ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment on any other VM type, for example, including Edsv5 to Edsv6; only size changes among Edsv6 instances (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
+. ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment with any other VM type, for example, from Edsv5 to Edsv6; only size changes among Edsv6 variants (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
 --
 
 .Node-based licenses 
@@ -251,7 +251,7 @@ Conversely, if you deployed Cloud Volumes ONTAP using any other VM type, you won
 
 . ^5^Data tiering to Azure Blob storage isn't supported with PAYGO Explore. 
 
-. ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment on any other VM type, for example, including Edsv5 to Edsv6; only size changes among Edsv6 instances (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
+. ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment with any other VM type, for example, from Edsv5 to Edsv6; only size changes among Edsv6 variants (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
 --
 ====
 
@@ -339,7 +339,7 @@ Notes:
 . ^5^ This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 . ^6^ For information about the internal disks for system data for HA deployments single and multiple availability zones, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-ha-pair[Azure (HA pair)^].
 . ^7^ Beginning on August 11, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure marketplace for pay-as-you-go (PAYGO) subscriptions. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025[End of availability of Optimized licenses^].
-. ^8^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment on any other VM type, for example, including Edsv5 to Edsv6; only size changes among Edsv6 instances (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
+. ^8^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment with any other VM type, for example, from Edsv5 to Edsv6; only size changes among Edsv6 variants (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
 
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
@@ -411,7 +411,7 @@ Notes:
 
 . ^5^ This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 
-. ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment on any other VM type, for example, including Edsv5 to Edsv6; only size changes among Edsv6 instances (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
+. ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment with any other VM type, for example, from Edsv5 to Edsv6; only size changes among Edsv6 variants (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
 
