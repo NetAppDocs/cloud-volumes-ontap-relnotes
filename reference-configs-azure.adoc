@@ -399,7 +399,7 @@ a|
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
 
-| Supported disk types 3+| Managed disks
+| Supported disk types 3+| Premium SSD Managed Disks or Premium SSD v2 Managed Disks.
 
 |===
 
