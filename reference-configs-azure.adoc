@@ -98,13 +98,6 @@ a|
 * DS4_v2 ^1^
 * DS13_v2 ^1^
 
-* ##E4bds_v5## ^7^
-* ##E8bds_v5## ^7^
-* ##E16bds_v5## ^7^
-* ##E32bds_v5## ^7^
-* ##E48bds_v5## ^7^
-* ##E64bds_v5## ^7^
-
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E4ds_v4 ^3^
@@ -119,12 +112,12 @@ a|
 * DS14_v2 ^1^
 * DS15_v2 ^1^
 
-* E4s_v3 ^1^
-* E8s_v3 ^1^
-* E32s_v3 ^1,3^
-* E48s_v3 ^1,3^
-* E64is_v3 ^1,3^
-* ##E104ids_v5## ^7^
+* ##E4bds_v5## ^7^
+* ##E8bds_v5## ^7^
+* ##E16bds_v5## ^7^
+* ##E32bds_v5## ^7^
+* ##E48bds_v5## ^7^
+* ##E64bds_v5## ^7^
 
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
@@ -142,6 +135,13 @@ a|
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+
+* E4s_v3 ^1^
+* E8s_v3 ^1^
+* E32s_v3 ^1,3^
+* E48s_v3 ^1,3^
+* E64is_v3 ^1,3^
+* ##E104ids_v5## ^7^
 
 * L8s_v3 ^2^
 * L16s_v3 ^2^
@@ -171,7 +171,7 @@ Similarly, if you choose Premium SSD Managed Disks for an environment that fulfi
 . ^4^ For information about the supported disk types in single node deployments, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/reference-default-configs.html#azure-single-node[Azure (single node)^]. High write speed is supported with all instance types when using a single node system. You can enable high write speed from the Console during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^]. Enhanced write performance is enabled when using SSDs.
 . ^5^ Beginning on August 11, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Azure marketplace for pay-as-you-go (PAYGO) subscriptions. For more information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html#11-august-2025[End of availability of Optimized licenses^].
 . ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment with any other VM type, for example, from Edsv5 to Edsv6; only size changes among Edsv6 variants (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
-. ^7^
+. ^7^ 
 
 --
 
@@ -192,14 +192,20 @@ Similarly, if you choose Premium SSD Managed Disks for an environment that fulfi
 
 a|
 
+* ##E4bds_v5## ^7^
+
 * E4s_v3 ^1^
 * E4ds_v4 ^3^
 * E4ds_v5
 * E4ds_v6 ^6^
 
 a|
+
 * DS4_v2 ^1^
 * DS13_v2 ^1^
+
+* ##E8bds_v5## ^7^
+
 * E8s_v3 ^1^
 * E8ds_v4 ^3^
 * E8ds_v5
@@ -209,8 +215,6 @@ a|
 * DS5_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
-* ##E4bds_v5## ^7^
-* ##E8bds_v5## ^7^
 * ##E16bds_v5## ^7^
 * ##E32bds_v5## ^7^
 * ##E48bds_v5## ^7^
@@ -326,7 +330,6 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 
 a|
 
-* ##E4bds_v5## ^9^
 * ##E8bds_v5## ^9^
 * ##E16bds_v5## ^9^
 * ##E32bds_v5## ^9^
@@ -362,7 +365,6 @@ a|
 
 a|
 
-* ##E4bds_v5## ^9^
 * ##E8bds_v5## ^9^
 * ##E16bds_v5## ^9^
 * ##E32bds_v5## ^9^
@@ -373,6 +375,8 @@ a|
 * E32ds_v4 ^1^
 * E48ds_v4 ^1^
 * E80ids_v4 ^1,2^
+* ##E104ids_v5## ^9^
+
 * E8ds_v5 ^4^
 * E20ds_v5 ^1,4^
 * E32ds_v5 ^1,4^
@@ -429,21 +433,20 @@ Notes:
 
 a|
 * E8ds_v4 ^4^
-* E8ds_v5 
+* ##E8bds_v5 ^7^##
 * L8s_v3 ^4,5^
 
 a|
 
-* ##E4bds_v5## ^9^
-* ##E8bds_v5## ^9^
-* ##E16bds_v5## ^9^
-* ##E32bds_v5## ^9^
-* ##E48bds_v5## ^9^
-* ##E64bds_v5## ^9^
+* ##E16bds_v5## ^7^
+* ##E32bds_v5## ^7^
+* ##E48bds_v5## ^7^
+* ##E64bds_v5## ^7^
 
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
 * E80ids_v4 ^1,2,4^
+* ##E104ids_v5## ^7^
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
@@ -461,16 +464,19 @@ a|
 
 a|
 
-* ##E4bds_v5## ^9^
-* ##E8bds_v5## ^9^
-* ##E16bds_v5## ^9^
-* ##E32bds_v5## ^9^
-* ##E48bds_v5## ^9^
-* ##E64bds_v5## ^9^
+* ##E4bds_v5## ^7^
+* ##E8bds_v5## ^7^
+* ##E16bds_v5## ^7^
+* ##E32bds_v5## ^7^
+* ##E48bds_v5## ^7^
+* ##E64bds_v5## ^7^
+
 * E8ds_v4 ^4^ 
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
 * E80ids_v4 ^1,2,4^
+* ##E104ids_v5## ^7^
+
 * E4ds_v5
 * E8ds_v5 
 * E20ds_v5 ^1^
@@ -511,6 +517,7 @@ Notes:
 --
 ====
 
+//Don't update anything under this. No page blob support for new deployments after 9.12.1 (tentative release).
 ==== HA pairs with page blob
 You can use the following configurations with the existing Cloud Volumes ONTAP HA page blob deployments in Azure.
 
