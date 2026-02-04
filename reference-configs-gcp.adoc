@@ -43,11 +43,11 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 
 a|
 
-* c3-standard-4 ^5^
-* c3-standard-8 ^5^
-* c3-standard-22 ^5^
-* c3-standard-44 ^5^
-* c3-standard-88 ^5^
+* ##c3-standard-4## ^5^
+* ##c3-standard-8## ^5^
+* ##c3-standard-22## ^5^
+* ##c3-standard-44## ^5^
+* ##c3-standard-88## ^5^
 * n1-standard-8 ^1^
 * n1-standard-32 ^1^
 * n2-standard-4
@@ -62,11 +62,11 @@ a|
 * n2-standard-8
 
 a|
-* c3-standard-4 ^5^
-* c3-standard-8 ^5^
-* c3-standard-22 ^5^
-* c3-standard-44 ^5^
-* c3-standard-88 ^5^
+* ##c3-standard-4## ^5^
+* ##c3-standard-8## ^5^
+* ##c3-standard-22## ^5^
+* ##c3-standard-44## ^5^
+* ##c3-standard-88## ^5^
 * n1-standard-8 ^1^
 * n1-standard-32 ^1^
 * n2-standard-4
@@ -123,27 +123,27 @@ NOTE: _Flash cache_, high write mode, and an MTU of 8,896 are feature-dependent 
 | Supported machine types ^3^
 
 a|
-* c3-standard-4 ^5^
+* ##c3-standard-4## ^5^
 * n2-standard-4 
 a|
-* c3-standard-8 ^5^
+* ##c3-standard-8## ^5^
 * n1-standard-8 ^3^
 * n2-standard-8
 a|
-* c3-standard-22 ^5^
-* c3-standard-44 ^5^
-* c3-standard-88 ^5^
+* ##c3-standard-22## ^5^
+* ##c3-standard-44## ^5^
+* ##c3-standard-88## ^5^
 * n1-standard-32 ^3^
 * n2-standard-16
 * n2-standard-32
 * n2-standard-48
 * n2-standard-64
 a|
-* c3-standard-4 ^5^
-* c3-standard-8 ^5^
-* c3-standard-22 ^5^
-* c3-standard-44 ^5^
-* c3-standard-88 ^5^
+* ##c3-standard-4## ^5^
+* ##c3-standard-8## ^5^
+* ##c3-standard-22## ^5^
+* ##c3-standard-44## ^5^
+* ##c3-standard-88## ^5^
 * n1-standard-8 ^3^
 * n1-standard-32 ^3^
 * n2-standard-4
