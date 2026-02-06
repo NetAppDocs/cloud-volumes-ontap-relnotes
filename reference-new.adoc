@@ -22,7 +22,7 @@ New Cloud Volumes ONTAP features are also introduced in the latest versions of t
 
 //link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1[View the list of bugs fixed in the P1 patch^] (NetApp Support Site login required).
 
-== 9.18.1 GA (29 January 2026)
+== 9.18.1 GA (10 February 2026)
 The Cloud Volumes ONTAP 9.18.1 General Availability release is now available for deployment and upgrade in Amazon Web Services (AWS), Microsoft Azure, and Google Cloud. 
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
