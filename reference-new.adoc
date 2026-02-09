@@ -23,7 +23,7 @@ New Cloud Volumes ONTAP features are also introduced in the latest versions of t
 //link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1[View the list of bugs fixed in the P1 patch^] (NetApp Support Site login required).
 
 == 9.18.1 GA (10 February 2026)
-The Cloud Volumes ONTAP 9.18.1 General Availability release is now available for deployment and upgrade in Amazon Web Services (AWS), Microsoft Azure, and Google Cloud. 
+The Cloud Volumes ONTAP 9.18.1 General Availability release is now available for deployment and upgrade in Amazon Web Services (AWS) and Microsoft Azure. This version is not available for deployment and upgrade in Google Cloud. 
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
 
@@ -39,8 +39,10 @@ Upgrades of Cloud Volumes ONTAP must be completed from the Console. You should n
 link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when the Console notifies you^].
 
 === Supported upgrade path
-You can upgrade to Cloud Volumes ONTAP 9.18.1 from the 9.17.1 release in AWS, Azure, and Google Cloud. For AWS, you can upgrade from Cloud Volumes ONTAP 9.17.1 P1 and later. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.18.1 from the 9.17.1 P1 and later patches in AWS and Azure. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
+[NOTE]
+This version is not available for upgrade in Google Cloud.
 
 //Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. The Console agent version removed as per code separation verification from engg: MM
 
