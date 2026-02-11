@@ -15,6 +15,9 @@ summary: Known limitations identify platforms, devices, or functions that are no
 [.lead]
 The following known limitations are specific to Cloud Volumes ONTAP in Google Cloud Platform. Be sure to also review link:reference-limitations.html[Limitations for Cloud Volumes ONTAP in all cloud providers].
 
+== Limitations with C3 VMs
+##You can't change the disk type for C3 VMs when adding volumes to aggregates because C3 supports only Hyperdisk Balanced disks. Similarly, when replicating a system with N2 VM types to a C3 VM, the disk type is set by default to Hyperdisk Balanced.##
+
 == Limitation with packet mirroring
 
 https://cloud.google.com/vpc/docs/packet-mirroring[Packet mirroring^] must be disabled in the Google Cloud VPC in which you deploy Cloud Volumes ONTAP.
