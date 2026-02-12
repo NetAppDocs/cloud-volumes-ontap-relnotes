@@ -17,9 +17,9 @@ Several Cloud Volumes ONTAP configurations are supported in Google Cloud.
 
 == Supported configurations by license
 
-Cloud Volumes ONTAP is available in Google Cloud as a single node system and as a high-availability (HA) pair of nodes for fault tolerance and nondisruptive operations.
+Cloud Volumes ONTAP is available in Google Cloud as a single-node system and as a high-availability (HA) pair of nodes for fault tolerance and nondisruptive operations.
 
-Upgrading a single node system to an HA pair isn't supported. If you want to switch between a single node system and an HA pair, then you need to deploy a new system and replicate data from the existing system to the new system.
+Upgrading a single-node system to an HA pair isn't supported. If you want to switch between a single-node system and an HA pair, then you need to deploy a new system and replicate data from the existing system to the new system.
 
 Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from your cloud provider. Solutions that use other VM instance types aren't supported.
 

@@ -85,7 +85,7 @@ Notes:
 
 == Disk and tiering limits by EC2 instance
 
-Capacity limits are different depending on the EC2 instance type family that you use and whether you're using a single node system or an HA pair.
+Capacity limits are different depending on the EC2 instance type family that you use and whether you're using a single-node system or an HA pair.
 
 The following notes provide details about the numbers that you’ll see in the tables below:
 

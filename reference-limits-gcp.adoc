@@ -87,7 +87,7 @@ The table below shows the maximum system capacity with disks alone, and with dis
 | Limit
 
 | Maximum data disks a|
-* 124 for single node systems
+* 124 for single-node systems
 * 123 per node for HA pairs
 | Maximum disk size | 64 TB
 | Maximum system capacity with disks alone | 256 TB ^1^
