@@ -71,7 +71,7 @@ include::_include/capacity-limit.adoc[]
 
 --
 
-.Node-based licenses 
+.Other licenses 
 --
 [cols=5*,cols="h,d,d,d,d",options="header"]
 |===
