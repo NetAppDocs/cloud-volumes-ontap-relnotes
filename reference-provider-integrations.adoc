@@ -25,7 +25,7 @@ NetApp has implemented tools aimed to connect with applicable cloud providers on
 
 Microsoft schedules and programmatically announces maintenance events on its Azure virtual machine (VM) infrastructure that may affect Cloud Volumes ONTAP VMs. These events are announced 15 minutes prior to the maintenance window.
 
-Special handling of the maintenance events is supported for Cloud Volumes ONTAP high availability (HA) pairs. To maintain application health, we perform a preventive takeover to prioritize stability, as any loss of connectivity of more than 15 seconds will disable failover capabilities.
+Special handling of the maintenance events is supported for Cloud Volumes ONTAP high-availability (HA) pairs. To maintain application health, we perform a preventive takeover to prioritize stability, as any loss of connectivity of more than 15 seconds will disable failover capabilities.
 
 When the maintenance window is announced, the partner node of the targeted node will perform a takeover. When the maintenance is complete, a giveback will be initiated. After the giveback, the HA pair is expected to return to a healthy state. If this doesn't occur, contact NetApp Support for assistance. Note that maintenance events are targeted at one of the VMs in an HA pair at a time, and typically both nodes are targeted in a relatively short period of time.
 
