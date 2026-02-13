@@ -49,7 +49,7 @@ Cloud Volumes ONTAP 9.18.1 is not available for upgrade in Google Cloud.
 
 === Downtime
 
-* The upgrade of a single node system takes the system offline for up to 25 minutes, during which I/O is interrupted.
+* The upgrade of a single-node system takes the system offline for up to 25 minutes, during which I/O is interrupted.
 
 * Upgrading an HA pair is non-disruptive and I/O is uninterrupted. During this non-disruptive upgrade process, each node is upgraded in tandem to continue serving I/O to clients.
 

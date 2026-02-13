@@ -88,7 +88,7 @@ The limits do not include the root disk, core disk, and VNVRAM.
 
 * HA systems which use page blobs have a maximum of 8 TiB per page blob. The number of supported disks varies by VM size.
 
-* The 896 TiB disk-based limit that's listed for single node systems with certain VM sizes is the _tested_ limit.
+* The 896 TiB disk-based limit that's listed for single-node systems with certain VM sizes is the _tested_ limit.
 
 === Limits for different deployment modes of capacity-based licensing
 The following disk limits apply to Cloud Volumes ONTAP systems using a capacity-based licensing package. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html[Learn about Cloud Volumes ONTAP licensing options^]. 
