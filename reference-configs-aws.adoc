@@ -17,9 +17,9 @@ Several Cloud Volumes ONTAP configurations are supported in AWS.
 
 == Supported number of nodes
 
-Cloud Volumes ONTAP is available in AWS as a single node system and as a high-availability (HA) pair of nodes for fault tolerance and nondisruptive operations.
+Cloud Volumes ONTAP is available in AWS as a single-node system and as a high-availability (HA) pair of nodes for fault tolerance and nondisruptive operations.
 
-Upgrading a single node system to an HA pair is not supported. If you want to switch between a single node system and an HA pair, then you need to deploy a new system and replicate data from the existing system to the new system.
+Upgrading a single-node system to an HA pair is not supported. If you want to switch between a single-node system and an HA pair, then you need to deploy a new system and replicate data from the existing system to the new system.
 
 == Supported storage
 
@@ -71,7 +71,7 @@ include::_include/capacity-limit.adoc[]
 
 --
 
-.Node-based licenses 
+.Other licenses 
 --
 [cols=5*,cols="h,d,d,d,d",options="header"]
 |===
@@ -232,9 +232,9 @@ The bandwidths shown in the table below match the documented AWS limits for each
 
 . Some instance types include local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It's effective for random read-intensive workloads, including databases, email, and file services. Compression must be disabled on all volumes to take advantage of the Flash Cache performance improvements. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more about Flash Cache^].
 
-. Cloud Volumes ONTAP supports high write speed with most instance types when using an HA pair. High write speed is supported with all instance types when using a single node system. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
+. Cloud Volumes ONTAP supports high write speed with most instance types when using an HA pair. High write speed is supported with all instance types when using a single-node system. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
 
-. The r5.12xlarge instance type has a known limitation with supportability. If a node unexpectedly reboots due to a panic, the system might not collect core files used to troubleshoot and root cause the problem. The customer accepts the risks and limited support terms and bears all support responsibility if this condition occurs. This limitation affects newly deployed HA pairs and HA pairs upgraded from 9.8. The limitation does not affect newly deployed single node systems.
+. The r5.12xlarge instance type has a known limitation with supportability. If a node unexpectedly reboots due to a panic, the system might not collect core files used to troubleshoot and root cause the problem. The customer accepts the risks and limited support terms and bears all support responsibility if this condition occurs. This limitation affects newly deployed HA pairs and HA pairs upgraded from 9.8. The limitation does not affect newly deployed single-node systems.
 
 . While these EC2 instance types support more than 64 vCPUs, Cloud Volumes ONTAP only supports up to 64 vCPUs.
 
