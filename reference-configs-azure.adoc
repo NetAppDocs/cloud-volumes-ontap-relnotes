@@ -178,6 +178,7 @@ Similarly, if you choose Premium SSD Managed Disks for an environment that fulfi
 --
 
 .Other licenses 
+.Other licenses 
 --
 [cols=5*,cols="h,d,d,d,d",options="header"]
 |===
@@ -422,6 +423,7 @@ Notes:
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
 --
+.Other licenses 
 .Other licenses 
 --
 [cols=3*,cols="h,d,d,d",options="header"]
