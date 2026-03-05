@@ -803,7 +803,7 @@ You can use the following configurations with the existing Cloud Volumes ONTAP H
 NOTE: Azure page blobs are not supported for any new deployment.
 
 [role="tabbed-block"]
-====
+=====
 .Capacity-based licenses
 --
 [cols=4*,cols="h,d,d,d",options="header"]
@@ -819,50 +819,107 @@ NOTE: Azure page blobs are not supported for any new deployment.
 | Supported virtual machine types
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS5_v2 ^1^
 * DS13_v2
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
-
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
 * E48s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS13_v2
+====
+
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^ 
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS5_v2 ^1^
 * DS13_v2
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
 * E48s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+====
 
 | Supported disk types 3+| Page blobs
 
@@ -1004,7 +1061,7 @@ Notes:
 . ^3^ These VMs are only supported in deployments of Cloud Volumes ONTAP 9.11.1 or earlier. With these VM types you can upgrade an existing page blob deployment from Cloud Volumes ONTAP 9.11.1 to 9.12.1. You cannot perform new page blob deployments with Cloud Volumes ONTAP 9.12.1 or above. 
 
 --
-====
+=====
 
 
 == Supported disk sizes
