@@ -51,7 +51,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 | Supported virtual machine types
 a| 
 
-.DSv2 Series
+.DSv2 series
 [%collapsible]
 ====
 * DS4_v2 ^1^
@@ -64,7 +64,7 @@ a|
 .Ebdsv5 series
 [%collapsible]
 ====
-* E4bds_v5 ^7^
+* E4bds_v5 ^7^                                                                                     
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
@@ -72,7 +72,7 @@ a|
 * E64bds_v5 ^7^
 ====
 
-.Esv4 Series
+.Edsv4 series
 [%collapsible]
 ====
 * E4ds_v4 
@@ -82,7 +82,7 @@ a|
 * E80ids_v4 ^3^
 ====
 
-.Esv5 Series
+.Edsv5 series
 [%collapsible]
 ====
 * E4ds_v5 
@@ -93,7 +93,7 @@ a|
 * E64ds_v5 ^3^
 ====
 
-.Esv6 Series
+.Edsv6 series
 [%collapsible]
 ====
 * E4ds_v6 ^6^
@@ -115,7 +115,7 @@ a|
 ====
 
 
-.LS_v3 Systems
+.Lsv3 series
 [%collapsible]
 ====
 * L8s_v3 ^2^
@@ -139,7 +139,7 @@ a|
 
 a|
 
-.DSv2 Series
+.DSv2 series
 [%collapsible]
 ====
 * DS4_v2 ^1^
@@ -158,9 +158,10 @@ a|
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+* E104ids_v5 ^7^
 ====
 
-.Esv4 Series
+.Edsv4 series
 [%collapsible]
 ====
 * E4ds_v4 ^3^
@@ -170,7 +171,7 @@ a|
 * E80ids_v4 ^3^
 ====
 
-.Esv5 Series
+.Edsv5 Series
 [%collapsible]
 ====
 * E4ds_v5 
@@ -184,19 +185,25 @@ a|
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
-
+====
+.Esv3 series
+[%collapsible]
+====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
-
+====
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
 * L48s_v3 ^2^
 * L64s_v3 ^2^
+====
 | Supported disk types ^4^ 3+| Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, and Premium SSD v2 Managed Disks.
 
 |===
@@ -239,9 +246,9 @@ Similarly, if you choose Premium SSD Managed Disks for an environment that fulfi
 
 a|
 
-* E4bds_v5 ^7^
+* E4bds_v5 ^7d^
 
-* E4s_v3 ^1^
+* E4s_vds3 ^1^
 * E4ds_v4 ^3^
 * E4ds_v5
 * E4ds_v6 ^6^
@@ -250,8 +257,8 @@ a|
 
 * DS4_v2 ^1^
 * DS13_v2 ^1^
-
-* E8bds_v5 ^7^
+d
+* E8bds_v5 ^7d^
 
 * E8s_v3 ^1^
 * E8ds_v4 ^3^
