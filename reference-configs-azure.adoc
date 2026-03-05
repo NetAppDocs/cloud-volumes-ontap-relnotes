@@ -64,7 +64,7 @@ a|
 .Ebdsv5 series
 [%collapsible]
 ====
-* E4bds_v5 ^7^                                                                                     
+* E4bds_v5 ^7^                                                                                    
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
@@ -114,7 +114,6 @@ a|
 * E104ids_v5 ^7^
 ====
 
-
 .Lsv3 series
 [%collapsible]
 ====
@@ -125,18 +124,29 @@ a|
 * L64s_v3 ^2^
 ====
 
-
 a|
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2 ^1^
 * DS13_v2 ^1^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E4ds_v5 
 * E8ds_v5 
-
+====
 a|
 
 .DSv2 series
@@ -205,7 +215,6 @@ a|
 * L64s_v3 ^2^
 ====
 | Supported disk types ^4^ 3+| Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, and Premium SSD v2 Managed Disks.
-
 |===
 
 Notes:
