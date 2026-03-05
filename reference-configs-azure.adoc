@@ -480,7 +480,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 You can choose from the following configurations when deploying Cloud Volumes ONTAP as an HA pair in Azure.
 
 [role="tabbed-block"]
-====
+=====
 .Capacity-based licenses
 --
 [cols=4*,cols="h,d,d,d",options="header"]
@@ -794,7 +794,7 @@ Notes:
 //. PAYGO Explore isn't supported with HA pairs in Azure.
 
 --
-====
+=====
 
 
 ==== HA pairs with page blob
