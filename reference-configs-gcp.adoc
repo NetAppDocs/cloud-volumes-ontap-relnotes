@@ -308,7 +308,7 @@ You can enable _Flash Cache_, and high write speed when deploying an eligible in
 
 NOTE: _Flash Cache_, high write mode, and an MTU of 8,896 are feature-dependent and cannot be disabled individually within a configured instance.
 
-Beginning with Cloud Volumes ONTAP 9.18.1, if you select the local SSD (LSSD) variants of the C3 VMs, Flash Cache gets enabled by default. Within your Cloud Volumes ONTAP deployments, you can switch LSSD VM types among different variants within the C3 family if that variant supports Flash Cache.
+Beginning with Cloud Volumes ONTAP 9.18.1, if you select the local SSD (LSSD) variants of the C3 VMs, Flash Cache gets enabled by default. You can't switch between C3 LSSD VM variants in your Cloud Volumes ONTAP deployment, even if the target variant supports Flash Cache.
 
 Check this table to understand the VM variant and the maximum number of LSSDs supported by them:
 
