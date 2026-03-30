@@ -585,7 +585,6 @@ a|
 * E32bds_v5 ^9^
 * E48bds_v5 ^9^
 * E64bds_v5 ^9^
-
 ====
 
 .Edsv4 series
