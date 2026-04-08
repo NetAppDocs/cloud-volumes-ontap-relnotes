@@ -803,7 +803,7 @@ Notes:
 . ^5^ This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 
 . ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment with any other VM type, for example, from Edsv5 to Edsv6; only size changes among Edsv6 variants (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
-. ^7^ The Ebdsv5 and E104ids_v5 VMs are available for new deployments and upgrade of Cloud Volumes ONTAP 9.18.1 and later. You can change or upgrade your existing Edsv4, Edsv5, or other Ebdsv5 VMs types to Ebdsv5. You can upgrade Ebdsv5 or Eidsv5 VMs to E104ids_v5.v
+. ^7^ The Ebdsv5 and E104ids_v5 VMs are available for new deployments and upgrade of Cloud Volumes ONTAP 9.18.1 and later. You can change or upgrade your existing Edsv4, Edsv5, or other Ebdsv5 VMs types to Ebdsv5. You can upgrade Ebdsv5 or Eidsv5 VMs to E104ids_v5.
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
 
