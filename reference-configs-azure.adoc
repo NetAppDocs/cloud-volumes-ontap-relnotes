@@ -34,7 +34,7 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 
 
 [role="tabbed-block"]
-====
+=====
 
 .Capacity-based licenses
 --
@@ -49,111 +49,177 @@ Cloud Volumes ONTAP can run on either a Reserved or On-demand VM instance from y
 (disks + object storage) | 500 GiB 2+a| include::_include/capacity-limit.adoc[] 
 
 | Supported virtual machine types
+a| 
 
-a|
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2 ^1^
 * DS5_v2 ^1^
 * DS13_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
-* E4bds_v5 ^7^
+.Ebdsv5 series
+[%collapsible]
+====
+* E4bds_v5 ^7^                                                                                    
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E4ds_v4 
 * E8ds_v4 
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E4ds_v5 
 * E8ds_v5 
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E4ds_v6 ^6^
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
+====
 
-
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
 * L48s_v3 ^2^
 * L64s_v3 ^2^
-
+====
 
 a|
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2 ^1^
 * DS13_v2 ^1^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E4ds_v5 
 * E8ds_v5 
-
+====
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2 ^1^
 * DS5_v2 ^1^
 * DS13_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
+.Ebdsv5 series
+[%collapsible]
+====
 * E4bds_v5 ^7^
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+====
+
+.Edsv5 Series
+[%collapsible]
+====
 * E4ds_v5 
 * E8ds_v5 
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+====
+
+.Edsv6 Series
+[%collapsible]
+====
 * E4ds_v6 ^6^
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
-
+====
+.Esv3 series
+[%collapsible]
+====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
-
+====
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
 * L48s_v3 ^2^
 * L64s_v3 ^2^
-
-
+====
 | Supported disk types ^4^ 3+| Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, and Premium SSD v2 Managed Disks.
-
 |===
 
 Notes:
@@ -178,7 +244,6 @@ Similarly, if you choose Premium SSD Managed Disks for an environment that fulfi
 --
 
 .Other licenses 
-.Other licenses 
 --
 [cols=5*,cols="h,d,d,d,d",options="header"]
 |===
@@ -195,94 +260,205 @@ Similarly, if you choose Premium SSD Managed Disks for an environment that fulfi
 
 a|
 
-* E4bds_v5 ^7^
 
+.Ebdsv5 series
+[%collapsible]
+====
+* E4bds_v5 ^7^
+====
+
+.Esv3 series
+[%collapsible]
+====
 * E4s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E4ds_v4 ^3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E4ds_v5
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E4ds_v6 ^6^
+====
 
 a|
 
+
+.Dsv2 series
+[%collapsible]
+====
 * DS4_v2 ^1^
 * DS13_v2 ^1^
+====
 
+.Ebdsv5 series
+[%collapsible]
+====
 * E8bds_v5 ^7^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5
+====
+
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^2^
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS5_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
+
+.Ebdsv5 series
+[%collapsible]
+====
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2 ^1^
 * DS5_v2 ^1^
 * DS13_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
+.Ebdsv5 series
+[%collapsible]
+====
 * E4bds_v5 ^7^
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E4s_v3 ^1^
 * E8s_v3 ^1^
 * E32s_v3 ^1,3^
 * E48s_v3 ^1,3^
 * E64is_v3 ^1,3^
-* E104ids_v5 ^7^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E4ds_v4 ^3^
 * E8ds_v4 ^3^
 * E32ds_v4 ^3^
 * E48ds_v4 ^3^
 * E80ids_v4 ^3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E4ds_v5 
 * E8ds_v5 
 * E20ds_v5 ^3^
 * E32ds_v5 ^3^
 * E48ds_v5 ^3^
 * E64ds_v5 ^3^
+* E104ids_v5 ^7^
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E4ds_v6 ^6^
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+====
 
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^2^
 * L16s_v3 ^2^
 * L32s_v3 ^2^
 * L48s_v3 ^2^
 * L64s_v3 ^2^
+====
 
 
 | Supported disk types ^4^ 4+| Standard HDD Managed Disks, Standard SSD Managed Disks, and Premium SSD Managed Disks
@@ -308,7 +484,7 @@ Similarly, if you choose Premium SSD Managed Disks for an environment that fulfi
 
 . ^7^ The Ebdsv5 and E104ids_v5 VMs are available for new deployments and upgrade of Cloud Volumes ONTAP 9.18.1 and later. You can change or upgrade your existing Edsv4, Edsv5, or other Ebdsv5 VMs types to Ebdsv5. You can upgrade Ebdsv5 or Eidsv5 VMs to E104ids_v5.
 --
-====
+=====
 
 === HA pairs
 You can choose from the following configurations when deploying Cloud Volumes ONTAP as an HA pair in Azure.
@@ -317,7 +493,7 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 You can choose from the following configurations when deploying Cloud Volumes ONTAP as an HA pair in Azure.
 
 [role="tabbed-block"]
-====
+=====
 .Capacity-based licenses
 --
 [cols=4*,cols="h,d,d,d",options="header"]
@@ -334,68 +510,120 @@ You can choose from the following configurations when deploying Cloud Volumes ON
 
 a|
 
+.Ebdsv5 series
+[%collapsible]
+====
 * E8bds_v5 ^9^
 * E16bds_v5 ^9^
 * E32bds_v5 ^9^
 * E48bds_v5 ^9^
 * E64bds_v5 ^9^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4
 * E32ds_v4 ^1^
 * E48ds_v4 ^1^
 * E80ids_v4 ^1,2^
-* E104ids_v5 ^9^
+====
 
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 ^4^
 * E20ds_v5 ^1,4^
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+* E104ids_v5 ^9^
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E20ds_v6 ^8^
 * E32ds_v6 ^8^
 * E48ds_v6 ^8^
 * E64ds_v6 ^8^
+====
 
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^1,3,5^
 * L16s_v3 ^1,3,5^
 * L32s_v3 ^1,3,5^
 * L48s_v3 ^1,3,5^
 * L64s_v3 ^1,3,5^
+====
 
 
 a|
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 ^4^
+====
 
 a|
 
+.Ebdsv5 series
+[%collapsible]
+====
 * E8bds_v5 ^9^
 * E16bds_v5 ^9^
 * E32bds_v5 ^9^
 * E48bds_v5 ^9^
 * E64bds_v5 ^9^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 
 * E32ds_v4 ^1^
 * E48ds_v4 ^1^
 * E80ids_v4 ^1,2^
-* E104ids_v5 ^9^
+====
 
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 ^4^
 * E20ds_v5 ^1,4^
 * E32ds_v5 ^1,4^
 * E48ds_v5 ^1,4^
 * E64ds_v5 ^1,4^
+* E104ids_v5 ^9^
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E20ds_v6 ^8^
 * E32ds_v6 ^8^
 * E48ds_v6 ^8^
 * E64ds_v6 ^8^
+====
 
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^1,3,5^
 * L16s_v3 ^1,3,5^
 * L32s_v3 ^1,3,5^
 * L48s_v3 ^1,3,5^
 * L64s_v3 ^1,3,5^
+====
 
 
 | Supported disk types ^6^ 3+| Premium SSD Managed Disks or Premium SSD v2 Managed Disks.
@@ -437,66 +665,124 @@ Notes:
 | Supported virtual machine types
 
 a|
-* E8ds_v4 ^4^
+
+.Ebdsv5 series
+[%collapsible]
+====
 * E8bds_v5 ^7^
+====
+
+.Edsv4 series
+[%collapsible]
+====
+* E8ds_v4 ^4^
+====
+
+.Lsv3 series
+[%collapsible]
+====
 * L8s_v3 ^4,5^
+====
 
 a|
 
+.Ebdsv5 series
+[%collapsible]
+====
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
 * E80ids_v4 ^1,2,4^
-* E104ids_v5 ^7^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+* E104ids_v5 ^7^
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+====
 
+.Lsv3 series
+[%collapsible]
+====
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
 * L64s_v3 ^1,4,5^
+====
 
 
 a|
 
+.Ebdsv5 series
+[%collapsible]
+====
 * E4bds_v5 ^7^
 * E8bds_v5 ^7^
 * E16bds_v5 ^7^
 * E32bds_v5 ^7^
 * E48bds_v5 ^7^
 * E64bds_v5 ^7^
+====
 
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^4^ 
 * E32ds_v4 ^1,4^
 * E48ds_v4 ^1,4^
 * E80ids_v4 ^1,2,4^
-* E104ids_v5 ^7^
+====
 
+.Edsv5 series
+[%collapsible]
+====
 * E4ds_v5
 * E8ds_v5 
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+* E104ids_v5 ^7^
+====
+
+.Edsv6 series
+[%collapsible]
+====
 * E20ds_v6 ^6^
 * E32ds_v6 ^6^
 * E48ds_v6 ^6^
 * E64ds_v6 ^6^
+====
 
+.Lsv3 series
+[%collapsible]
+====
 * L16s_v3 ^1,4,5^
 * L32s_v3 ^1,4,5^
 * L48s_v3 ^1,4,5^
 * L64s_v3 ^1,4,5^
+====
 
 
 | Supported disk types 3+| Premium SSD Managed Disks or Premium SSD v2 Managed Disks.
@@ -516,12 +802,12 @@ Notes:
 . ^5^ This VM type includes local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It is effective for random read-intensive workloads, including databases, email, and file services. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more^].
 
 . ^6^ Edsv6 VM types are supported for new deployments of Cloud Volumes ONTAP 9.17.1 and later. You cannot switch an existing deployment with any other VM type, for example, from Edsv5 to Edsv6; only size changes among Edsv6 variants (for example E20ds_v6 → E32ds_v6) are supported. For information about this VM type, refer to the https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv6-series?tabs=sizebasic[Azure documentation: Edsv6 sizes series^].
-. ^7^ The Ebdsv5 and E104ids_v5 VMs are available for new deployments and upgrade of Cloud Volumes ONTAP 9.18.1 and later. You can change or upgrade your existing Edsv4, Edsv5, or other Ebdsv5 VMs types to Ebdsv5. You can upgrade Ebdsv5 or Eidsv5 VMs to E104ids_v5.v
+. ^7^ The Ebdsv5 and E104ids_v5 VMs are available for new deployments and upgrade of Cloud Volumes ONTAP 9.18.1 and later. You can change or upgrade your existing Edsv4, Edsv5, or other Ebdsv5 VMs types to Ebdsv5. You can upgrade Ebdsv5 or Eidsv5 VMs to E104ids_v5.
 
 //. PAYGO Explore isn't supported with HA pairs in Azure.
 
 --
-====
+=====
 
 
 ==== HA pairs with page blob
@@ -530,7 +816,7 @@ You can use the following configurations with the existing Cloud Volumes ONTAP H
 NOTE: Azure page blobs are not supported for any new deployment.
 
 [role="tabbed-block"]
-====
+=====
 .Capacity-based licenses
 --
 [cols=4*,cols="h,d,d,d",options="header"]
@@ -546,50 +832,107 @@ NOTE: Azure page blobs are not supported for any new deployment.
 | Supported virtual machine types
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS5_v2 ^1^
 * DS13_v2
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
-
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
 * E48s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS13_v2
+====
+
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^ 
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS5_v2 ^1^
 * DS13_v2
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
 * E48s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5 
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+====
 
 | Supported disk types 3+| Page blobs
 
@@ -620,46 +963,103 @@ Notes:
 | Supported virtual machine types
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS13_v2
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E8ds_v5
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS5_v2 ^1^
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E48s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+====
 
 a|
+
+.DSv2 series
+[%collapsible]
+====
 * DS4_v2
 * DS5_v2 ^1^
 * DS13_v2
 * DS14_v2 ^1^
 * DS15_v2 ^1^
+====
 
+.Esv3 series
+[%collapsible]
+====
 * E8s_v3
 * E48s_v3 ^1^
+====
+
+.Edsv4 series
+[%collapsible]
+====
 * E8ds_v4 ^3^ 
 * E32ds_v4 ^1,3^
 * E48ds_v4 ^1,3^
 * E80ids_v4 ^1,2,3^
+====
+
+.Edsv5 series
+[%collapsible]
+====
 * E4ds_v5 
 * E8ds_v5 
 * E20ds_v5 ^1^
 * E32ds_v5 ^1^
 * E48ds_v5 ^1^
 * E64ds_v5 ^1^
+====
 
 | Supported data disk types 3+| Page blobs
 
@@ -674,7 +1074,7 @@ Notes:
 . ^3^ These VMs are only supported in deployments of Cloud Volumes ONTAP 9.11.1 or earlier. With these VM types you can upgrade an existing page blob deployment from Cloud Volumes ONTAP 9.11.1 to 9.12.1. You cannot perform new page blob deployments with Cloud Volumes ONTAP 9.12.1 or above. 
 
 --
-====
+=====
 
 
 == Supported disk sizes
