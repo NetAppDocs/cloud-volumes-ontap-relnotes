@@ -50,7 +50,6 @@ a| *Supported disk types*
 * Throughput Optimized HDD (st1) ^4^
 
 a| *Cold data tiering to S3* 2+a| Supported |
-
 |===
 
 Notes:
@@ -66,9 +65,6 @@ include::_include/capacity-limit.adoc[]
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
 
 . Cloud Volumes ONTAP configurations in AWS Local Zones only support the General Purpose SSD (gp2) disk type. No other disk types are supported in Cloud Volumes ONTAP in AWS Local Zones.
-
-
-
 --
 
 .Other licenses 
@@ -90,7 +86,6 @@ include::_include/capacity-limit.adoc[]
 * Throughput Optimized HDD (st1) ^4^
 
 | Cold data tiering to S3 | Not supported 3+| Supported
-
 |===
 
 Notes:
@@ -103,8 +98,7 @@ Notes:
 
 . Tiering data to object storage is not recommended when using Throughput Optimized HDDs (st1).
 
-. Cloud Volumes ONTAP configurations in AWS Local Zones only support the General Purpose SSD (gp2) disk type. 
-
+. Cloud Volumes ONTAP configurations in AWS Local Zones only support the General Purpose SSD (gp2) disk type.
 --
 ====
 
@@ -147,7 +141,6 @@ a|
 * 6 TiB
 * 8 TiB
 * 16 TiB
-
 |===
 
 == Supported EC2 compute
@@ -227,7 +220,6 @@ The bandwidths shown in the table below match the documented AWS limits for each
 | m5dn.24xlarge | 64 ^4^ | 384 | Supported | 100 | 19,000 | Supported
 
 | m6id.32xlarge | 64 ^4^ | 512 | Supported | 50 | 40,000 | Supported
-
 |===
 
 . Some instance types include local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It's effective for random read-intensive workloads, including databases, email, and file services. Compression must be disabled on all volumes to take advantage of the Flash Cache performance improvements. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more about Flash Cache^].
