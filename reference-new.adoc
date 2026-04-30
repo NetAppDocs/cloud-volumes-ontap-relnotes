@@ -17,6 +17,11 @@ You can now deploy and upgrade to Cloud Volumes ONTAP 9.18.1. You can see the ba
 
 To know about the Cloud Volumes ONTAP features that are introduced in the latest versions of the NetApp Console, see what's new in https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html[Cloud Volumes ONTAP^].
 
+== 9.18.1 P2 (30 April 2026)
+The Cloud Volumes ONTAP 9.18.1 P2 patch is now available for deployment and upgrade in AWS, Azure, and Google Cloud. The Console will prompt you to upgrade your existing systems to this patch release.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P2[View the list of bugs fixed in the P2 patch^] (NetApp Support Site login required).
+
 == 9.18.1 P1 (31 March 2026)
 The Cloud Volumes ONTAP 9.18.1 P1 patch is now available for deployment and upgrade in AWS, Azure, and Google Cloud. The Console will prompt you to upgrade your existing systems to this patch release.
 
