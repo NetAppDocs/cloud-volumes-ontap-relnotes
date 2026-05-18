@@ -163,11 +163,15 @@ The bandwidths shown in the table below match the documented AWS limits for each
 | EBS bandwidth (Mbps)
 | High write speed ^2^
 
-| *Explore or any other license*
+.3+| *Explore or any other license*
 
 | m5.xlarge ^6^ | 4 | 16 | Not supported | Up to 10 | Up to 4,750 | Supported (single node only)
 
-.3+| *Standard or any other license*
+| ##m6id.xlarge## ^7^ | 4 | 16 | Supported | Up to 12.5 | Up to 10,000 | ##Unable to find##
+
+| ##m6idn.xlarge## ^7^ | 4 | 16 | Not supported | Up to 30 | Up to 25,000 | ##unable to find##
+
+.5+| *Standard or any other license*
 
 | r5.xlarge ^6^ | 4 | 32 | Not supported | Up to 10 | Up to 4,750 | Supported (single node only)
 
@@ -175,7 +179,11 @@ The bandwidths shown in the table below match the documented AWS limits for each
 
 | m5.2xlarge ^6^ | 8 | 32 | Not supported | Up to 10 | Up to 4,750 | Supported
 
-.22+| *Premium or any other license*
+| ##m6id.2xlarge## ^7^ | 8 | 32 | Supported | Up to 12.5 | Up to 10,000 | ##unable to find##
+
+| ##m6idn.2xlarge## ^7^ | 8 | 32 | Not supported | Up to 40 | Up to 25,000 | ##unable to find##
+
+.29+| *Premium or any other license*
 
 | m5n.2xlarge | 8 | 32 | Not supported | Up to 25 | Up to 4,750 | Supported
 
@@ -219,7 +227,22 @@ The bandwidths shown in the table below match the documented AWS limits for each
 
 | m5dn.24xlarge | 64 ^4^ | 384 | Supported | 100 | 19,000 | Supported
 
-| m6id.32xlarge | 64 ^4^ | 512 | Supported | 50 | 40,000 | Supported
+
+| ##m6id.4xlarge## ^7^ | 16 | 64 | Supported | Up to 12.5 | Up to 10,000 | ##unable to find##
+
+| ##m6id.8xlarge## ^7^ | 32 | 128 | Supported | 12.5 | 10,000 | ##unable to find##
+
+| ##m6id.16xlarge## ^7^ | 64 ^4^ | 256 | Supported | 25 | 20,000 | ##unable to find##
+
+| ##m6id.32xlarge## ^7^ | 64 ^4^ | 512 | Supported | 50 | 40,000 | Supported
+
+| ##m6idn.4xlarge## ^7^ | 16 | 64 | Not supported | Up to 50 | Up to 25,000 | ##unable to find##
+
+| ##m6idn.8xlarge## ^7^ | 32 | 128 | Not supported | 50 | 25,000 | ##unable to find##
+
+| ##m6idn.16xlarge## ^7^ | 64 ^4^ | 256 | Supported | 100 | 50,000 | ##unable to find##
+
+| ##m6idn.32xlarge## ^7^ | 128 (?) | 512 | Supported | 200 ^8^ | 100,000 | ##unable to find##
 |===
 
 . Some instance types include local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It's effective for random read-intensive workloads, including databases, email, and file services. Compression must be disabled on all volumes to take advantage of the Flash Cache performance improvements. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more about Flash Cache^].
@@ -235,6 +258,10 @@ The bandwidths shown in the table below match the documented AWS limits for each
 . AWS Local Zones are supported in the following EC2 instance type families with sizes xlarge to 4xlarge: M5, C5, C5d, R5, and R5d. link:https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/?nc=sn&loc=2[You should refer to AWS for the latest and complete details about supported EC2 instance types in Local Zones^]. 
 +
 High write speed isn't supported with these instance types in AWS Local Zones.
+
+. These instance types require ONTAP 9.16.1 GA or later.
+
+. ##For 32xlarge and metal sizes, at least 2 elastic network interfaces, with each attached to a different network card, are required on the instance to achieve 200 Gbps throughput. Each network interface attached to a network card can achieve a maximum of 170 Gbps##. For more information, refer to https://aws.amazon.com/ec2/instance-types/m6i/[Amazon EC2 M6i instance types^].
 
 === c4, m4, and r4 instances no longer supported
 
@@ -252,5 +279,15 @@ For more information, refer to:
 == Supported regions
 
 For AWS region support, see https://bluexp.netapp.com/cloud-volumes-global-regions[Cloud Volumes Global Regions^].
+
+//BLUEXPDOC-129, BLUEXPDOC-133
+
+== Related information
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html[Amazon EC2 instance types^]
+* https://aws.amazon.com/ec2/instance-types/m5/[Amazon EC2 M5 instances^] — Product details, benefits, and features of M5 instances, which are ideal for application servers, caching fleets, and other diverse workloads.
+* https://aws.amazon.com/ec2/instance-types/m6i/[Amazon EC2 M6i instances^]
+* https://aws.amazon.com/ec2/instance-types/c5/[Amazon EC2 C5 instances^]
+* https://aws.amazon.com/ec2/instance-types/r5/[Amazon EC2 R5 instances^]
 
 //BLUEXPDOC-129, BLUEXPDOC-133
