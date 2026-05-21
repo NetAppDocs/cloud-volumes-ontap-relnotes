@@ -29,7 +29,7 @@ Cloud Volumes ONTAP supports several types of EBS disks, and S3 object storage f
 
 Each license supports a different maximum system capacity. The maximum system capacity includes disk-based storage plus object storage used for data tiering. NetApp doesn’t support exceeding this limit.
 
-##The following tables list the supported storage and EC2 machine type combinations for each license. For the latest EC2 instance specifications, including vCPU, memory, network bandwidth, and Amazon EBS bandwidth, refer to https://aws.amazon.com/ec2/instance-types/[Amazon EC2 instance types^].##
+The following tables list the supported storage and EC2 machine type combinations for each license. For the latest EC2 instance specifications, including vCPU, memory, network bandwidth, and Amazon EBS bandwidth, refer to https://aws.amazon.com/ec2/instance-types/[Amazon EC2 instance types^].
 
 Cloud Volumes ONTAP can run on either a Reserved or On-demand EC2 instance. Solutions that use other instance types aren't supported.
 
@@ -176,12 +176,6 @@ include::_include/capacity-limit.adoc[]
 +
 High write speed isn't supported with these instance types in AWS Local Zones.
 . These instance types require ONTAP 9.16.1 GA or later.
-
-The following additional notes provide general guidance about supported instance behavior and deployment options.
-
-* Some instance types include local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It's effective for random read-intensive workloads, including databases, email, and file services. Compression must be disabled on all volumes to take advantage of the Flash Cache performance improvements. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more about Flash Cache^].
-* Cloud Volumes ONTAP supports high write speed with all supported instance types when using a single-node system. When using an HA pair, high write speed is supported only with supported instance types. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
-* When you choose an EC2 instance type, you can specify whether it is a shared instance or a dedicated instance.
 
 --
 
@@ -369,14 +363,176 @@ include::_include/capacity-limit.adoc[]
 High write speed isn't supported with these instance types in AWS Local Zones.
 . These instance types require ONTAP 9.16.1 GA or later.
 
-The following additional notes provide general guidance about supported instance behavior and deployment options.
-
-* Some instance types include local NVMe storage, which Cloud Volumes ONTAP uses as _Flash Cache_. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It's effective for random read-intensive workloads, including databases, email, and file services. Compression must be disabled on all volumes to take advantage of the Flash Cache performance improvements. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more about Flash Cache^].
-* Cloud Volumes ONTAP supports high write speed with all supported instance types when using a single-node system. When using an HA pair, high write speed is supported only with supported instance types. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
-* When you choose an EC2 instance type, you can specify whether it is a shared instance or a dedicated instance.
-
 --
 ====
+
+=== Support for Flash Cache and high write speed
+
+The following table identifies which supported EC2 instance types support Flash Cache and high write speed. 
+
+[cols="d,d,d",options="header"]
+|===
+| Supported instance
+| Flash Cache
+| High write speed
+
+| r5d.2xlarge
+| Supported
+| Supported
+
+| r5.xlarge
+| Not supported
+| Supported (single node only)
+
+| r5.8xlarge
+| Not supported
+| Supported
+
+| r5.2xlarge
+| Not supported
+| Supported
+
+| r5.12xlarge
+| Not supported
+| Supported
+
+| m6idn.xlarge
+| Not supported
+| Supported (single node only)
+
+| m6idn.8xlarge
+| Not supported
+| Supported
+
+| m6idn.4xlarge
+| Not supported
+| Supported
+
+| m6idn.32xlarge
+| Supported
+| Supported
+
+| m6idn.2xlarge
+| Not supported
+| Supported
+
+| m6idn.16xlarge
+| Supported
+| Supported
+
+| m6id.xlarge
+| Supported
+| Supported (single node only)
+
+| m6id.8xlarge
+| Supported
+| Supported
+
+| m6id.4xlarge
+| Supported
+| Supported
+
+| m6id.32xlarge
+| Supported
+| Supported
+
+| m6id.2xlarge
+| Supported
+| Supported
+
+| m6id.16xlarge
+| Supported
+| Supported
+
+| m5n.2xlarge
+| Not supported
+| Supported
+
+| m5dn.4xlarge
+| Supported
+| Supported
+
+| m5dn.24xlarge
+| Supported
+| Supported
+
+| m5dn.12xlarge
+| Supported
+| Supported
+
+| m5d.8xlarge
+| Supported
+| Supported
+
+| m5d.12xlarge
+| Supported
+| Supported
+
+| m5a.2xlarge
+| Not supported
+| Supported
+
+| m5a.16xlarge
+| Not supported
+| Supported
+
+| m5.xlarge
+| Not supported
+| Supported (single node only)
+
+| m5.4xlarge
+| Not supported
+| Supported
+
+| m5.2xlarge
+| Not supported
+| Supported
+
+| m5.16xlarge
+| Not supported
+| Supported
+
+| c5n.9xlarge
+| Not supported
+| Supported
+
+| c5n.18xlarge
+| Not supported
+| Supported
+
+| c5d.9xlarge
+| Supported
+| Supported
+
+| c5d.4xlarge
+| Supported
+| Supported
+
+| c5d.18xlarge
+| Supported
+| Supported
+
+
+| c5a.12xlarge
+| Not supported
+| Supported
+
+| c5.9xlarge
+| Not supported
+| Supported
+
+| c5.18xlarge
+| Not supported
+| Supported
+|===
+
+The following notes provide general guidance about supported instance behavior and deployment options.
+
+* Some instance types include local NVMe storage, which Cloud Volumes ONTAP uses as Flash Cache. Flash Cache speeds access to data through real-time intelligent caching of recently read user data and NetApp metadata. It's effective for random read-intensive workloads, including databases, email, and file services. Compression must be disabled on all volumes to take advantage of the Flash Cache performance improvements. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html[Learn more about Flash Cache^].
+
+* Cloud Volumes ONTAP supports high write speed with all supported instance types when using a single-node system. When using an HA pair, high write speed is supported only with supported instance types. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
+
+* When you choose an EC2 instance type, you can specify whether it is a shared instance or a dedicated instance.
 
 === Supported disk sizes
 
