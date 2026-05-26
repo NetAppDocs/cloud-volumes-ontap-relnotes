@@ -190,7 +190,7 @@ High write speed isn't supported with these instance types in AWS Local Zones.
 | Node-based BYOL
 
 | Maximum system capacity
-(disks + object storage) | 2 TiB | 10 TiB | 368 TiB | 368 TiB per license ^2^
+(disks + object storage) | 2 TiB | 10 TiB | 368 TiB ^2^| 368 TiB per license ^2^
 
 | Supported machine types
 
@@ -447,9 +447,9 @@ a|
 ======
 
 | Supported disk types 4+a|
-* General Purpose SSD (gp3 and gp2)
-* Provisioned IOPS SSD (io1)
-* Throughput Optimized HDD (st1)
+* General Purpose SSD (gp3 and gp2) ^3^,^5^
+* Provisioned IOPS SSD (io1) ^3^
+* Throughput Optimized HDD (st1) ^4^
 
 | Cold data tiering to S3 | Not supported 3+| Supported
 |===
