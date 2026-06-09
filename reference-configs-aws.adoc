@@ -630,7 +630,7 @@ The following table identifies which supported EC2 instance types support Flash 
 | Supported
 |===
 
-pass:[*] Flash Cache is supported on m6id.xlarge, m6id.2xlarge, m6idn.xlarge, and m6idn.2xlarge; however, these instance types have fewer than 16 cores and are not recommended for high-performance or memory-intensive workloads. Under heavy load, they may restart due to memory constraints. To avoid this, use an instance type with a higher core count and more memory.
+pass:[*] Flash Cache is supported on m6id.xlarge, m6id.2xlarge, m6idn.xlarge, and m6idn.2xlarge. However, these instance types have fewer than 16 core processors and are not recommended for high-performance or memory-intensive workloads. Under heavy load, they may restart due to memory constraints. To avoid this, use an instance type with a higher core count and larger memory.
 
 The following notes provide general guidance about supported instance behavior and deployment options.
 
