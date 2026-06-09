@@ -55,8 +55,8 @@ a| *Supported machine types*
 .C5 series
 [%collapsible]
 ======
-* c5.18xlarge ^7^
 * c5.9xlarge
+* c5.18xlarge ^7^
 ======
 
 .C5a series
@@ -68,47 +68,47 @@ a| *Supported machine types*
 .C5d series
 [%collapsible]
 ======
-* c5d.18xlarge ^7^
 * c5d.4xlarge ^8^
 * c5d.9xlarge
+* c5d.18xlarge ^7^
 ======
 
 .C5n series
 [%collapsible]
 ======
-* c5n.18xlarge ^7^
 * c5n.9xlarge
+* c5n.18xlarge ^7^
 ======
 
 .M5 series
 [%collapsible]
 ======
-* m5.16xlarge
+* m5.xlarge ^8^
 * m5.2xlarge ^8^
 * m5.4xlarge ^8^
-* m5.xlarge ^8^
+* m5.16xlarge
 ======
 
 .M5a series
 [%collapsible]
 ======
-* m5a.16xlarge
 * m5a.2xlarge
+* m5a.16xlarge
 ======
 
 .M5d series
 [%collapsible]
 ======
-* m5d.12xlarge
 * m5d.8xlarge
+* m5d.12xlarge
 ======
 
 .M5dn series
 [%collapsible]
 ======
-* m5dn.24xlarge ^7^
-* m5dn.12xlarge
 * m5dn.4xlarge
+* m5dn.12xlarge
+* m5dn.24xlarge ^7^
 ======
 
 .M5n series
@@ -120,32 +120,32 @@ a| *Supported machine types*
 .M6id series
 [%collapsible]
 ======
-* m6id.16xlarge ^7,9^
+* m6id.xlarge ^9^
 * m6id.2xlarge ^9^
-* m6id.32xlarge ^7,9^
 * m6id.4xlarge ^9^
 * m6id.8xlarge ^9^
-* m6id.xlarge ^9^
+* m6id.16xlarge ^7,9^
+* m6id.32xlarge ^7,9^
 ======
 
 .M6idn series
 [%collapsible]
 ======
-* m6idn.16xlarge ^7,9^
+* m6idn.xlarge ^9^
 * m6idn.2xlarge ^9^
-* m6idn.32xlarge ^9^
 * m6idn.4xlarge ^9^
 * m6idn.8xlarge ^9^
-* m6idn.xlarge ^9^
+* m6idn.16xlarge ^7,9^
+* m6idn.32xlarge ^9^
 ======
 
 .R5 series
 [%collapsible]
 ======
-* r5.12xlarge ^6^
+* r5.xlarge ^8^
 * r5.2xlarge ^8^
 * r5.8xlarge
-* r5.xlarge ^8^
+* r5.12xlarge ^6^
 ======
 
 .R5d series
@@ -251,8 +251,8 @@ a|
 .C5 series
 [%collapsible]
 ======
-* c5.18xlarge ^7^
 * c5.9xlarge
+* c5.18xlarge ^7^
 ======
 
 .C5a series
@@ -264,23 +264,23 @@ a|
 .C5d series
 [%collapsible]
 ======
-* c5d.18xlarge ^7^
 * c5d.4xlarge ^8^
 * c5d.9xlarge
+* c5d.18xlarge ^7^
 ======
 
 .C5n series
 [%collapsible]
 ======
-* c5n.18xlarge ^7^
 * c5n.9xlarge
+* c5n.18xlarge ^7^
 ======
 
 .M5 series
 [%collapsible]
 ======
-* m5.16xlarge
 * m5.4xlarge ^8^
+* m5.16xlarge
 ======
 
 .M5a series
@@ -292,16 +292,16 @@ a|
 .M5d series
 [%collapsible]
 ======
-* m5d.12xlarge
 * m5d.8xlarge
+* m5d.12xlarge
 ======
 
 .M5dn series
 [%collapsible]
 ======
-* m5dn.24xlarge ^7^
-* m5dn.12xlarge
 * m5dn.4xlarge
+* m5dn.12xlarge
+* m5dn.24xlarge ^7^
 ======
 
 .M5n series
@@ -313,27 +313,27 @@ a|
 .M6id series
 [%collapsible]
 ======
-* m6id.16xlarge ^7,9^
-* m6id.32xlarge ^7,9^
 * m6id.4xlarge ^9^
 * m6id.8xlarge ^9^
+* m6id.16xlarge ^7,9^
+* m6id.32xlarge ^7,9^
 ======
 
 .M6idn series
 [%collapsible]
 ======
-* m6idn.16xlarge ^7,9^
-* m6idn.32xlarge ^9^
 * m6idn.4xlarge ^9^
 * m6idn.8xlarge ^9^
+* m6idn.16xlarge ^7,9^
+* m6idn.32xlarge ^9^
 ======
 
 .R5 series
 [%collapsible]
 ======
-* r5.12xlarge ^6^
 * r5.2xlarge ^8^
 * r5.8xlarge
+* r5.12xlarge ^6^
 ======
 
 .R5d series
@@ -347,8 +347,8 @@ a|
 .C5 series
 [%collapsible]
 ======
-* c5.18xlarge ^7^
 * c5.9xlarge
+* c5.18xlarge ^7^
 ======
 
 .C5a series
@@ -360,47 +360,47 @@ a|
 .C5d series
 [%collapsible]
 ======
-* c5d.18xlarge ^7^
 * c5d.4xlarge ^8^
 * c5d.9xlarge
+* c5d.18xlarge ^7^
 ======
 
 .C5n series
 [%collapsible]
 ======
-* c5n.18xlarge ^7^
 * c5n.9xlarge
+* c5n.18xlarge ^7^
 ======
 
 .M5 series
 [%collapsible]
 ======
-* m5.16xlarge
+* m5.xlarge ^8^
 * m5.2xlarge ^8^
 * m5.4xlarge ^8^
-* m5.xlarge ^8^
+* m5.16xlarge
 ======
 
 .M5a series
 [%collapsible]
 ======
-* m5a.16xlarge
 * m5a.2xlarge
+* m5a.16xlarge
 ======
 
 .M5d series
 [%collapsible]
 ======
-* m5d.12xlarge
 * m5d.8xlarge
+* m5d.12xlarge
 ======
 
 .M5dn series
 [%collapsible]
 ======
-* m5dn.24xlarge ^7^
-* m5dn.12xlarge
 * m5dn.4xlarge
+* m5dn.12xlarge
+* m5dn.24xlarge ^7^
 ======
 
 .M5n series
@@ -412,32 +412,32 @@ a|
 .M6id series
 [%collapsible]
 ======
-* m6id.16xlarge ^7,9^
+* m6id.xlarge ^9^
 * m6id.2xlarge ^9^
-* m6id.32xlarge ^7,9^
 * m6id.4xlarge ^9^
 * m6id.8xlarge ^9^
-* m6id.xlarge ^9^
+* m6id.16xlarge ^7,9^
+* m6id.32xlarge ^7,9^
 ======
 
 .M6idn series
 [%collapsible]
 ======
-* m6idn.16xlarge ^7,9^
+* m6idn.xlarge ^9^
 * m6idn.2xlarge ^9^
-* m6idn.32xlarge ^9^
 * m6idn.4xlarge ^9^
 * m6idn.8xlarge ^9^
-* m6idn.xlarge ^9^
+* m6idn.16xlarge ^7,9^
+* m6idn.32xlarge ^9^
 ======
 
 .R5 series
 [%collapsible]
 ======
-* r5.12xlarge ^6^
+* r5.xlarge ^8^
 * r5.2xlarge ^8^
 * r5.8xlarge
-* r5.xlarge ^8^
+* r5.12xlarge ^6^
 ======
 
 .R5d series
@@ -481,20 +481,16 @@ The following table identifies which supported EC2 instance types support Flash 
 | Flash Cache
 | High write speed
 
-| c5.18xlarge
+| c5.9xlarge
 | Not supported
 | Supported
 
-| c5.9xlarge
+| c5.18xlarge
 | Not supported
 | Supported
 
 | c5a.12xlarge
 | Not supported
-| Supported
-
-| c5d.18xlarge
-| Supported
 | Supported
 
 | c5d.4xlarge
@@ -505,17 +501,21 @@ The following table identifies which supported EC2 instance types support Flash 
 | Supported
 | Supported
 
-| c5n.18xlarge
-| Not supported
+| c5d.18xlarge
+| Supported
 | Supported
 
 | c5n.9xlarge
 | Not supported
 | Supported
 
-| m5.16xlarge
+| c5n.18xlarge
 | Not supported
 | Supported
+
+| m5.xlarge
+| Not supported
+| Supported (single node only)
 
 | m5.2xlarge
 | Not supported
@@ -525,11 +525,7 @@ The following table identifies which supported EC2 instance types support Flash 
 | Not supported
 | Supported
 
-| m5.xlarge
-| Not supported
-| Supported (single node only)
-
-| m5a.16xlarge
+| m5.16xlarge
 | Not supported
 | Supported
 
@@ -537,11 +533,19 @@ The following table identifies which supported EC2 instance types support Flash 
 | Not supported
 | Supported
 
+| m5a.16xlarge
+| Not supported
+| Supported
+
+| m5d.8xlarge
+| Supported
+| Supported
+
 | m5d.12xlarge
 | Supported
 | Supported
 
-| m5d.8xlarge
+| m5dn.4xlarge
 | Supported
 | Supported
 
@@ -553,24 +557,16 @@ The following table identifies which supported EC2 instance types support Flash 
 | Supported
 | Supported
 
-| m5dn.4xlarge
-| Supported
-| Supported
-
 | m5n.2xlarge
 | Not supported
 | Supported
 
-| m6id.16xlarge
-| Supported
-| Supported
+| m6id.xlarge
+| Supported ^*^
+| Supported (single node only)
 
 | m6id.2xlarge
 | Supported ^*^
-| Supported
-
-| m6id.32xlarge
-| Supported
 | Supported
 
 | m6id.4xlarge
@@ -581,20 +577,20 @@ The following table identifies which supported EC2 instance types support Flash 
 | Supported
 | Supported
 
-| m6id.xlarge
+| m6id.16xlarge
+| Supported
+| Supported
+
+| m6id.32xlarge
+| Supported
+| Supported
+
+| m6idn.xlarge
 | Supported ^*^
 | Supported (single node only)
 
-| m6idn.16xlarge
-| Supported
-| Supported
-
 | m6idn.2xlarge
 | Supported ^*^
-| Supported
-
-| m6idn.32xlarge
-| Supported
 | Supported
 
 | m6idn.4xlarge
@@ -605,13 +601,17 @@ The following table identifies which supported EC2 instance types support Flash 
 | Supported
 | Supported
 
-| m6idn.xlarge
-| Supported ^*^
-| Supported (single node only)
-
-| r5.12xlarge
-| Not supported
+| m6idn.16xlarge
 | Supported
+| Supported
+
+| m6idn.32xlarge
+| Supported
+| Supported
+
+| r5.xlarge
+| Not supported
+| Supported (single node only)
 
 | r5.2xlarge
 | Not supported
@@ -621,9 +621,9 @@ The following table identifies which supported EC2 instance types support Flash 
 | Not supported
 | Supported
 
-| r5.xlarge
+| r5.12xlarge
 | Not supported
-| Supported (single node only)
+| Supported
 
 | r5d.2xlarge
 | Supported
