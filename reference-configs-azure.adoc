@@ -636,7 +636,7 @@ Notes:
 
 . ^1^ Cloud Volumes ONTAP supports high write speed with these VM types when using an HA pair. You can enable high write speed from the Console during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
 
-. ^2^ This VM is recommended only when Azure maintenance control is needed. It's not recommended for any other use case due to the higher pricing.
+. ^2^ Use this VM only when Azure maintenance control is required. It is not recommended for other use cases due to higher pricing. When using Isolated instance types for Azure maintenance control, ensure that each VM in an HA pair has its own Maintenance Configuration in Azure with staggered schedules so that both VMs are not offline simultaneously.
 
 . ^3^ Multiple availability zone support starts from ONTAP version 9.13.1. 
 
@@ -794,7 +794,7 @@ Notes:
 
 . ^1^ Cloud Volumes ONTAP supports high write speed with these VM types when using an HA pair. You can enable high write speed from the Console during deployment or any time after. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html[Learn more about choosing a write speed^].
 
-. ^2^ This VM is recommended only when Azure maintenance control is needed. It's not recommended for any other use case due to the higher pricing.
+. ^2^ Use this VM only when Azure maintenance control is required. It is not recommended for other use cases due to higher pricing. When using Isolated instance types for Azure maintenance control, ensure that each VM in an HA pair has its own Maintenance Configuration in Azure with staggered schedules so that both VMs are not offline simultaneously.
 
 . ^3^ These VM types are only supported for HA pairs in a single availability zone configuration running on shared managed disks. 
 
