@@ -6,8 +6,10 @@ settings:
     pdf_enabled: true
     harmony_enabled: true
   versions:
-    - version-number: "9.18.1"
+    - version-number: "9.19.1"
       url: /cloud-volumes-ontap-relnotes
+    - version-number: "9.18.1"
+      url: /cloud-volumes-ontap-9171-relnotes           
     - version-number: "9.17.1"
       url: /cloud-volumes-ontap-9171-relnotes          
     - version-number: "9.16.1"

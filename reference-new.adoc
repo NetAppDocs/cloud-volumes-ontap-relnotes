@@ -2,10 +2,10 @@
 sidebar: sidebar
 permalink: reference-new.html
 keywords: what's new, new, features, release notes, enhancements
-summary: Cloud Volumes ONTAP 9.18.1 includes a new enhancement.
+summary: Cloud Volumes ONTAP 9.19.1 includes a new enhancement.
 ---
 
-= What's new in Cloud Volumes ONTAP 9.18.1
+= What's new in Cloud Volumes ONTAP 9.19.1
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,28 +13,12 @@ summary: Cloud Volumes ONTAP 9.18.1 includes a new enhancement.
 :imagesdir: ./media/
 
 [.lead]
-You can now deploy and upgrade to Cloud Volumes ONTAP 9.18.1. You can see the base version of this release and the latest patch versions available for deployment and upgrade in the Console.
+You can now deploy and upgrade to Cloud Volumes ONTAP 9.19.1. You can see the base version of this release and the latest patch versions available for deployment and upgrade in the Console.
 
 To know about the Cloud Volumes ONTAP features that are introduced in the latest versions of the NetApp Console, see what's new in https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html[Cloud Volumes ONTAP^].
 
-== 9.18.1 P2 (30 April 2026)
-The Cloud Volumes ONTAP 9.18.1 P2 patch is now available for deployment and upgrade in AWS, Azure, and Google Cloud. The Console will prompt you to upgrade your existing systems to this patch release.
-
-NOTE: For AWS, Cloud Volumes ONTAP 9.18.1 P2 is the standard version for deployment and upgrade. Any lower version or patch of 9.18.1 is not supported.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P2[View the list of bugs fixed in the P2 patch^] (NetApp Support Site login required).
-
-== 9.18.1 P1 (31 March 2026)
-The Cloud Volumes ONTAP 9.18.1 P1 patch is now available for deployment and upgrade in Azure and Google Cloud. The Console will prompt you to upgrade your existing systems to this patch release.
-
-NOTE: This version is not available for deployment and upgrade in AWS.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.18.1P1[View the list of bugs fixed in the P1 patch^] (NetApp Support Site login required).
-
-== 9.18.1 GA (10 February 2026)
-The Cloud Volumes ONTAP 9.18.1 General Availability release is now available for deployment and upgrade in Microsoft Azure and Google Cloud.
-
-NOTE: This version is not available for deployment and upgrade in Amazon Web Services (AWS).
+== 9.19.1 GA (10 July 2026)
+The Cloud Volumes ONTAP 9.19.1 General Availability release is now available for deployment and upgrade in Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud.
 
 //Update this section for every major release and every patch. This section can have a patch version as the first major release available for deployment and upgrade. Other patches might top this one. When 9.x.1 version of a 9.x.0 version is available, the patch rls for 9.x.0 stops: MM
 
@@ -49,7 +33,7 @@ Upgrades of Cloud Volumes ONTAP must be completed from the Console. You should n
 link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when the Console notifies you^].
 
 === Supported upgrade path
-You can upgrade to Cloud Volumes ONTAP 9.18.1 from the 9.17.1 P1 and later patches in AWS, Azure, and Google Cloud. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.19.1 from the 9.18.1 patches in AWS, Azure, and Google Cloud. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 //Update this version for every major release. 9.x.0 v is can be usually upgraded from only the prev 9.x.1 version. But if the 9.x.0 version for a release has not gone, the n-2 for 9.x.1 will not be continued, and in that case only the previous 9.x.1 will be the upgrade path. The Console agent version removed as per code separation verification from engg: MM
 
