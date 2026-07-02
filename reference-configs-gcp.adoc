@@ -189,7 +189,7 @@ For more information about specific machine types, refer to the Google Cloud doc
 | Supported machine types ^1^
 
 a|
-* ##c3-standard-8##
+* ##c3-standard-8 ^5^##
 * ##c3-standard-22, c3-standard-22-lssd ^5^##
 * ##c3-standard-44, c3-standard-44-lssd ^5^##
 * ##c3-standard-88, c3-standard-88-lssd ^5^##
@@ -214,7 +214,7 @@ a|
 * n2-standard-8
 
 a|
-* ##c3-standard-8##
+* ##c3-standard-8 ^5^##
 * ##c3-standard-22, c3-standard-22-lssd ^5^##
 * ##c3-standard-44, c3-standard-44-lssd ^5^##
 * ##c3-standard-88, c3-standard-88-lssd ^5^##
@@ -265,15 +265,14 @@ link:reference-limits-gcp.html[Learn more about disk limits in Google Cloud].
 a|
 * n2-standard-4
 a|
-* ##c3-standard-8##
+* ##c3-standard-8 ^5^##
 * ##c3-standard-22, c3-standard-22-lssd ^5^##
-* ##c3-standard-44, c3-standard-44-lssd ^5^##
-* ##c3-standard-88, c3-standard-88-lssd ^5^##
+
 
 * n1-standard-8 ^3^
 * n2-standard-8
 a|
-* ##c3-standard-8##
+* ##c3-standard-8 ^5^##
 * ##c3-standard-22, c3-standard-22-lssd ^5^##
 * ##c3-standard-44, c3-standard-44-lssd ^5^##
 * ##c3-standard-88, c3-standard-88-lssd ^5^##
@@ -284,7 +283,7 @@ a|
 * n2-standard-48
 * n2-standard-64
 a|
-* ##c3-standard-8##
+* ##c3-standard-8 ^5^##
 * ##c3-standard-22, c3-standard-22-lssd ^5^##
 * ##c3-standard-44, c3-standard-44-lssd ^5^##
 * ##c3-standard-88, c3-standard-88-lssd ^5^##
