@@ -228,7 +228,7 @@ a|
 * n2-standard-48
 * n2-standard-64
 
-| Supported disk types ^2^ 3+| Balanced persistent disks ^3^, Performance (SSD) persistent disks ^3^, and Standard (HDD) persistent disks.
+| Supported disk types ^2^ 3+| Balanced persistent disks ^3^, Performance (SSD) persistent disks ^3^, and Standard (HDD) persistent disks. C3 VMs support only Hyperdisk Balanced disks.
 
 |===
 
@@ -272,8 +272,6 @@ a|
 * n1-standard-8 ^3^
 * n2-standard-8
 a|
-* ##c3-standard-8 ^5^##
-* ##c3-standard-22, c3-standard-22-lssd ^5^##
 * ##c3-standard-44, c3-standard-44-lssd ^5^##
 * ##c3-standard-88, c3-standard-88-lssd ^5^##
 
@@ -297,7 +295,7 @@ a|
 * n2-standard-48
 * n2-standard-64
 
-| Supported disk types 4+| Balanced persistent disks ^4^, Performance (SSD) persistent disks ^4^, and Standard (HDD) persistent disks.
+| Supported disk types 4+| Balanced persistent disks ^4^, Performance (SSD) persistent disks ^4^, and Standard (HDD) persistent disks. C3 VMs support only Hyperdisk Balanced disks.
 
 |===
 
@@ -360,15 +358,15 @@ Check this table to understand the VM variant and the number of LSSDs supported 
 | VM type                | Maximum supported data disks for single node deployments | ##Maximum supported data disks for single AZ HA deployments## | Maximum capacity (in TiB)
 
 | c3-standard-4          | 12         | N/A      | 256
-| c3-standard-8          | 12         | 16       | 256
-| c3-standard-22         | 28         | 32       | 256
-| c3-standard-44         | 28         | 32       | 512
-| c3-standard-88         | 28         | 32       | 512
-| c3-standard-4-lssd     | 12         | 32       | 256
-| c3-standard-8-lssd     | 12         | 32       | 256
-| c3-standard-22-lssd    | 28         | 32       | 256
-| c3-standard-44-lssd    | 28         | 32       | 512
-| c3-standard-88-lssd    | 28         | 32       | 512
+| c3-standard-8          | 12         | 11       | 256
+| c3-standard-22         | 28         | 27       | 256
+| c3-standard-44         | 28         | 27       | 512
+| c3-standard-88         | 28         | 27       | 512
+| c3-standard-4-lssd     | 12         | N/A      | 256
+| c3-standard-8-lssd     | 12         | N/A      | 256
+| c3-standard-22-lssd    | 28         | 27       | 256
+| c3-standard-44-lssd    | 28         | 27       | 512
+| c3-standard-88-lssd    | 28         | 27       | 512
 | n2 (all variants)      | 124        |124       | 257
 |===
 
