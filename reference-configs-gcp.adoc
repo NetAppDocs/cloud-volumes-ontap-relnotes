@@ -244,7 +244,7 @@ link:reference-limits-gcp.html[Learn more about disk limits in Google Cloud].
 
 . ^3^ Enhanced write performance is enabled when using Balanced persistent disks and Performance (SSD) persistent disks.
 . ^4^ Beginning on August 11, 2025, the Cloud Volumes ONTAP Optimized license is deprecated and will no longer be available for purchase or renewal in the Google Cloud marketplace for pay-as-you-go (PAYGO) subscriptions. For information, refer to https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html[What's new in Cloud Volumes ONTAP^].
-. ^5^ You can deploy the next-generation C3-family VMs on https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html#cloud-volumes-ontap-support-for-next-generation-google-cloud-vms[Cloud Volumes ONTAP 9.19.1 and later for single AZ HA deployments^]. The c3-standard-44 and c3-standard-88 machines and their LSSD variants support Tier-1 bandwidth in Google Cloud Console by default. Refer to link:reference-configs-gcp.html#flash-cache-support[Flash Cache support] for more information on the LSSD variants.
+. ^5^ You can deploy the next-generation C3-family VMs on https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html#support-for-next-generation-google-cloud-vms-in-cloud-volumes-ontap-ha[Cloud Volumes ONTAP 9.19.1 and later for single AZ HA deployments^]. The c3-standard-44 and c3-standard-88 machines and their LSSD variants support Tier-1 bandwidth in Google Cloud Console by default. Refer to link:reference-configs-gcp.html#flash-cache-support[Flash Cache support] for more information on the LSSD variants.
 --
 
 .Other licenses 
@@ -314,7 +314,7 @@ The custom-4-16384 machine type is no longer supported with new Cloud Volumes ON
 . ^4^ Enhanced write performance is enabled when using Balanced persistent disks and Performance (SSD) persistent disks.
 
 The Console shows an additional supported machine type for Standard and BYOL: n1-highmem-4. However, this machine type isn't meant for production environments. We've made it available for a specific lab environment only.
-. ^5^ You can deploy the next-generation C3-family VMs on https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html#cloud-volumes-ontap-support-for-next-generation-google-cloud-vms[Cloud Volumes ONTAP 9.19.1 and later for single AZ HA deployments^]. The c3-standard-44 and c3-standard-88 machines and their LSSD variants support Tier-1 bandwidth in Google Cloud Console by default. Refer to link:reference-configs-gcp.html#flash-cache-support[Flash Cache support] for more information on the LSSD variants.
+. ^5^ You can deploy the next-generation C3-family VMs on https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html#support-for-next-generation-google-cloud-vms-in-cloud-volumes-ontap-ha[Cloud Volumes ONTAP 9.19.1 and later for single AZ HA deployments^]. The c3-standard-44 and c3-standard-88 machines and their LSSD variants support Tier-1 bandwidth in Google Cloud Console by default. Refer to link:reference-configs-gcp.html#flash-cache-support[Flash Cache support] for more information on the LSSD variants.
 --
 ====
 
