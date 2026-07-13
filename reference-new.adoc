@@ -33,7 +33,7 @@ Upgrades of Cloud Volumes ONTAP must be completed from the Console. You should n
 link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap-cloud.html[Learn how to upgrade when the Console notifies you^].
 
 === Supported upgrade path
-You can upgrade to Cloud Volumes ONTAP 9.19.1 RC from the 9.18.1 in only Google Cloud. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
+You can upgrade to Cloud Volumes ONTAP 9.19.1 RC from 9.18.1 in only Google Cloud. The Console will prompt you to upgrade eligible Cloud Volumes ONTAP systems to this release.
 
 [NOTE]
 In AWS and Azure, you won't be prompted for an upgrade to 9.19.1 RC because this version is unavailable for deployment and upgrade for these cloud providers.
