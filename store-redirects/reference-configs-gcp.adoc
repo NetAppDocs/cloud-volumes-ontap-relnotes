@@ -1,0 +1,4 @@
+---
+permalink: reference-configs-gcp.html
+redirect: storage-management-cloud-volumes-ontap/reference-configs-gcp.html
+---

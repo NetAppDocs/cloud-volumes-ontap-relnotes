@@ -1,0 +1,5 @@
+---
+permalink: reference-limits-azure.html
+redirect: storage-management-cloud-volumes-ontap/reference-limits-azure.html
+---
+
