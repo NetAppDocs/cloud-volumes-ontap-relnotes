@@ -15,7 +15,7 @@ summary: Cloud Volumes ONTAP 9.19.1 includes a new enhancement.
 [.lead]
 You can now deploy and upgrade to Cloud Volumes ONTAP 9.19.1. You can see the base version of this release and the latest patch versions available for deployment and upgrade in the Console.
 
-To know about the Cloud Volumes ONTAP features that are introduced in the latest versions of the NetApp Console, see what's new in https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html[Cloud Volumes ONTAP^].
+To know about more Cloud Volumes ONTAP features, supported configurations, limits, and more, see https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/index.html[Cloud Volumes ONTAP documentation^].
 
 == 9.19.1 RC (13 July 2026)
 The Cloud Volumes ONTAP 9.19.1 Release Candidate (RC) is now available for deployment and upgrade in Google Cloud only. This version is unavailable for deployment and upgrade in Amazon Web Services (AWS) and Microsoft Azure (Azure).
@@ -46,3 +46,4 @@ In AWS and Azure, you won't be prompted for an upgrade to 9.19.1 RC because this
 
 * Upgrading an HA pair is non-disruptive and I/O is uninterrupted. During this non-disruptive upgrade process, each node is upgraded in tandem to continue serving I/O to clients.
 
+//Update on 22 July, 2026: There were many more topics in the previous versions. But as part of the the restructuring activity of the CVO docs, they have been moved to the core docs. The redirected topics are listed in the store-redirects folder: MM
