@@ -1,0 +1,5 @@
+---
+permalink: reference-provider-integrations.html
+redirect: storage-management-cloud-volumes-ontap/reference-provider-integrations.html
+---
+
