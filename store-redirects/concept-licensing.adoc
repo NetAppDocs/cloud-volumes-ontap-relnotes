@@ -1,0 +1,6 @@
+---
+permalink: concept-licensing.html
+redirect: storage-management-cloud-volumes-ontap/concept-licensing.html
+---
+
+

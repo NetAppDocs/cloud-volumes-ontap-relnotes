@@ -1,0 +1,5 @@
+---
+permalink: reference-limits-gcp.html
+redirect: storage-management-cloud-volumes-ontap/reference-limits-gcp.html
+---
+
