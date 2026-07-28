@@ -6,7 +6,7 @@ Product: Cloud Volumes ONTAP
 This repository contains release notes for *Cloud Volumes ONTAP* across AWS, Azure, and Google Cloud. The content focuses on release changes, supported configurations, storage limits, licensing, known issues, limitations, and cloud provider integration behavior.
 
 ### Repository structure
-- `./` – Top-level AsciiDoc pages for the current release, including *What's new*, licensing, provider-specific supported configurations, storage limits, known issues, limitations, and provider integrations.
+- Top-level AsciiDoc pages for the current release, including *What's new*, licensing, provider-specific supported configurations, storage limits, known issues, limitations, and provider integrations.
 - `_include/` – Reusable include fragments for shared licensing and capacity-limit content referenced from multiple pages.
 - `media/` – Shared PDF notices and other assets linked from the release-notes pages.
 
