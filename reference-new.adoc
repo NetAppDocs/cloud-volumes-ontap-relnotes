@@ -22,6 +22,13 @@ The Cloud Volumes ONTAP 9.19.1 P4 patch is now available for deployment and upgr
 
 link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.19.1P4[View the list of bugs fixed in the P4 patch^] (NetApp Support Site login required).
 
+== 9.19.1P3HF1 (2 November 2026)
+The 9.19.1P3HF1 patch is now available for Cloud Volumes ONTAP for all cloud providers. This patch is compatible with ONTAP hotfix for 9.19.1.
+ 
+For your Cloud Volumes ONTAP systems, you might be prompted to upgrade to this hotfix in the Console. However, this hotfix is supported only when the Console agent version is 4.12.0 or later. If the Console agent version is earlier than 4.12.0, ignore the prompt.
+ 
+link:https://docs.netapp.com/us-en/console-setup-admin/whats-new.html#console-agent-4-12-0[Console agent 4.12.0^]
+
 == 9.19.1 GA
 The Cloud Volumes ONTAP 9.19.1 General Availability (GA) version is now available for deployment and upgrade in Amazon Web Services (AWS), Microsoft Azure (Azure), and Google Cloud.
 
